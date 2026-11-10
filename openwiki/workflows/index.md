@@ -1,0 +1,6 @@
+# Files
+
+- [Feature Diagnostics, Causality, and Selection](feature-diagnostics-and-selection.md) - End-to-end guide to validating feature causality and statistical quality, measuring outcome evidence, and applying the stateful FeatureSelector triage pipeline. Covers IC, drift, importance, interactions, and optional ML and SHAP boundaries.
+- [Portfolio, Trade, and Factor Analysis](portfolio-trade-and-factor-analysis.md) - Maps authoritative returns, account frames, holdings, fills, market data, benchmarks, factors, and model explanations into portfolio, execution, capacity, round-trip, attribution, and reporting outputs without fabricating missing surfaces.
+- [Signal Analysis Workflow](signal-analysis.md) - End-to-end guide to ingesting raw factors and prices or strict precomputed signal panels, then computing IC, quantile, spread, persistence, event, portfolio, persistence, and visualization outputs.
+- [Leakage-Aware Cross-Validation and Statistical Validation](validated-cross-validation.md) - How walk-forward and combinatorial folds control temporal leakage, how fold definitions are persisted, and how ValidatedCrossValidation turns CPCV fold returns into Sharpe and DSR significance results.

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/system-map.md": {
+      "pageVersion": "sha256:e16c2c0eff2fbce548494c8ce75b751673e6ff845b58bb6689b8f47b9c40117b",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/concepts/contracts-time-and-results.md": {
+      "pageVersion": "sha256:7e26fdd9f1187f3826f3c6dbac5fe392ddccaedd44c8bc2b0e16ac8614f4827d",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/integrations/backtest-to-tearsheet.md": {
+      "pageVersion": "sha256:58303cbc2bdbe987d4a4bf0496a67f301b17f5368843699d1a8aa7ba7b819cf0",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/integrations/legacy-compatibility.md": {
+      "pageVersion": "sha256:560d44a963c840474c633fd75853d87986f0bcb04e24704ea4f72322a6bc701a",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/integrations/reporting-and-visualization.md": {
+      "pageVersion": "sha256:a9cc9c3008c7ae60a164edc4d6b7e13c51e1ed176c095efd3623ff65fe9fecf8",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:fcb7067afe6822f2a359870f7d9b707db973350350afdbb61a6a792d1a5efcef",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/testing/development-and-test-strategy.md": {
+      "pageVersion": "sha256:7821256cf85b57765408e69e579c19d3ebac85ced37fcfa159325c7b2ce9a199",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/workflows/feature-diagnostics-and-selection.md": {
+      "pageVersion": "sha256:1edac965428c0766ac5b9d8187cc881446c5b829b32381cfc40584d36b3d447e",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/workflows/portfolio-trade-and-factor-analysis.md": {
+      "pageVersion": "sha256:331d4e46fe13aaefb6d8ee3368afec40480a550810483bc70764773fbbe10ecc",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/workflows/signal-analysis.md": {
+      "pageVersion": "sha256:acf01c40627f42143717eec304f4bcfa45d0365a2f7c4f90435fd203bf9c2b42",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    },
+    "/openwiki/workflows/validated-cross-validation.md": {
+      "pageVersion": "sha256:05e987045b5f36c081a41087e2bda22bf0a60319e4b42214bd4cd0593232137d",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "b7e75d90-601d-4b00-b2e1-54c3e1f089b0",
+      "gitHead": "afda973336527e7cf4b27baabc47e3736df2f576",
+      "sourceFingerprint": "sha256:5b449b5918a58c677209cb590aeeb83093a4a75466b78075a4870fe17c08f102"
+    }
+  }
+}

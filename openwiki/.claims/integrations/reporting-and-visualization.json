@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:a9cc9c3008c7ae60a164edc4d6b7e13c51e1ed176c095efd3623ff65fe9fecf8",
+  "claims": [
+    {
+      "id": "claim_259e555acea04e3b86900a605db49116",
+      "statement": "The `ml4t.diagnostic.reporting` package is a generic `BaseResult` rendering system whose factory supports HTML, JSON, and Markdown through import-time renderer registration, and it raises `ValueError` when a requested format has no registered generator.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/__init__.py#L27-L43",
+          "version": "repo-lines-v1:sha256:59c7e1bfb948676dbaff5941af203558a3f550284091f173eeb2c4be64d7ce7f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1NTNjNmI2NjJkZTEzOGNlYmI5MmVmNzdmNTFlNTk4YjUyYmU3N2ZiYzM0YTBiMzYwYWRlYmVhNzRmYzZhY2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2MDNmYjllMTIyMDg1NTlhOTYwY2FjNDk0ZTQwNzE0ZDg0NWNjNmFlMWMzOGU1MGUwNjFlMWJlMjFjZjU5ZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/base.py#L12-L18",
+          "version": "repo-lines-v1:sha256:41cd17247de60bc036d02d3ac5360f78b451b6b4d2ce65eb79ae38eed0900489:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjA3NGNmOTA2ZWZlZWE5YzVhM2E4Y2M5OTQ0ZTE1YjEwMmNkM2Q0ZmU0MmFhNjY1NTM2ZDI1ZTlmNzEwNTIxYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2I5MTAxNmJjZjgzOWE5OTFhOTQ3MmM0YWQxZGMzNDZmYTg2NGViZjkxZTYyYzZmNDQwYmJiMWQxOGI5NDgwMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU2NjIzNTA3NjU5NGUyNGJmNTY4NTFjZTc3MGY0ZWRiM2E0MjYwODMxYTI3YTg2OTBkZGEzZjVhNzViZjMzOSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/base.py#L53-L130",
+          "version": "repo-lines-v1:sha256:b0dce7176a015d3897b05a050eb26e3337c5c342dc20364957b65bc2b5e1f420:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjMmI5ZjlhNmQzOGQ1MDgyZTAzYWJlMjgyYTBiMDdjM2VkNzYxMzMwNTM3YzhmMjkzZTNkYjU4OTA2YmE4ZDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjOTFlYzY5OTQ2ZjMwZTNjMTM5NDVjZDcxZTRjYWE5OWRjYTA0MjNkYzdiMjhkOTI0OTcwYWI1YTRhYzRlZGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgxYzVlMTMyM2YxNmJjMWEzNmVkMTJiM2RmYjI1NDc4MDcyMzdkOGE2NTk2YTI1NDgyMTg2OTEyZWI2NzUzNjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_04b18849cf894daea30698b3a54f7efd",
+      "statement": "Generic HTML and Markdown renderers compose result metadata, `summary()`, and result-advertised DataFrames with configurable row limits, while the JSON renderer delegates to the `BaseResult` serialization contract; these renderers do not select domain-specific analytical plots.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/html_renderer.py#L117-L199",
+          "version": "repo-lines-v1:sha256:f256312998527fe758bc91135c81f63370644020d8ea3eef2bc82d22bea8b2fd:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMDllMTJmNjVmNjRiYzNhYjJlMTQyOGMwZTIxZjQ0NmE1NjE2ZWE0ZTc2OWVlNGMxNGQ4OWYzM2NmZTQxZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlYjE0YThkZmQ2NTA2MTNhMzY0Y2EyNDBmMjY5ZTI4MzA0ZGQzZjExMzE2YWM0Y2FiYWVhNTdhNjQzMzFhMjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0ZjllODU4ZjFiYjE0NWVhNmIzNmVlNDkwOTBiNWU4M2M3MTQxZDc1MjNmNWFhZDhjYzA5YzdlNGQ3YzE3ZDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/json_renderer.py#L20-L45",
+          "version": "repo-lines-v1:sha256:4a5c761c9de2285904b44310e6c70f15d1ceec6b6b8384374ba09706ba1bd36a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2Nzg5YzQ0ZWUyNDIxM2IyMmIxNzE5OWM5NTVlNjE5OTYwM2E5MThjZDFjYzQ4NzUyMmM4ZDNmY2Q2ODFkYzciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlM2Q1ODVkMzM1ODNkYTQ3YTliMjFkNDA2ZGVhNzYwMmM1NzViZjE4ZmE1YjJkOTdmN2U1MWEyMmI5ZjRjZTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiZTY1YjNhYmRmZTYyMjM5MTM0ZTYyMTY1MDQyMTk5NDVhOWJjMDY3ZjBkZGU5MGQ3YjJlMWQ3NjAwZDUxZjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/markdown_renderer.py#L20-L80",
+          "version": "repo-lines-v1:sha256:99de7b0762c5f265d6e12faf5dbda8357af017882ea6e1cd066bec9717321ba0:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyMmMxYzQ4MWVhNzYxM2RlYzJmMjUwODNjMDRkNGUxMjY4M2E2NzU2NmQ0NDJkMjhiOWJhZmU3NzU2N2Q5YzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzNjgzMGNhYzIxOWM3OTk0ZGE4OWIxYTM4NTk1YjVlMDUzY2ExNWE3NDRmMzFlN2VjNzBmMzkwNzU5NGFiYTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmNjY3MGY5NDliMGE5MmNiNmRiNTYxY2I0NzFhNGI3OGMxNTNmODI0MGIwNjgzMDdiNWY2YmU2M2RiZDIxOTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0ed0e63e76b24fb192f5a6144821d1a6",
+      "statement": "`combine_figures_to_html` validates Plotly figures and section indices, converts the figures to HTML while including Plotly.js only for the first figure, and either returns the document or atomically replaces an output file; its default Plotly.js source is the CDN, while `True` embeds the library.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L159-L231",
+          "version": "repo-lines-v1:sha256:ad7d2fead9b70de7aedc02f9cee83e5c13691519bf994b52d744482f7ffbe06e:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlNmNkNjI2ZjliYmQyNGI3NWE3MWVlZWFlMTExM2YyOGU2ODNmYzdiZTZjYWRmZmE4NWFiMTk1ZmQ2ZjQyY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiN2Q4NzM4ZWIwZTNlNGUwZTYyOGI0YmFhNTNlM2U4MTg5OTU5NzMxOWViNWJkNzJhYzE2Mjc3YWRkMzE0ZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwN2Y1ZDNhMDhiODY2MWE5ZTA1ZjJlMzdhM2U2NGZjZGY3MDE4YjQyY2YzNGQyNjlmZmM3ODA0N2NmY2NmMDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFiYWJiYmY0Y2U4OWFiMGI3NTE5NTI2NjEwNzg0MjhkODUzNDA2NzA1Y2I3MWE2ZGUyNmZhMTlhMmE1ZDg4NGEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L63-L103",
+          "version": "repo-lines-v1:sha256:a4d35132663fc1a2e6d3f48ca4a21f141bb3ad33c211679b332c669ef314b633:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjZTcwOGI1YjE0MTViNzdhMGRjMDJkZmUyODM3YWVlMWZlMDNmMTIxOGYyMWQyZDNmNTBjMzNmMzQxNzk3MzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzZDE3MWRlNzU0MzFhMDIxYTBkOTRmYTc2ZmFiZjBkNzEzOWM4OThjMWEwYjQ0YjQzY2E2MDkwM2ZhMWI4NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViNDA5NWNiYWQ5YjNjN2Q5ZjUzY2U4YWI0Y2FmYzUyZmI2N2E1MzJhNzJiMDAzNzkwZmNlZTRmNmQzMDhmOGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8022d5d1ce584b0b8d3b382ab5f3e267",
+      "statement": "The visualization report helpers are domain composers above the generic Plotly HTML combiner: feature importance, interaction, and combined report entry points choose domain plots and narrative rather than operating on the generic `BaseResult` renderer contract.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L33-L57",
+          "version": "repo-lines-v1:sha256:73be7a69c6fc33f8492aa6f076e179a5be8ac5474c4cfab4a2f1fe5bc219e63c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjYjlmZmNjYmE1MTQ2YjJkZDE3N2EzMGMzMDU3YTQzOTVlYmQ1Yzc0NWQwNzg5ZDJlZDk1ZDBjZjRhZmUyNzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3MWRhMTlmY2U0M2VkZDViMTg3OTNmNDdhYTUwMjMxYzU1NzE5ZjlmZjMzZGE1MmE4ODAzM2ViZGFjZTU3YzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyZWQyY2VlMmVmNWQzMjBiYmJkZTQ0ZGYzZjQ0MjIwOGQ1NDE0NDhmNGJiNDI3YTNlMTY2NzYzYzQ4OGM5YmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhOWIwYTFjZDA3N2MxMjNjMWEyY2E3NWE4NTJlZjM1ZWE5YjYwMjVlOWIzMjBiZDc4MmQwYzliNDFiNzljZjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L351-L390",
+          "version": "repo-lines-v1:sha256:d94bff6c3fd5ab8c6c87a50fdb9ae27527920dc876b08d349c76cfb3ce20004a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYzQ3MjlkNzg2Nzc5M2YzMDQ5MmNiZDAxYWU1MjgyNjY1N2FhNDhlNGIxMTg2YTAzMmVlNmU3OTlhZDlkOWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhOWI2NzkyY2IwMmU2ZDQ3N2QxYTI0MzcxNzg3ZjM4YmVjZDdlYTAzZjI0YzQ1NzFiNzBjNDI3YzRhNzQ1YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhNzU0ZGJkYmU5ZjI5NDgwMThhZjIwYjExZTM5OTkyOTNlZDg0MDEwZTE4ZTMxMWI2YmFlNzYzNGFlOWFlNTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzMjRmMDc0ZTUxNTk3ZDA2NmYwOTc5Y2M2MDQxYjc5ZDc3MjJlZmJmNTYwZTFhYWEzMzQzZTFkMjA5MzVjMGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L533-L684",
+          "version": "repo-lines-v1:sha256:264c4957fa8dd00a217c12d1d1cfba17dd17ea2c78ab1d70f86793241b9acbb5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2Y2RjYzNiY2FkZWE1ODU0ZTgxOWRmNzIxMmU5MjZiMTViYWIxNWQyNzc1NzY1MTJmZThmODMwY2UwYjRkNzNjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxYzMzNGJlNWIxZDA5YTZkZjA0MWNhOGRkYmRhNTRhMDVhNzAzNjE5NTJjMWMyYTkxMDkxZWFlZTQ3OTI4MGYwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzMzAxYmI4NWIxOTc0MzIzZWQ2OTQ1YWU3NGMxZmE4MTIxODY4Yjk0MjBlYzAyNzhkYWMxYjY4NDY2MTQ4YTlhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlMzc1YmFkMGQzNmZiZTNhMWYyZDE4YTVlZWZlMDNkZGVhMTZjYmM3Y2MxODMwNzk5NzNjZDQ1YTJmOWMwMDNhIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_ac4eadbf3d914458b6c5a90abfc6d1ee",
+      "statement": "`generate_backtest_tearsheet` is a separate domain-specific composition pipeline that hydrates profile inputs, enriches metrics, enables data-dependent sections, renders a selected template into workspaces, fills an HTML shell, and optionally writes the result.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L759-L856",
+          "version": "repo-lines-v1:sha256:efc6ebe51a2ce0219e850a92b5ad30dc5634b9aa4efdfdbc0a228ad8843da26d:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmM2M1OGViZWM4NDhiODRhODRlYjFlZWI0MDJmOTJkNTkwMzgyMWYzNzQyNTQ3NjM1ZmE3NWI2OWU4MjE0MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2ZTM4OTdiZTA0MDkwZTYwOTA0NjJjNjFlZDllZGNmNzkwOTZmMGY0NzA5NGIxNzE2MDhjMGRmMWM5YjgzN2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyYjI1NzhkODVmMDU0N2ZhOTE3ZGE3YjE4ZDIwNzg5OTE4MjlhNTM4MmM3OTEyOGJlMTZmNmYxMDg4ZjdhYjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1Yzg4YTQxYTlkZThhYmJiMDlkZjhjNThhMDAzZmY2OTQyZWM1YTM3YmNkMWVlYjhhZTRhMTI1NTMxMjMxZWEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L910-L1041",
+          "version": "repo-lines-v1:sha256:9e57368123f2f77ebc3c656b02622bced7e2ce51256fe221b0a3f2be9c224cf1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1NTAzMmU5NjRkMDkzMjM1MWU1ZDE4NTI2OTI4MWIxNzFhM2EwOWIwOGIyODZlNjYxZWE0NzAzMjNjODJlYjRkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0ZGM3NDY3ZGNhN2RiYjc3NDU5YjcyY2Y0YzljOTMwNzVlN2ExNjVkOTYzZmYwYWY1NzA3MmNmYmI5MTZmYmRkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiZTM1M2M3NjY4ZTVkNGUzMTlkMzRiYmEyZTdmMWQ5NTYyZDNlMjAyNGQ4YzJiY2RkYmQ3NGM4MWM0ZDc1OGUzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_17d0ace59d754328a5901219e9c28e82",
+      "statement": "Backtest templates explicitly define section names, titles, bands, enabled state, and priority, while the tearsheet section registry dispatches those names through a shared context; a renderer may produce a Plotly figure, HTML, or no section when data is unavailable.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L1156-L1242",
+          "version": "repo-lines-v1:sha256:3304e95b4b76cf648f68ac836d038cfdff67f8b692285d9c3e1b7e9bdddd5f04:eyJzZWxlY3RlZExpbmVDb3VudCI6ODcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2ZGU3ZGJmZTUyOWMwOWExN2VmYTc3MjQ1N2ViNWNmY2NlODkxZjA3NmMwZGY1Yjg4NjRkYjQ1NWRiMTI2YTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkOWVjMzk0NzkxNjFmZGM5ZWM1MGI0YTYyYzE0MWI5ZThiZWFjMTJkMzY2YjliNDliOGM2ZDIzNjQ0OGNjNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjZWVmMmE3YjcyYTVmZDA2NzI0ZjViYWU2NGJlYWNjZDEzOTZlOTY1Y2Y0YzJlMWI0MjM0ZGE1OTQxODk2MGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiNzZmZWRlZmFjZjc5YjE0MmNmMGMzZmU1MWQwNTc3ZmUyZDVjNzE4ODQ4NjUzOWU0YmE5YmVjYTgxNDJmNmUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L2816-L2909",
+          "version": "repo-lines-v1:sha256:ff8028b506baf94cbec93252c1faea0efdac4454befe26490d283ecb85db7367:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhOTRkODA2YWE3OTM2ZDZiYjZlN2E1MjljY2Q1OWJmOTE1NWE1ZDlhZGE1MTNkOGVlMWRmMzRiZTBiMjk3YzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlN2M5NTdiY2I0NGZiNjczYzk4YjAwNTBhNzVkMzgwODJkYjgxZDkxOGRlMzEzYTNmMDdjMTIzNTMwNmQ3ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5ZTk1NDgxODBlMjlmZDBjYjk0ZmFjNmI2NDliOTk4ZjlmZmIwZTVlNmM1MWU0NzM4ZGUyZTk5MTQ3M2E0ZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0MmNjMmUyNTcxYWE4ZmM4NzY3MDhkODNjMWIyNTcwNzU5ZDgxMWFhMzQxYTkzNTZjNzU0ZmQ4ZGE2YzViNjMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/template_system.py#L21-L46",
+          "version": "repo-lines-v1:sha256:40824c008e5826ea7a7e4a0f60194ffe02199b729bf1d9d87c8613be53de07e4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzODZhNTRjNTA5YmExYWIyNjdlOWQ5YWI5MDc1ZjM1NDEwNTdiZGJmNTU4MWQ0N2I4YmY3YTUzYjI5MGU4MjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMmY5ZjBiNThhMzljZmMyNzI3OWJkMmNiNmRlOWZjMzYzZWI0NTAxNjQ1NThmMmIyMDMxOTI4YjUxOTMyN2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjMWYwMmZkN2VjMWQ0NjJjMGNiODE4Yjk0OGZmZTRmNzE1YjJjMmM0MzI2MzBjMjMyZGZlMzRkNDI3NDNmYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY0M2VjNGQzYWVmMDlhYzc4MGVkMGE2NDBlNTQ0ZGRiYmEzMTM1ZTk4ZDMwMWVlZTJkMmQ1YWMwZDFhN2E1YjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1652e350b9604423b8178de4534bcf45",
+      "statement": "`BacktestTearsheet` is the stateful builder for the same tearsheet system: its methods accumulate data and mutate section enablement on a stored template, and `generate()` deliberately uses that stored template so caller customization survives composition.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L2941-L3083",
+          "version": "repo-lines-v1:sha256:e7a3ab0479070f8a500ff7493200d85439daaf79608f726dbedcc81494299253:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3ZGVjZTU2ZGE2ZDQwYTBiMzhiYWZmYTk4ZjcyNDA0OTJhYzc5NTBhMWJmYTdkZTM3NGQzY2U1MDNjNGNjMWZhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlNzA4ZTQ3OTgwY2EyZjk0OTRkZTk1MWRjOWU4MzJlMTUwMjI0ZWMxZDY4MGFmMTUxOGVhZjIyM2IyYTdiYzVlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNDk4Njk1ZjEwYjY1YzE5NThmODkxMzQwMDllZThhYzEyNzg4NTk2NmJhM2I2NjZiMTBmNDFmOGZmYTVlMDY1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhYTQ0ZDk0OGI0YTZhZjRiYTgyODYyOTVjMDcxNDIzZTVkMDdiM2Y3Zjc2Zjc2YzAwZjc0MTNkOGI4Mzg5NmUxIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L3084-L3177",
+          "version": "repo-lines-v1:sha256:8fe5cab80d92126a5bf8a647de09fdc6dfc42bfa345b64e077354ac8e99cd874:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllMjA2MjUyMDEwNjhlZGRmYmEwMjkzYzIxMDlhYWViNzQzNmMzNzM5ZmE4YTUwMTExOGM4MjkwMWYzZGY0ODIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzMGY2ZmRiZGZlNjc1NDUzMGZjNzU1YTg3ZmQ1OWQxZmMzNTc0MGYwZWJlYjVhZTQ5NmQyNjFlMWEzNTQ5YWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQzZDQ4ZmMwMWQ3YTUyZTg4Y2EzNWUzZDVjY2Y0MDVmZjUxMDMzY2RlYjczMDgzMzFmODhjZDhmYjNkYTg2OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1608731ed8274ef5b6f32d7b07978d17",
+      "statement": "The tearsheet's `include_plotlyjs=True` inserts a fixed Plotly CDN script rather than embedding Plotly.js, and `False` inserts no script, so offline or host-page behavior differs from `combine_figures_to_html`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L1015-L1025",
+          "version": "repo-lines-v1:sha256:66b494170f6b9f2be8738e11533831bc68acdf8443f4a020f870a53eb2862c57:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczNjEzNmJjYjI3YWYzMjI1NDQxMTY3MDlkZjIyZTM3YjA0NzM1M2JkMjQ3Y2RjMDc1ZmI0ZTYzMzgwMjMzN2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMTE4ZDI4YzRiMmZjNmFjNmNjMDJmYzA0M2UwMjNkZGI3NGQ2NDkxYjY4MGE3Mjk0OWQ2MDYwN2FhODI0NDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiY2FkZTYwZTNjY2FmNjAwY2VmMzIxNmMxNzllMTE5YzczMTFjMTdmNWY3ODUyMTY3ZDMxMTJhODUzYWVmOWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhYTJlNmY4M2RjYmRmZGIxOTNkNjJmYjk1NDU3MDI1OGZjMWFjZGIwNDU4MmQ0OGNkNDM2OTBkODVmMmJlMmIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/backtest/tearsheet.py#L466-L469",
+          "version": "repo-lines-v1:sha256:9b1e9b6798cff1954f25ab2965812343c60328d969de0b86cda64949e1c3c47f:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQ4YjQ5MDUxYTQ4NDhlNDdhOTExZmE5MGNmZDA0MmZkODY0NmFhNzllMjMyZTNhODgwZjk5YWEwZjc4MzdkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU5YjcyZjEzZGZlYzA3OWIyNGYyNTA4Yzg4NDU3YWEyY2QwN2U1ZTM3YWM1M2NjYjc2ZjgwMTMxNTViNzRkNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmViODBjYjI2MjViMTJmNjFlYTJiM2YxZTMzNzY1OGU0YmFhOWU3MDQzN2M2ZTY0ZTIwZDc3Y2Q0YmQwYzI3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDA0Mjg1YjI5MDEzMDQ0YjMyNWEzOWE5M2JiYWI0ZTdkOTIxZGFhNGJmZjFhZmE3M2FhZWE2ZTY2MzI3YmNlNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_31249892abc5488fbf64bcf1ec0ddde3",
+      "statement": "Visualization and static export are optional: the `viz` extra includes Plotly, Kaleido, `pypdf`, and process support; current static Plotly image/PDF export may require local Chrome or Chromium, whereas the Streamlit trade dashboard belongs to the separate `dashboard` extra and imports Streamlit lazily.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L99-L118",
+          "version": "repo-lines-v1:sha256:6119e88a95484e983d124009531a1081afa4801044db53348b079b75edfb6c68:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyN2ZmYjMxODkzMTA4ZGRjMDFjNjRjYzNiYjZhMDQ0OGJjMDU1YTFiMzk4MzIwMDAyZjg2MDBkYWY1OGQ3MjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmN2QxNTU1NjBhN2VlODQ4NzgzYmZmYmNlMWI1YzgyMTJjZmRiZDcyZDYyMmViYjdiZDdjZWRhYjE3ZmNmMGQifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L106-L154",
+          "version": "repo-lines-v1:sha256:ee64ed4c3bfaa5cba40bdaf4756e170efb909afe979f47b200a6315dd0844603:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4Y2Y3NTMyNDkzZmRkNzBlN2Y5MjM4MTA5YmZmOTU3OTRmZTFiYzE2Yzg5NDUwYmUyMTI4OWNlMDc2YWUwMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwYmEzOWIxM2U3MTBkNzkzODMyMjk0MmI4N2I3NWM1YjEyOTg0ODJhMTAxODBlODhjMzE2YjJlNmIxMjk5MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZjY2UxNTZmMzAyNDgyZjM3ODEyN2ZjNDMxZmZhOTU0OTQ2NjRjMzJhM2JlZWFjZTQyMGZmY2QxYTQ1MWIwN2IifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_dashboard/app.py#L69-L82",
+          "version": "repo-lines-v1:sha256:e9656f0b3f679ac06b9e37267a0e4cbe43e821707aaab4bbe1ba7598d1342f86:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkNDdmZTViODg0MGNkZDM1MDYxNDMxNmIwMDkyNmEyOTk4Y2ZlMDJjMWQ2NWMyMDgzNTc0NjY0YTkzZTUwOTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5MTllZWI1NTRlNDg0MDMyNzZiZTdmNmMyOWUzM2QwYWQxNWExZjUyMGI0ZWM0ODEyY2MxZDNhZTdjN2I4MWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhNjA4ZTk5NWFkZmVhYTdhZjFjOTdkZjg4MGY5MzU3NzlhNWVhYzBjOWFkNDNmOTYyZTI4ODUxNTU0ZTJjMzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0NjlhMWQyOTg5MjAyYjdlZTJkMzZjMWRmNjk1ZGMwNzMwZjU2N2Q2Yzk3ZDU5ZTI0YmExMzBkNmZmYjlmM2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c45cca12423e410bbee54142e6c9170b",
+      "statement": "`export_figures_to_pdf` accepts only non-empty Plotly figure lists, requires Kaleido, supports vertical multipage export while rejecting compact layout, renders temporary per-figure PDFs without mutating the originals, merges them with `pypdf` or `PyPDF2`, and atomically replaces the destination.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L1325-L1460",
+          "version": "repo-lines-v1:sha256:f74ef7edcc4519a1396a9a285686b44595f1a6085f771c8fa1da6e2662143556:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwNzM1Mzk3OGJjMjIyMjgzNjUxNGNmOTk5OGNlNzdjMzU1M2EwNGRjNmJiMzkyODZiNjY3ZWEzM2VkNWQ1ZjJjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiZDRmM2ViNTdmNzkwYTQwNTkzNTQyMmI3YTg0ZDZkMWFmMzA0YmIyZWQ4ZGMxYjA3YjBlZjE5ZDExYjc3OTdlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxNzlmZWI0YTc3YTRjYTZjOWQ5M2ZkZGUzZDBlMjFmNzVjN2NjMzM2NmQ2ZWZiYWUwZWU0MzJlOGQ5NDQ4MTg1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/report_generation.py#L234-L349",
+          "version": "repo-lines-v1:sha256:9a91f18f777b5d1fc0687d679647406849c322b8dc893aeb94a891f2064ef1d8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyMzAyOTg5MGI1NjdlZjJjMjkxNWY1M2NjZjJmNWYxMTAxMGZkMjc0NWQ2MmZhNzFlNzBhYjU1Y2VmNzI2YjgxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhMzhlMTIwN2YwOTM1MGU4NDQ3MTM3YTFmZDY5OTg5YTM1MjIxNGIxZGM5ZjJiM2MwZWU4ZDliOWM0ZjhmODc2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyMDVjNGQyNGM3NWIzZGUzMjc0ZjM2NmQ0ZDA2YjlkYWNlNjc2NzEyYjE4YzQ0YTJiMThiMWQ2YmZjNzM3YWY5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_425da7d321734f0d893052c53a3ed191",
+      "statement": "The concrete `evaluation.report_generation` module is a third, feature-diagnostics-specific reporting path whose HTML, JSON, and Markdown functions understand `FeatureDiagnosticsResult` fields directly, so it is neither the generic factory nor the backtest tearsheet.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/report_generation.py#L1-L52",
+          "version": "repo-lines-v1:sha256:e6a17e1dd3b45cbd085d063b5e24b5667c673bf46a48f11e61c3011771580d80:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0OWU0OGIzMWMwMTcyNjYzMGFhMzBmNjg3MjMwZGMyNWMyNGM4OGFjMGM5YmFkMjdlMjg1NWQxY2NmODIzNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkNGQ3N2EwYTU0MzZiZjIyYjBkOGM3ZmYyMGY3ZmY3N2M0ZjFjYjMyYzZhOGM5MWQ1MDJkODJjYTY2Njc2YjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI2NWJiOWMwNTMzZWMwNjA3MWYxMDY1NzE2Y2VkZmVhMzY5ZGU5YjY2MjBmYjFiMzRmMDIxMDU1ZWFkODc5MjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/report_generation.py#L148-L255",
+          "version": "repo-lines-v1:sha256:2720368dd316b452c1a1f9636c2ca1aa5bc0921766eea735b80701c774d1345e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2YmM1MTE2YjU4Y2UxZDI5OTcyZWYwMjg4MTQ1YjJiNDM0M2JmMzk1NWE0MTIwZDEwNDVmMmMxMmRkNDcwYTZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4MDA2YWIwNzM0Y2ViNDE4NGJlY2UwNWZkYWRkMjE2Yzg2ODBiMzVlZDI1YzNjYTNlNTFjNTk1MjdkZjI3ZmVlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxNmRiNWNkN2I0ZDQ5NDc0YWVkZTAyODY5YmRkZDg2OWU1N2MwMzA1ZjM0MzE5YWQzZjJkMjZiMWY0ZjdhYTg4In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/report_generation.py#L55-L145",
+          "version": "repo-lines-v1:sha256:68d520d9b70484462f218de031dfcddd7ecf46efc12345167d8ffa9593fa1a95:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkOTg3NDM2NjRhZWNhMjU4NGU4MDczYTQ3MjRhZjE1NjQyYTMwNGUyNTRlYmU4M2VjZTEwM2IxMjUyNTI5NGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0OGM4NTBjNmU0MjQ1NDVlMWUwODVlNTM0ODdhYWY5NzdjMGU4NWEzODE3ZWIwMzQ0ZWY5NTkwNDQwODIyOTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3M2M0OWQzNjhjNjhjNjM4ZGU5YjUyZWQ2ZDMwOWExZWZmMTkzNTg1NmU1ZGY0ODFhODNiZWE3ZDYyMTZiNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhOGU4NTY3N2IyYWQxODVjZjlmNWI4YzNkMTQzZTcxZGM1ZmE3ZTJkNDcyMGY0NTU1OTVhMDM5YjJiOTE0ODUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

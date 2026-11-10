@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1edac965428c0766ac5b9d8187cc881446c5b829b32381cfc40584d36b3d447e",
+  "claims": [
+    {
+      "id": "claim_e8b42e1c1b9746f6b867b5146b2e4472",
+      "statement": "The look-ahead auditor tests temporal causality by rerunning an extractor after corrupting post-cutoff inputs, measuring extractor nondeterminism in two baseline runs, and flagging pre-cutoff feature changes above a per-feature tolerance derived from the noise floor.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/causality.py#L1-L38",
+          "version": "repo-lines-v1:sha256:7443a81fba964ea9d939904f9bfc0aa0cf6790268c361dcd9e9df6f646c8035e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkMDBlMzI5YzY5YjhhMjViY2E1NmRiYWE4ZmMyYzRhZjkxNzgxNTE5YzU5MDE4MGQ0ZTg2ZjBjMzEzNmNiZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5YjYyNGM3MTI4ODUwMTQxZGZiYzNjZDE4Zjc0ZWZjYWZmMzIyNzMwODgxNzBhM2Q2MjI2Y2IzNzk5MWVlMzIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/causality.py#L568-L699",
+          "version": "repo-lines-v1:sha256:53315cab8addd339b258f0fd2a7d9b3b422d9382cbfbd30bd8fbcfcf98d256e5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyZTM2NDdhNGM4YjhiMzAzMWIxYjU3MmUwZmE3YzY1NDZmNzJiMzRkYjRlYzQzMjE0NWQxZThhMTYzNjYyYmIxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3ZWMyMGY3ZjRlN2FhZDAzZTAwN2RlNTZkYjc2YmZlNDQ0OWViOTIyZWEzYzZiZDAxMmE3ZThhNjFkODM5YWQwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkZGYwOWU4ZTI1NzNhNTY1Njg0YzE1ZTNmNGYzZjk4ZmVlZWM4MmU1NTU5YTNiYzA2MTNlOGNhMGU0OGIyZDgyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_cd4fe35c84aa46aea54926ca292df901",
+      "statement": "A causal verdict requires effective perturbation and comparison coverage: absent a detected leak, the auditor raises rather than returning causal when all probes are ineffective, a cutoff has no effective probe, or a cutoff-feature pair lacks pre-cutoff comparisons.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/causality.py#L701-L748",
+          "version": "repo-lines-v1:sha256:34a60c1a12fdb4feee4c0f0247ab76f93ea54138ce3b26b2db1da80a084e8132:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxNGVkMzVlZjZiMTcxMzU2M2U3ZDllYTE4ZTVlZjMwZDExYjJkZWUzYmJiYzYyYzU5MDhiZmUxMTZjYmEzOTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMWU3NzhhOTViZmJmN2Q3MGYzMzM5OTFkYmZlNDVlMmNjMzY5YTEyN2QwZDRlZjM3ODEzOGEyMjMwZWMyZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFiYzI2ZWJkMTU1NTA1ZmJhOTRmYmZjMDA0YjY2ZGNkYThmOWFkZmMzM2FlYTZiOGQ2MzNjNmQzMmEwMWMxYTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4YjBiMjU3ZDAzNGE0Y2IzOTViNzEyNmExOWMwM2M1YzRmMzdmYTlmYzk2YzBhYzhjODE3NWYwODRhMDZjNTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7b3f791472242b58f6b95eb51bcbb13",
+      "statement": "`assert_causal` returns the causality report on success but raises `CausalityError` with the report attached when any audited feature leaks.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/causality.py#L63-L84",
+          "version": "repo-lines-v1:sha256:067d345342eced85d1d711e0e1f82ed52d62b1b909ac7289206b162a5373bc79:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMWZmNmEzYTlmMDRlOWI2MTcwMTYzNGI1NDQ2MGM1ZDAxNzVhNDQ5ZTRmMWZlZjcyOGNhZDRjZTcyZDZlYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZiZGNjODM3YTE1Njk5YTI0ZDYzYzc2MTE4MzAyZDdmMTcyZjJlOGQ5OWZiOWQwNzA1MGViNDVmZDY0YzA5MjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1MmY1OTFiNmJiOTVjYjQxY2E4YzZiNDIwNWM1ODdiZGIyZWIxMTZhMjgyN2U2ZmM0MWQyN2MwNzJiZTQ3Y2YifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/causality.py#L750-L789",
+          "version": "repo-lines-v1:sha256:1454a807942936f389009529081dfb8d4256d61b48c066b920c094dcbd3c8d22:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhNjg4ODk4ZDE5MTUyZDFiOGMyZGEyMjAzZDUwOTg3ODFlNTkwMjE3N2JjN2I1ZTQxYTA0MWVkNTU0MTI2ZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiODQzZTkwMjkxMjdkMTcxOWRkNWZmZWY4ZWY0Y2UwZGY2YzA5NTMxODFkMzg4NmFhNzAyYTE2Y2M5ODlhZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0ODM5MzExZGY3NTFlYWRjMjI2MGI1NmZjODdhNDRhMzhhYWU3ZWNkZjU3MTBhNzEwMjg3YjkxNzhkMzI1YWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_42445c41116a4a2c840a94537b17311d",
+      "statement": "`FeatureDiagnostics` orchestrates configurable stationarity, autocorrelation, volatility, and distribution analyses; it requires at least one enabled module, validates one-dimensional nonempty input, and isolates module failures so remaining analyses can continue.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L592-L716",
+          "version": "repo-lines-v1:sha256:65ab09451cde1ce721ab511d9af3edd4dfd3036729ca7b0b790452bea8b8ede1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYjI4OGIwYWIwZjNjZWEwNDYzYzY5N2E1NzQwYmZjMmFmYjc4MDAwYmZmOWQ1OWQxNzc4MmU0M2RjYzFkNmZmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlNzZlYTk0NTAwZjIzMzRhZTEzM2Y1NTc2NzM2MGIxYzliNTkxYzFjYzEwYThlNDM2OTMwMDRmODFkZDBlMzgxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5YWUxODQ0ZTcxYzgzMGI3YTBlNTc1NTcyOWY0ZDk1ZDYzNGJkOTQ1NzU5MzNkNDVlNjNiMjZjODQ5NzZjMmE4In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L718-L762",
+          "version": "repo-lines-v1:sha256:c5a2a4b21a92ce5e200280bc67c51ebefd1689880e77030a5440c86867580f58:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhYWYyYzQ3ZDk5OTVmNDZhYjRiMTMyODIyMTA3OWI1ZTE1YjhkOTZkM2JlYWRjZDQ3ZGZmMTUyZTZhNjIyNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3OWYwZjA5MDY5YjI2Mzg1MDU4ZDYyM2ZkZTgyMjE2NjY3ZWQzMDc1YTAzODcyNWI2M2JhMGJjZjFiMzJiOWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2NDVhMzRmMzU5ZjkyYmNmZjhlYmFkYmU4NjU5MzVkODhkMTk1MDI1MjlhMGM4NGNhNTMyMTkwMDRlNmE0YmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzZTk0OWQ5MTU0M2JhMzRiZTE2ZjVmZmM0ZWM2NzQxM2VkZGZhNmIyODg1M2Y1MzZjOWU1MGQ3ZWQ5YjJkMTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e2d1bad6614e47e8a6c7533dedcb45dd",
+      "statement": "Feature diagnostic results derive a summary, recommendations, flags, and a health score normalized over successful modules; if all analyses fail, the result explicitly reports `ALL_MODULES_FAILED`, score zero, and recommends inspecting pathological input.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L315-L377",
+          "version": "repo-lines-v1:sha256:371a1076233c5ac23dbf15d657ff8e9083fa2282da694bc971833a2f62c7b58f:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkYjdmYzI1M2U1YjIyZjA1ZTVhNjNmMjNmNmEzZDNmNDRlZTYwOTM0Y2I0NjJjYmI2NWY5NGU3ODRmZmMxNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4YzRkNGZjNmEyMTI5YjE0OTE0ZDY1YWE5MDExYjcyZGVmMDY4ODhkNTI0YmMzOGU5YTM4YTM0MzJkYmVmZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkYjBkOTI1M2M1MmMxYWMxMTRmYjMxMTlkOWIyNjcwNTk4NWZjYThhNzNkOTE0MDQwZTkwMzJlYzNmMjdlMTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1ZDYzYmJkZTAzNmU4MGIwNzMyYWI5ODk5ODRkM2EzYmZkY2RhZGM2NGFmMWZhMzJkMWQ4ZjBjMDk0NTYwOTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L380-L523",
+          "version": "repo-lines-v1:sha256:b1f63b746bf243540d3a610e5736e95a9cc2e38171f3db6b90354b19b2690387:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MGJkNjJmOTllZjAwYzkzMTY3YTlmOGUwYmRmNjljMWYyZTk2ZjI5ZDhmZTU4MmIxYTRhNThkMDUxODVkMWJjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkOWU1ZTY5ZTU2NGQzNDZjNzc0NTZjMTlkYmE5YjFmZWY2NGFmOTU0ODlhZDZjZTJmZDY5ZTg0NTE5ZDUwZjFiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyYjhhNTIyYjMyN2M5NmMxYWY0OTUzOWY1MGVlOThjMzBjZGJiYTJiZDViYmFlZTgxMTliNDI4NDQxNmU3MGM2In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L525-L574",
+          "version": "repo-lines-v1:sha256:cdb3d2e574f4a74bc54b26446b8f0e4df74684ff43dd9b24f61596931de7d01e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNTFmNDIyNDM0OTE0MmQ1MGU4ZmQzOWIyZmE3NjU1NzdiYWVjNzkwMDYwOGMzODc1OTUwYjAyMDg2MmYyYjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIyNDkzNTcyNGVmMTM1MTJhMjhjNzMyMzUzNzMyNDJkMzczYWVkZGNiOWZmMzVlYzQ4NTFhNDkxZGM5OTEzMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NzFkOWE2YjkwOThlNjgwYmViMDQwNjUxMWRjZWZjZmJhNWRiZmU5YWQ5NWJjYjljNjUxZGM0NzU4ZjA3YjkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/feature_diagnostics.py#L83-L107",
+          "version": "repo-lines-v1:sha256:93fd7e96d02ab8a35fd940df295e9ad70a75c72e40b356dfc8dede574b8cad53:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiMGI2OTczMzU3YzUxNDQ5MDIwYjFjNmViZGJjNjZlZjgxNjhhNGM0Yzk0YWUwMjA5ZDE3NWFiMDEwZjljNTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2M2I5YjIzY2M4YTc1YjI4OTY0MDcwN2I1MDY4MDU5OGE4MTkxYjg0OGZjOGM2MTlmOGU3ZGJiYzJkMzQ3ZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVjOWI5MGNlN2MwOGUyMTBmMmYzODgyMzlmYzNmMjEzYzVhZjM3MjliM2NmZDY4ZDY4MmUyY2ExZjczMTU0YzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_623c7a1c70ee45f09ffa22e9a9fa6f54",
+      "statement": "`analyze_feature_outcome` joins predictions to computed forward returns and produces IC series and summary evidence with optional HAC significance, multi-horizon decay, and quantile monotonicity; panel analysis uses a group key to compute cross-sectional IC by date.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/feature_outcome.py#L108-L183",
+          "version": "repo-lines-v1:sha256:22277df6df41266ba031c72bf6fa90a9c6af1055c0fcfdee6c72a7dcacf97ffd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiNTg0MGFiNWRmNTY0NWYzZGU1NGUxZWQxNWNjMTgwMzcwMzEzY2ViY2YzZGJhMTFiMTM4YzM2YjRlNjQ2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZWNlNTZkYTZkNDBhMGIzOGJhZmZhOThmNzI0MDQ5MmFjNzk1MGExYmZhN2RlMzc0ZDNjZTUwM2M0Y2MxZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3MjIwNjEzMWMyMjMxNjJhZWUzMjg4YmZkZWRjMmMxZThkM2Q0ZWZmMWNiMzAxZjlmNWJiZDQwNjc0NjJmNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0MTNmNDMwNTYxYjgzMzFiNTRhNGYwYTUzODcwNzA3ZTcyNDE1YWVlNjY2ZDdmZmYwMzRiNTFhYWQ3OGFjYTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/feature_outcome.py#L258-L387",
+          "version": "repo-lines-v1:sha256:894c4603383c9924e145756b5e0b956a48a97419e0445d05a01e8e56d7bf817c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkMTk1MDdkMTA1YTg3Y2Q5OTFiYTVkYzU5ZWZlYzM3ZDZlMGJlZjg2ZDFjNWFlMjQ4ZDYwMzQ5NGM4NzBiZjliIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlNmI1NjlhMzU4ODlkOTkyNGU4ZTA0N2I5NTAwMzdmOTAzNThlNjA5NTJmY2QwNmI4MmUyNmI2ZTE3MjE1Zjg1IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5MDc4M2ZlN2ZlZGNmZjcyYzkwNzBkNTlmOWMzNmI3YjRjNGY3ZDQxNTk5OTMzMjAxNWM2YmIwYzQzZTI3ZmI0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4YmIxZTg5YTcwMzBlZWU1OThlNDJkZWFhNjBkY2RkMzgyYjE2MjQyOGUzNjA5OTkyMmU3ZTAyNzQ5OGJjZmJlIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e7afbe7aef84513a191714481917209",
+      "statement": "Unified drift analysis produces per-feature PSI and Wasserstein evidence plus optional multivariate domain-classifier evidence, recording how many univariate methods successfully ran and the fraction that detected drift.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/drift/analysis.py#L171-L250",
+          "version": "repo-lines-v1:sha256:621760ae84fca8c3f75897f25dccfff6eb78936695cea635f5928b7377eecf22:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjNGRmMzQ3ZTM0YjAzZDM3ZmIxYzA4ZGNjODQ1NmE2NTFiZjZlYWQxYWUwNjVlZDY1MzcwYzg0M2ZmOGI3NjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM2MWRlMjMxODg4MWE2ZGM0YzMxZjFkOTVhMTE2YWM0MjA2ZTNhYzRlZTU3Y2E3ZDcxNDRlNzVkNTM2ODgyYTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmMmY2YTA2OWQ2YjM4MjcxNjVhMjdmMzlmYjMyNmYzNzA2MjUzOWVhMDM1MTgzOWUzMGU5MWI2OWUyNTNlZmEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/drift/analysis.py#L24-L75",
+          "version": "repo-lines-v1:sha256:b70e96d51a92335558ba88fa293ef01e921f0d644ab36968a94271c2e0de9080:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyOTA3OTc0M2I0NWVkZDFkMTVjNTlmYTI4MWViMGVkMjU1MjJiNDkzZGUzNzc1YWZkNjE5YzY3NjVkZGJjN2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYjA5MTNjNmU0ZWYwZjcyNTM4M2NjNzQxZWRmNDhiNTQ1MThjOTA5M2E3MWI3YzExMDA3ZWU0NzEyYzEwN2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4YzA0OTU3ZjE3M2Y0YTZjYzdiZmFiMDE1Zjg1ZTQ5YmJhZGNiZDAyY2EwZTFmNzAyNmVlZmQxYzliOWE4ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3YmRkNGFiNzBiMWJiZmQ5NGE2ZGVkNmRkMGQwODEwZGNmMmFhMDUzYjk1M2ExZjljMjZjN2IxOWQzZjQzZjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/drift/analysis.py#L329-L360",
+          "version": "repo-lines-v1:sha256:7cab24c1db0814b8800fae1839bad7c23b16014ff3d9cd8ed83a4cad2bf299c1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViMDhhYzc2MDY2OGY2Yjc2MTM0MzQyYzc5NGM0NTlkMmNiODg0OTcyYWUyYTExNjMyYmRlYjlmZjNjYzBjNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyNmYxMzgyMzY2ZmNkNzYzZDNkOGI0Zjc4OGM4ZDNjZGNmOTZhNWM0ODkwNzIxOTUyMGEwMGZlZDMwY2ZkY2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5Yzg1NzVlZWU3YmM1NmExODgyYjEwNjU2YTEzNzQzNjc2MTVhNGIyNjFlODkyNzZiZDcwYjU4YTUxYTRmYTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6e9da2bbd74f4905a1cc704e1b8f7d6c",
+      "statement": "Model importance and interaction evidence has method-specific backend boundaries: MDI needs `feature_importances_`, PFI/MDA need prediction or scoring behavior, H-statistic needs `predict`, and SHAP paths require the optional SHAP package and compatible explainers or tree models.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L137-L143",
+          "version": "repo-lines-v1:sha256:e33806cc24c4e9e5d266354e13efd7557c54856a1ed6d6d251f98f0fb7832113:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTBhMTIyZjg0MmM4ZTQxZDEwZDE2YTU2M2E4MjVjMzBlMWFjZTA1YWViNjZhODRkNmFlM2I0NDQ3ODcyMjQyYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmQxMTRlZDM3ODc1NWIwNjhjNzZkZWEzYWRkZjk1NjY3OWExYmI1MmFhYjVhN2I5YWRjZDk0YTk4YjY2N2NkYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjQzODFmZjk2NDg2NGM3YzljZDBlOWJmMjEyNTYyY2Y4ZjY4YjViNWE3OWQ0MjMwOGRjN2U5MWY3OTNhMjAyYiJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/importance_analysis.py#L78-L139",
+          "version": "repo-lines-v1:sha256:c6d1bc89efe9839ac47db33592a7212beb52e430606da8cb29f906617a32d802:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzZjBhMzFkNTFlN2VhMTYxODFiMzdjNmU3MWQ1MGQwMTZkOTU2MjFiYWI4MzI4ODYwM2Q1YWFkOTcwOTgzYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY2NDUyYzhiM2ZmNmM3MDg3YTNkOGVmYTUxNDZmNWZlOTdhNWNiNDJlZDQ2YWJiMDFkZWVkZWRmMzY2NTJlYjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/importance_shap.py#L20-L139",
+          "version": "repo-lines-v1:sha256:76aba32801024c4fbed8415db3ac2e83edb16eb74172dc03eafb546ec3db96d2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjMjAwZWZhZTc5MjJlNzFjMGU5NzM4Mjk2NGY2NjU0OWRkMjI5ODNkYmU5ZWMyMGEyMjljNDA1ZjRhOTIzMTE4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMTJjYzE3OGRhMWJkYjMzYTU0ZWRlZTFhMzg5MDhlOTZmZjVjNjhkYTA4Yzg4OTNjYWZjZjQwNzFlMTUwNDE2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4OTM1ZGJhZjVjOTkzOTNiZDVkZTg5ZjY1NWNjOGY0MTM5Y2I5MzMyM2FjM2Y2MjgwMWIzNDhhYTkxNWJjNzJmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhNzdhODJjOTFhZGFmYzlmNzM1MDZjNzZiY2YyMTZmZTVmNGU4NWQ3MDNiYjlhNmYyY2ExOWUxMjIxMDgyYmNkIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/interactions.py#L214-L267",
+          "version": "repo-lines-v1:sha256:2e99defbfe65cf1cc7c77b2825e5eccee8952fb967f2358b75f5f12f6ca44d6c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhN2JiNTM1OTllNTU1Y2I5NGJhYWM0MzdkZTdjZmRkOGMzZDM4NzY0ZDNkNjdjZDFhMjJlODkxMzYxZjliNGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFiNDEzODI2YTg0ZmRlYzNjNWM2ODI0MTVkMGNjY2RlOTdkOTc3MzdhZTMwMzJkOGUxYWUzNTJlYjQxMTBhYzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRlMDM4OTY1MWY5N2UwZGRlYzYzN2E4M2ViNzlhY2IxOTY5N2E0MWM3ODkxMTU3YjhmYTQ3NzYwMzBiMWJjNGYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/interactions.py#L24-L72",
+          "version": "repo-lines-v1:sha256:c90ee887f4e31a646e9222614fc8e48275aca5a0fa8e197983bca333443aec7c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3MjdhZDIwNDg1MjI3M2Q5M2UwNmRmNmQzYmQxMzBlOGUxN2U1ZDkwMDhjN2Y0NWY3ODQyMTE4ZTJiYWE2MzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhODhiYjRmMDAwZGRmNTIzYTdlMDFjMDgwNTg3M2QxZDc1NGM4NzY4NmUzNDdjN2Q4OTJhNTY2ZmQwMDJjNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY2NDUyYzhiM2ZmNmM3MDg3YTNkOGVmYTUxNDZmNWZlOTdhNWNiNDJlZDQ2YWJiMDFkZWVkZWRmMzY2NTJlYjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_44e094abe5b24e58914c492fa9e121c7",
+      "statement": "`FeatureSelector` consumes an integration DTO of per-feature IC, importance, and optional drift results; current metrics entry points return analysis dictionaries rather than directly producing this selector DTO, so workflow code must adapt and align the evidence.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/feature_outcome.py#L108-L183",
+          "version": "repo-lines-v1:sha256:22277df6df41266ba031c72bf6fa90a9c6af1055c0fcfdee6c72a7dcacf97ffd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiNTg0MGFiNWRmNTY0NWYzZGU1NGUxZWQxNWNjMTgwMzcwMzEzY2ViY2YzZGJhMTFiMTM4YzM2YjRlNjQ2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZWNlNTZkYTZkNDBhMGIzOGJhZmZhOThmNzI0MDQ5MmFjNzk1MGExYmZhN2RlMzc0ZDNjZTUwM2M0Y2MxZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3MjIwNjEzMWMyMjMxNjJhZWUzMjg4YmZkZWRjMmMxZThkM2Q0ZWZmMWNiMzAxZjlmNWJiZDQwNjc0NjJmNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0MTNmNDMwNTYxYjgzMzFiNTRhNGYwYTUzODcwNzA3ZTcyNDE1YWVlNjY2ZDdmZmYwMzRiNTFhYWQ3OGFjYTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/metrics/importance_analysis.py#L78-L154",
+          "version": "repo-lines-v1:sha256:ae20d341d84decf781f00c74252cb46b76214f5bc9c63bcb575bececdc9a788e:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmYjQ2MzgwMzc3NGE0OGI1ZTVmOTBlMjQ3NmEwMGVhOWI0MDMzZTM3NTI1YjNkYTBjYmNiNjlkNmIxN2JmMTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzZjBhMzFkNTFlN2VhMTYxODFiMzdjNmU3MWQ1MGQwMTZkOTU2MjFiYWI4MzI4ODYwM2Q1YWFkOTcwOTgzYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0NjhhZmUzMmQxNzlmNWI2MTMwZWVmNzQxOTdmZjNhZTBmY2Q4ZDUzZDQ0ZmQ2MjcwNTI4NzMzYTNlYTY1YjgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/types.py#L1-L83",
+          "version": "repo-lines-v1:sha256:bf92bf7bf90456cb0d382fc9d2592eaf22fc29a4a94576fc38b4d1ab32663d37:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4NTFhY2M0NDgxMzkzOWQwYjQzMjNiODE0YjVhYjcwNDBjYjlhZTg0ZjdmNTdkODk0YmZjY2U3ZGViNjk4OGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1OTE2ZmQyNjc0MmY4ODU1ODU1OTkwM2NlZDI2YzYzNzUwNTIwNTBkM2U5MjE5MmRlNTZhZWVkYzM3NzZiZjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_43d14dd7038e4badb7301652d5284936",
+      "statement": "Feature selection is stateful and sequential: each filter mutates the surviving set and records a `SelectionStep`, `run_pipeline` executes the caller's supplied order, and `reset` alone restores the initial candidates and clears history.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L147-L173",
+          "version": "repo-lines-v1:sha256:55cd144910d0222a292e020d7944bc1130424d33a6b93c5e301b9749b334a2bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1ZTMzMmNhOGZhNDA1MDUxODg5MThkNmE1ZGUyNTQ1YjA5MWE5ZjM3ZDdjZDc5NjAxZjI5NDcwNTBhMDFjOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzMGJkMTA5NGRlNDg2MjdlNjVkZjMyYWJiODNhMTE3YWI3MGQ3ZWRmY2VjOWE2MTVlZTE0MTdjYTUxMWZkNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhYjg1MzFkYWE0ZmIwODllYmNhZjEyYTVhNzEwZTJhNzRmYWY5ZTI2ODY2OWRkZGM1NDM0MGRiN2E1YzkzOTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L174-L231",
+          "version": "repo-lines-v1:sha256:f8705fb8e30715db4784a74bdaba80ac0e4c861a0fce2165a54bcc4701afb40e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1Mjg3N2YxMTgwZjgxYzM5MDZmY2RlZWEzNzhhZWE0NGE5ZTk4MTU0ODFhMmY5ZWNiMmI1Y2RlMmE0OWQwMDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjOGYwZWY1ZmVkOTk4M2QxMjk0ZWZkNzhkYWNiMjBmMThkNzVhNjAyOGVlNGQ0ZjE0OTQ5YTkyNDJkYjc5Y2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZjYzAzNjc2N2JmZDMyNTZkMWEzMmM1YWZlYWNmZTA4ZDczMjVhNjc2ZTcyOTNlNzgxNmU3ZmYxMzg1MzM2MjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L493-L549",
+          "version": "repo-lines-v1:sha256:0ff1f6272cb914a9c15265554c579b1f37e4cac210d6512932cc17a60ad86af4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyYWIwOTBiY2QxNjIwZmE2MmVhZWUxNTdhNzRmY2E2MzVhYTI5ZTEyY2JmZmQ2MThiNTc5MmQ4N2JjMDNhM2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjYzAzNjc2N2JmZDMyNTZkMWEzMmM1YWZlYWNmZTA4ZDczMjVhNjc2ZTcyOTNlNzgxNmU3ZmYxMzg1MzM2MjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_14d8d09d2b4d49f9bc0847686a1aca0b",
+      "statement": "The selector's four policies are IC threshold/minimum-observation filtering, model-importance threshold or top-k filtering, pairwise correlation pruning with a caller-selected survivor strategy, and PSI-red or consensus-probability drift filtering.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L174-L294",
+          "version": "repo-lines-v1:sha256:9b645f12f5c3514699bce9dd50c153b5330477f4da2c4d04beb425b036732cfc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxNTI4NzdmMTE4MGY4MWMzOTA2ZmNkZWVhMzc4YWVhNDRhOWU5ODE1NDgxYTJmOWVjYjJiNWNkZTJhNDlkMDA1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4YzhmMGVmNWZlZDk5ODNkMTI5NGVmZDc4ZGFjYjIwZjE4ZDc1YTYwMjhlZTRkNGYxNDk0OWE5MjQyZGI3OWNmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3MjgwMjU2NDA4ZDVmN2FhYmFjNzUxYTdmZjNkODM3ODhjMTlhMjExMzU3MDZiZjNiYWEwZWZlNDY0MjVmYzNmIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L296-L412",
+          "version": "repo-lines-v1:sha256:1c8ccadd3506e9e477d6f87219be723aaf24e978f295e8def3591398d4a5d538:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2NTRhZmE1YWE1Y2Q1M2QzYzAyMDU2YjBkNTVmOWQ0MzA3ZTZjNDQ5YzgwMjM2ODIyNTAyMmZiZjlkYzU4YTZkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlMmZmZDdkOWEyMTZiMzkzMWY3YjUzZjUwMzk5Nzg2NDdlYjZiMjZhYjBmMTIxNzQxYzdmMmJmNWZhYjc2MGI0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMzc2MTg5MTY3ZDQyZjdhZjI5NzVlYWM3Y2ZhOWYxOGZhN2VhYzE5OGNlYTA4MzU0N2E1MmRjMjU4N2U2OGI3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxNjQ1ZDNhY2FkZDQ2MDFhNjc0NjE5YjQ3YWJmMzk0ZWExZTk2OWUxMGVmZGRjZjM0MGUwZWE4YzU5ZTZhNzYyIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L414-L491",
+          "version": "repo-lines-v1:sha256:0470f812db4acad14e5ebf178a4078bd5df13cf66a54f4d5226389ae052cb430:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhNTE1OTQ2Mzg5MGViNTQ3ZGFkMGUwZTI3OGQ4N2ZmOTlhMzIzMmM0ZWViNDhjOGQxMjViNDI4ZjlkODJkMjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjM2VmZjgyNTllMmI5ZGI2ZDgzOWUxMTEzYjk2MDNmN2RjZjM1NmM0MTBmNDc3MTg1NzYwMzQ4ZGJlZTM1YzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNjMDRmMWRkY2QyODU2ZTlhYWQwZjBhMGU5MzVkOGEzNmI2NTdkODQzNzMzYmEzODkyZWUwNDYzNWYxNjlhZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee627ff8d47d4c5ba49e504320fa4e1c",
+      "statement": "Selection filters have asymmetric missing-evidence behavior: missing IC results leave a feature unchanged, while missing usable importance excludes it from the keep set; correlation filtering requires a matrix and drift filtering requires drift results.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L196-L218",
+          "version": "repo-lines-v1:sha256:41410f84dcea2a7cf40ffa256591f20a09059236234fd34ff284a68e80f8d6c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiMjJjYzg5MjgwMGQzOWMzNWFlY2ZhNzZlZDQ0ZjczOGI2ZTY5NzI5MzNjMzk5YjI0MjZkOGJhNjBiYjg2NDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjMDdmMzRlN2E0ZTZkYzcyZmM4NjZiN2E5MmYzYWJmMDIyYjRmY2ExZmQzODUyNmVhOWNjMzYyMjA4ZTlmMGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmZTljYzVhZWQ5NTQ0MTIwMDk0NzY4NTE1ZGViZmJhNDMzMjQzMmJmZDZmYTkxMTkyZTBkYTExMzEwZmIzOTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBhZGNjMTZlODVhYTE1ZjE5MzFkZGJiMTAyMDY3NDhiOWU1YTdhMGFkMmU3MmZmMmU0ODAzZGE1YjU2NjMzNzcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L254-L279",
+          "version": "repo-lines-v1:sha256:ed17edebfaf8998b70d82b6a3456104b68302b3f5a7b90daf130874e1c124edf:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3YTFiOWRkYmM1MDBjMDhiY2VkYmQwOGY0YWE0ZTk1MTNiMjdlNWMwNGQzN2FjYTIwZjJkMjE3MmY2Y2IwZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1ZDViZWU4ODhmZmE0YmUzOGJjMGYxZjJmODY0YTA3MjVjM2IxODczMTIyN2ZhMGYxZjdjZGIyNGMzNzk4ZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIwZmE3ZGRhY2IyYzdjMWI4ZGE2NmRkODY5YmFhNWY4MmM2MTFlZGU4MGY0OGZmN2I5ODMzZDFiNDM1MDdmOTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L322-L361",
+          "version": "repo-lines-v1:sha256:53722e25b5eb0774cd22375992f48ee17b09b4a0eac41c7c2b72d58593c35b5a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1NjZkZDFlMmEzZWYxOWMzNThlOWZlYzcyNDVhNDI4YzcxZDVhNjQ0MGM5MTJjMWIwZWQ4MTQ2YzMyMjYxOTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0Y2I2ZDYwMzFhNGQ2NWMxNmNiOGQ2YTc2OTE5ODUxZTZiZjBiZGUxNWVmYmExMDlhODBkYmIxZjAwZmZkMjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4NmRhOWZjY2MwNTVlMDk0NDc4MDVjZTBhNjhhMTM2MTJiODJiZGRiMjBkM2NlMWU3YWY3YzBiNmIzYzU1MjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYWU0MWNmMjE5MGQ3NzYyNzc2NjZiZGNkYzk2YzAzYTQzOGRjMmJjZGY0ZWVjM2MxZjY1ZWNhMDBlMmZlYWYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L438-L448",
+          "version": "repo-lines-v1:sha256:1265e5b08ff4988339a2efccf717cd2337397cb84dd70319629a5f08d9a0e17c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0N2U0NWQ4YTliZWMxMjZhYmE3YmQ1OGJhOTk5ZGMzNjFlZjcxNGI4YTMyMWUzOWY2NTBmOWU2ZWY4Nzg2ODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkMWU0MzMxMzBiODNjOTVkM2NiN2NhMzhhMjJkNWFlOWYwNzU4MWUxMjE4M2NmZmE2MmMzZTYyMDRlMGRlNzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0YmVlY2VjZjU4NDUzMTkwYWQwMGNmNTUwNmM3YjA1ZjkzM2YxOTQ2NGQ0MDNjNGU0ZTAwZWY4ODliYWVkYzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBkMDVlOTUwYzg3N2ZhYmM2OTcyZmRhZDM3N2JlMDM5NmJmNWE2YmJmN2Q0OTk1OTZiNjJkOWFlZjE5YzE4ZjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b0c1706fe70e4d37a9b39d4716e0d654",
+      "statement": "`SelectionReport` is an execution audit trail containing initial and final feature sets and step-by-step parameters, counts, removals, survivors, and reasoning.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L39-L124",
+          "version": "repo-lines-v1:sha256:03a92ed1b1bda2d364ecf862c92c055d16fb3e99d00a527f2cabea72f726f35c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZmJhZTBiOTFkNDRmYzBkNDlmNWRlNjkxZGE2ZmM0MzFmMjYwMTM0YmY3MzFlMGUyMWY3NjQ4MDk0MzM0Y2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4NjczZTNjZGIxNjQzNmQ4Nzc2ZDI2MmRjYjIzMDFlYzQ1MGJkZGFjZmQ1MjJlNTIzMzVlNzYwOGEzNmNmNzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBkNDliMDdlZWUxMzgzNzFiOGY2Yjk1ZWUwMzcwZGY1ZGU3YzNjMWVhYTYyMDAyNDFhMTAyNWM1MjQyMGE4YmYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/selection/systematic.py#L532-L541",
+          "version": "repo-lines-v1:sha256:0584024241e577748704ecfd2f169b032ba6d2b7c16ef7aa41edd5c992a44bf7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4ZjY4M2NjN2MwNjM4M2MyN2NmNmNkNjMxNmZlZTM1ZmM1NGEyZGI3ODUyOTlmODBmMzM2MTA1MGJlNWVhODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyZmZlYjIyYWQ3M2EzMjY1YzYyZjUxZWJhOGI2YmRlMzFlNWJjOWQ2NDM0NjNiMDIyMTkzY2I2ZWRiYzA4MmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1ZjNjODk1YTYxNTc0N2M3NzU4ZWQzMDRmYTgzN2IyNmM2YjQ3YTE2Zjg2NzdjYzlhZTljZjFlMWNjNzFlZjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliNDJkYWE4ZTA2ZDgxZjJkN2RhMGE1NDRjNWE2YTRiOGRiZWI2ZTI0NjE3ZTk4ZDg0NGQ0NDk5MjAyYjhhZmEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

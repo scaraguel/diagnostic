@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:05e987045b5f36c081a41087e2bda22bf0a60319e4b42214bd4cd0593232137d",
+  "claims": [
+    {
+      "id": "claim_168ac9e887734b4eb345982ca9cdbe33",
+      "statement": "WalkForwardCV constructs sequential folds with expanding or rolling training windows, supports consecutive or spread validation windows, and can reserve a held-out final test period whose indices are exposed separately from yielded validation folds.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L1285-L1382",
+          "version": "repo-lines-v1:sha256:a12affc946e9499a43a1f80223456158f59c071dccf9f8f02fa61f7f0fd30ebf:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxM2NhMDVhMzJhNjZlNWRmY2QxMGY5YWU3ZjY2MTUwODMyMjc1ZTQ4ZjA5MmE3YmMzMjE3ZWE0ZmQxOWYyM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2NDVhNWRlYzc0ZWMyZjM1YmIxNWZkNTViZjFmOTk2NmJjMjNjYTc0NjdjODU5M2EwMGEwZmY0MmExMjVmM2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyMmUxMzE1OTAwMDVhN2JmOTEzZWI3YjZjOTljYzIyMzkxNGZjNWI0N2IwNTlmNzFmZjJmZjVjMDkxZjYzMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNzgwZTYwMTdiMzA5ZWYzZDUyMTYwNDk0MTQ4ZjhjOWQ0ZWJkMGIyMjJmMTNmY2NmN2MyNDMwOGJkMGE5MjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L652-L747",
+          "version": "repo-lines-v1:sha256:25c86c071420227885088fb1a3c0b5c2d6e4b411c0b44f6ec745f8cc0d19e6a5:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzZWE4YTIxNjBjMmNhY2QxZGZhZWM1YzU5NmZiZGVhYzg0YTUxOTM3YTY2Yzc4MzExM2Q1MTdiODQ3YzZiNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzOTQ1MGQ5MjhhMjYxNjExMjY0OGM3ZjhmNDA0NzJlYjMxNmQ4YzMxZWM3N2RjY2E0NzgxMjA1NDkyMGMzOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyZmI1NGZhNWUzMTYyMmI0NjkwNGFlZDM3YzE0YmU4N2QxMWM0NjAzNTk5MDBhN2M3N2RmYTM1MmJkYzM3MDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMzZlZmYwZDdhZjNhYmMzZmFkMmYwZmYzYmVjNGJhZjBlZjIxYWQ1NTc1MTc5MGY3OGNhZDUzMjE0Zjk4ZDgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L769-L863",
+          "version": "repo-lines-v1:sha256:ef29a4ddc5281feb44124b95c7ce0961897ce553bceca1c397e1e0709aa0d6ae:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhZGRhMzAxODdlMjBlMDBiMzI4YmMyYTBlMTE5ZjQ4OTZmNDBmY2MzZjA1NTE2ZjZhMzBkZDliZDZhM2NhYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQzMjY4OWMxOWQ1ODExZmUwOTc1N2NhYWJjMjUzYmIxYTk4ZDUyN2U1ZTQwYTBhMzg1ZjBlMjk2N2NkNmY0NDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljNjI0MmM0N2Q4MTg4NWYyN2I0MTBlNWU0ZTYzNTc2YjJkZWRlZTU5NGNlZThlYTQzOTBkZmI3N2U4YjA3NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9bb3bffa29c54ca2850737f9c673e881",
+      "statement": "WalkForwardCV has distinct positional, explicit-session, and calendar-first paths: calendar-first fold arithmetic is performed in trading-session space and maps complete sessions back to row indices, while calendar-free integer controls remain positional.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L1025-L1087",
+          "version": "repo-lines-v1:sha256:0c26098e749bb88fba68271753a46a119bc2d198893476acdc6b113abb10adaa:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmMTFlYTExZWYwMWUyZTk2OWU1ZjRjNjI3MmYzZGI2NmRlNWY4ZTU0ZDFjYWFhNGFmZWYyZDIwYmJhMmVmMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlZTA3N2Q4MjJkOTBiZGFhMWFlNjc1ZDliODQ1ZTVhZGM1NGM1OGQxMzExNjcwMmQ2YzI2NTI2NjhhZTQwYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU0MjhmODNkOGIxOGEwNDZmOTIzNTcwNTBhYjIwNDEyMTRhNzY1MmNjZWIyMjczODMyNmVmNGVkNTU4ODQ5NDIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L1090-L1251",
+          "version": "repo-lines-v1:sha256:beb1f42e552f038b7e2a60fd8f9d70be475b00fbf408810fff1d05c1e8f20b81:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2ZWNiYTZkMWEyOTliODI4OTU1YjY4MjY5ZTA5OTM4MzhkMzRjZmIxNjc4NTVlYjIzYjExM2U0NTEzODcyNzY0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhN2ExYjlkZGJjNTAwYzA4YmNlZGJkMDhmNGFhNGU5NTEzYjI3ZTVjMDRkMzdhY2EyMGYyZDIxNzJmNmNiMGU3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkOGJiY2VmZmFiYjYxZmYxZWVmY2E3MGJjYmY2ZWZmN2I5MDUyZjMwM2U0NmEwYzI0NWRmZDViMGZjOGQ2YTVjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwODY2MzUwNGU2ZmM4NDFlZDMzZGRlNDc0NzA1OWFjYTQ3NmJkNGMwNzE1NjNmZDVkYzljODVmNDEzMWRlNGJmIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L725-L747",
+          "version": "repo-lines-v1:sha256:939f0d1a82fdfc31192fda84d31dfb3bfe96a55d7c75a7dc78037ee68f4adc59:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NGUwNGJlYmU3ODhhMTVmODc2NzcwZDM2Yzg0ZjE1NDI2YjBkNzhiMDNlZmUwOGIxNWM3NTBmYzQyZDc2NTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzOTQ1MGQ5MjhhMjYxNjExMjY0OGM3ZjhmNDA0NzJlYjMxNmQ4YzMxZWM3N2RjY2E0NzgxMjA1NDkyMGMzOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwNTYxMTVlZDVjNmY3MzYyMzQxY2M0NmRhMGI0MWVkYzk4NmJlZDVhOTYyM2FlYjVmOTFlMTBjZDlmMTM4OWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMzZlZmYwZDdhZjNhYmMzZmFkMmYwZmYzYmVjNGJhZjBlZjIxYWQ1NTc1MTc5MGY3OGNhZDUzMjE0Zjk4ZDgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/walk_forward.py#L749-L767",
+          "version": "repo-lines-v1:sha256:a0598042e7f7931ecc205fd1bb5ec764ea23e3603d13238177def0e945e560a9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxYWIzZjMyY2VjYTE3ODA4NjlkNDRkODMyZTEyY2M0NWQwZDUxY2E2Njc5NDU1ZWUwOTk1ZTU1ZDgxY2Q1MjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyNTY4NDAwYzJmNjcwYjUwMWUwZDA5NTk3YWQ5MTA5NGRkZjgxMjRiM2Y2NGMyNTU4MjZjMmE0YWI0NmNlYmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmOTQwNzk1MzJjMGNlOWMzOGI1ZDY1ZDNiNDZlM2QyZDA5ZThhM2Q4YzEyZGUwMWViYmIyM2I0YzA1MDFlYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3NjJiZjc2YTFiMDhmZDM1N2Q3ZjU1NGE1MjU3MTU5MTJmYTYzY2NhYTdkYzYwZDBjZDQ4YzgxNjg0MDVlNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fdd0e55297f8448c8c6610e0b1eddd68",
+      "statement": "CombinatorialCV partitions data into n_groups and emits combinations choosing n_test_groups for test, optionally caps and seeded-samples combinations, then applies purging, embargo, and optional group isolation before enforcing nonempty, disjoint, sorted folds.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/combinatorial.py#L567-L589",
+          "version": "repo-lines-v1:sha256:47881035e232aa8dbae29b5d510766c23ed2c0d8fd661ea3da3c37a202d9e388:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2OWUxMDE4M2ViYjUyZTI4Zjc2Y2JiZDY5Mjk1NjM1YmNhZjFmODg1NjU2OTE2ZTkwZjY0Zjc2OWVlNjJkZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUwYWU0OWQ3MDgzZmU4NTY5YTJiZjEwM2E4ZDYyNGJmMDAzOWMyNmU5N2JlNTMyZTcwMzg5MmY5YTgzMTNkMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM5ODRjNDVmYjE2MDJhZGMzMGE4ZTI1NDBhMTRiYzk1YWIyYjRkZmVlMzJhNzljOGE2ODljZjg5OGMzN2EwM2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/combinatorial.py#L758-L862",
+          "version": "repo-lines-v1:sha256:cc50e8ebd16b1f2665f86e33d331b6f108cd6ba8dce75d245a03bd65d72d9ef2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkMGU3ZWQ5YjA3ZTdiOWJjNzYzMjZmYjYzNGYzODg4OGU0MGE1NjZiZTBjMGM3OGU1NTk4ODJjN2UzYWEzMGUyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2YTQyMjVlZDFhZWY0NWI5NTYzZTM2MDQ3MjM2ZTFiZjFlNzY3ZDVmNThhZDhmMWM5NWJjMDJlZDBhMWIxYmU5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhMzkwZjU2ZDkzYjE2MWMzOTU1MjU0MTg3MjZmMDI3YTdhMjI5MjJkNTg4NGQ2YjI3OWM0OGNlMGM0MWE0YjJhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyZGJhNmUzM2Y1OTYxNDNlNGFiNzM2ZjIzMzU0OWQ1OTU3ZGM3Y2IyNWU4ZDJmZTc3MmEzOTA4ZTczMDIzMmM5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_321524df97e3446cb8e550dc7857a297",
+      "statement": "CPCV integer label horizons and embargo sizes are observation based, Timedelta controls are elapsed-time based, and selecting a calendar or aligning partitions to sessions does not convert those window units into session units.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/AGENTS.md#L14-L19",
+          "version": "repo-lines-v1:sha256:5641e28c68ba64de19065928bbfbc9e694cede43c481fcfead43652b5597d1a9:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjdiNWM1NGVmNzM5YmJhNTBlN2Y0NWExMmU2ODBkM2UxMjI5NjkxMjIzOGNkMTYxMGI3NDkzMGFkMDZkODFjYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2FiYWMwYTg4OWU4ZmFiMjA4YmVkNDExMWJlZjA0ZjE4ZWY0ZjNiYTRhZmUxOGY0YmY1MWMyODFiZjc5NmIyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/combinatorial.py#L321-L408",
+          "version": "repo-lines-v1:sha256:28c3e302c659f9526c3ad7cc61b3bbf8e3800f3bdc4a522017bfa0bd5bb2df54:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmZDdhMDdhODNkZDE5OTZmYjUxNjg0YjQyYWVjYWY0ZTkwZmI3OGJhNzIzMGU1NDJlZDdiZDAxZDQyMzAxYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NGE2NDk4MTA1ZTk3YjEzNTdjOWRlZTI1OGMxOTRhYjNkYzIxZjhkNzBiYzlmZDczMjdlZjNkMzMwNWUyZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjNjE3NzU0NjUzYzU0ZjlmM2IxYjg3NzdmYjVlYmE2YjI0Mzc0ZDBhMzI3NDQ1OWQ2MWMzZThjNzc5ZjU1ZGUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/cpcv/purge_engine.py#L39-L102",
+          "version": "repo-lines-v1:sha256:d80ab68765f512ad667063e042f94d567f34e112cd9fdef4e51eac03ac2f5657:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NTllMTAwZjBhMTliNmU1ZGVmYWU5OWQ0MGRkZTY1MjU3MGQzYjBiZTc1YTcwZTY3NDRhMmVlMzI0N2RhYzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNjEzMmY1NzZiYmRiZDA4N2VhZDg0N2JlYjgyZDU0NzJjZGJjYmFjOTI0MWU4MDRkZjczNTk4NjZjYWMxNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiNDYwMDRjOTMzZjA0NDc5MzRhODFhZmRlOTYwODdmYzEzMjI0ZTkxOWFmZmE1ZjBkM2MwMTcwZDVlZDdjNGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1ZmZiOWQzYWJmNTIwODFkMTEwODA4MDM4ODYwMTUyNTJiNmRlODNmN2VlYTE4ZDY2MDNhYzQ3MzkwNDk1M2UifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8bde53819a024a4a985831922d09e603",
+      "statement": "When CPCV receives asset groups, purging is performed in each asset's local row sequence across its contiguous test segments; assets without test segments retain their candidate training rows, and group isolation is a separate stronger control.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/combinatorial.py#L825-L830",
+          "version": "repo-lines-v1:sha256:28e4c7cb6c879c68de2c2334481888f3153374fa524dc192f0c4c852c0fb906c:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGEzNDJlZGJjMWVhMWM1ODU1MzI3YTE2MTljNmRkNGQ2MTdmYWQzZWFkM2RkZTRhYzEwNjA2ZDExNTRkMDcyMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmRjNDQ5MGQ1ODRmNjZlZmYzMDlkMmNhOWI1MDIxODg0YTA0NzU2MWU4ZjgzMTgzMTJlZTI5YTFlNjMxNzIyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGM3NzEyYTBkOGI3M2M1Nzc2ZmYwMTNkMTcyNTlmMDUxOGQzNThmZDI3MjIzNTYyMWY5NDYzMmUzMzUxZmJkMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDMxNDBlMDlhNmIxY2JhYzUxMWY3MDU5ZjA5MmFiNTcyNTU1ZTlmNDM5Y2Q2YmQ1OTkzZGQ0NjFhZTg2OTk0ZCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/cpcv/purge_engine.py#L105-L168",
+          "version": "repo-lines-v1:sha256:86b7de1552c722c8eed84c2adfb6727e93b31b88c1a3a8fe8fb81ace8390539b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4ODJmODA2YTllN2ViMDIwY2JhYWM5YmFhYmZjZGMxMmU0ODNjOGZjNWM2ZDhlMDk1OTJmNmJjNTM1MGNjMTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhNzdjN2U3OTdmMzgwZDkzMThkYWU2MmEwOGVhNDcxYmZhOWJiMDBmYzc3NDBlMzk4MmY1ZTUyMWM4ZWY5OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM2ZjJiYTc1YTdmYzllOGE3NGJlZjRiNThkMDM5ZjE4NjAwOTY5MDBkZDljYmUzNWZkMjJkYTI5NTI1OTRlZDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhOGJhNDlhMmExN2MxYzgzODYyMmZiYjM1OTg2MzRmYzdiYzg4NjZlZDA0OTc5MDlmNzk2ZWQ0MTdjZWQyMzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/cpcv/purge_engine.py#L213-L289",
+          "version": "repo-lines-v1:sha256:11a6f7336c8bf701b55425598db1f0123f98f07518645bb0bd255aa50506b0e7:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3ODVhNTVlYWY4NjA0ZGY2NmVlZGM2ZTNkNTJhN2RlMTkyODUzOTUwOWM1MTFjMzFhNTUwZjAxMzJkZWI4OWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5MmFiNzhhYmY5YmEyYjVjNjhlOTdhODMxNTZkMTE2MjExMDg0NWY4YTA5YTVhNmI2NDZkMTNiMWU2Zjg3NWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc5MzIzNzRiMWQzMmExODE3MzVlY2UwYjBmM2EwNWM3ZWQyMjBjNGMxNGM2MDk0ZTBhNmQzYTRlZDcxNGYzNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4YzNmZjNjMDI5YmYxNDg0MGY0YmZmZGY3NGE0NWJjOGVjY2IyYjdiMjgwYmI1NDYxYWYxMDdlM2UxNTI2ZDIifQ"
+        },
+        {
+          "resource": "repo://tests/test_splitters/test_multi_asset_purging.py#L10-L77",
+          "version": "repo-lines-v1:sha256:b0a23493fc149a13689103a2fe954a71b20a94785fc3ae7a416acf6f741a5e8b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNzlmZjg5MTdjZmRlZGVkNzQyOWI4N2QwOTk2MTlkMjk1NzE3ZTc3YTM2ZGMwZjkwMzQ0ZGRiNDQ3ZGZlNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1Y2Q1OTNlMjgyNzM3MDg1YWI4ZGIyY2UxY2EyMWUyNDU3YTY2YTE5NTFiYWJmMzc3NWQ1NTM0OGZiMzdkNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2ZDIwM2YyYmY3NGEwOWI1NjIxOTk2MjE3MzJjMmZlODc3OTJmN2YxMWY2YjE3YzEwMmE1OGY5NjFkZjYwNWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b02d543fb2a34145b28eb8a98b74aea5",
+      "statement": "TradingCalendar performs timezone-aware exchange-session assignment, and its sessions-and-mask API distinguishes rows associated with trading dates or active exchange intervals from non-trading rows for calendar-first splitting.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/calendar.py#L148-L224",
+          "version": "repo-lines-v1:sha256:e58a94c54f26ade6240a1cc0795fff65f7a201395a79155cc25691f9e60b7e7e:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmMTY2ZTVlYjNhZmY0ZTBjZWQxNjk0ZDQ5MmUxMzRjM2FhYzVjZjkyMTJkNjZhMDE5ZjY0MTU1Y2VjMzg1M2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlMWI1NDU4NmJlNzBiMjYxYWIzMmFiMDFkMjc5YjE5Njc3MTliMzQ5NzY2YmM2MDA5NzJmYjk2MmY2YjIyY2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3ZjIwMjFjM2RiMjk1NjMyOTNkZTMxNWMzY2ZiOWI3MDk0NDZhYzg4NDY0MmU2NmYyN2U1ODViZjM4ZTlkMTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyNGZjODIxNDVhYWEwMDNjZjk4YTkwNjFmNzJmOTBiM2U1ODY1YTAxOWY0Zjk5ZWM5ZWIyODUyMzY3YzA1NTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/calendar.py#L226-L304",
+          "version": "repo-lines-v1:sha256:b22e6d0bcbcccb3b6406064dc421cab4df8a9e86cc3dee34df32b373c76dcd40:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkM2IyMTdiNjJhN2YyOGU2Y2RlZGUwZTc0NmZhMmNmMDgyZTU0MjJhYjg1M2Q4ZjM4NjdlOTlkNmEzMGVjMmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5ZmY2M2Y5NmRiNzE0MTE3MmI5ZWJjYWEwOGJhYWIwMzkwODE4ZDVhYjc5NGYwNzQwOWExOTg0OTUwZDJjYjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNhMjRiYTNiYzBkYmJmMmNmYWUwNGQ1YTU0YTM3YjAyMWY2NTRkMjYxNDNiNmI2Mzk5M2MzMmU1YWZhNjIzZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1YjAwOGI3YmFkNThlNTZiMzNmMmQzMzM2NzA0OTkwNTFlNjg2ZDIxZmY5OTliNzFmYjczYmEzNTc4ZmFmYzEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/calendar.py#L66-L126",
+          "version": "repo-lines-v1:sha256:e8bbd2d72db70ad52405896dcc1d95588891502cb4c2976b15ebb186edf23c19:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2MzkwN2UxN2I0NjVmNjBkZGM1YTQ4YTFlMTc2YzMwMTVmNWJkYTk3Yjg1MzAzNmM0ZjgwZGEyMjNhZTcwMjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2NWVjMmM2MTZhMmE2NjM3ZjNhMjQyNDAxOTBiY2M1OTU5YzFiMzg0ODYxMDg1NjA2NGZhMTk2NDI2NWNmYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhNGZjYTM5OTBlMjc5MTBkNDdmMjcxN2M4ZTI5YTM0MGVhODM2MTc1ZTdlNjk3ZjI3NDgwNDcwZDc1MTAwMDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMDRmMzcyNjZmZDZkMmQxMGU3NTdiYTJiZmI2YWQ3ODBiZjhjZmM3Y2JmM2U4MDU2ZGZiNmQ4MTdkOTgyOTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f2107484cbdf4c7e9425692900586d5b",
+      "statement": "ValidatedCrossValidation always instantiates a sample-based CombinatorialCV from n_groups, n_test_groups, embargo_pct, and integer label_horizon; an optional times vector is only validated for matching length, datetime validity, absence of missing values, and non-decreasing order, and is not passed to CPCV as timestamps or groups.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L166-L181",
+          "version": "repo-lines-v1:sha256:6eb5ba051087d849bcdc083bf32a4e23d6090e0d45428359a4de75bd445a6626:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZTQyY2Q1NGE5YmM4OTU5YTAzZGVkMGY0MTRiY2M2ODIwMGNjY2UxNjYxMzY5YWFmNDFmZTg1YTlkNTJlNTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJkYjE5NGYzYzUzMTk5Y2VmMzNlMThlOTcyOTZkNWY0MGFjNDNkYjkzNDQwMzdmODY5MjMwYmVjZjZjNTdiYWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L183-L251",
+          "version": "repo-lines-v1:sha256:b0691146a44213f47dba10c52120d58080ffdd0cd3eed904af5e0fcd59d9c47b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3NzIxYzM4ZjVhZTE0YzUzY2U0YjVjMWNkZDFlNzIyY2Q0MTBmYTYwY2JjNDhjN2QwYmI3NGNmZThkNWQwMjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NDIyMWMzOTg4ZjU3MWZkODgyZGIyMjkzOWQ1ZDNiZWRkZDFlOTNlMTg5ZTBiYzZlYjViN2E3ODA5ZmRjYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxMTEyMDQ4NmNkMzNiNTc0ZWU3ZjY1YTlhN2YzNzIzNzcwOGExMzk1N2ZkZThlMjBlMDc4NzUyMzgyMzFmZWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1ZTZhMmMxM2U3ZjlmNjRmMjEwY2Q2OWQ0YzIxMzlmNWVjNzVmMDI4MTU3YjJkMDgzMTQ3ZWYwOGZmMTIxNjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L253-L277",
+          "version": "repo-lines-v1:sha256:e3cee487cd541d68b10763a2e20b19768d1cce4f3f81beb7563136c9fa7f760a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiNDA1Y2ZhYzc4NWJlZWNiZmI5ZGYzMDUyNTc1MDJmMTQyMTZjYjQ4YWVmYjg3NjBkZjBjZDk0N2IxOTIwNDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNzEyZGY0NWM5ZjhlMTVhMDAwZDkwYWI5NGIxNTQ4ZTRjYjkxMDdmZDVlYWMwNjc5ZDk3NDgzODEzM2NlYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyYTIzYTBmZjFkZWExNzNlY2FmMmNhNDhhODdiMTQ5NDU3NmJjYWQwODNkMTc3Y2EyNDdlOWEyNzEwNTc5OTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxMGI4NDhjYWJkMGQ4ZWJmMzQzMWI0N2VmNjI0NWQ4OGE2MGJlN2NlNzUyZDNkYjVlMWRjODk3NDIwNjMwZDEifQ"
+        },
+        {
+          "resource": "repo://tests/test_evaluation/test_validated_cv.py#L328-L371",
+          "version": "repo-lines-v1:sha256:a478bdf5a5448c1f010126f084836031ec449a3b9efe1f43d159474bb29ef79d:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4MjdjZDRkZDY4OGZlNmM2ZDQ1YjQxYTliNzhiMTk0ZjZjMzljODI0ODRkMmUzYjMyZjRmNTgwODJhMWE3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiNTNmM2FmMDM2MjFiM2RhZWY4MzFhNTVlODc5NGMwNmY5ZTRjY2ZmNzQ3MDA3ZGE2NjVjZmUzMjkzZTgxMTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NGVjYzE5NzRlNzhlODQwY2Q0NmM4Yjg2OGQ4NjI3YmMyY2U5MzI4NmIwYzUxOWMyMDA3NzA2NWIwNTJkOTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyOTJlNGEwN2U0OWEyODM4NTBjZWRmYmE2MTM2ZmM4MTZjYzhkMDIyMTExZmJkZjY4NWE0MmRiZjBkMWYxNzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cb1b866e54064fb78bb76a20e0e2c90e",
+      "statement": "For each validated-CV fold, the orchestrator refits the supplied model, predicts test rows, computes returns via a custom returns_fn or sign(prediction) times y_test, and computes annualized Sharpe with a zero result for fewer than two returns or zero variance.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L223-L251",
+          "version": "repo-lines-v1:sha256:3ae6432ded5a259e6b7c40ae740ecf6eef414cf397504befdceb104bb317b109:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NDIyMWMzOTg4ZjU3MWZkODgyZGIyMjkzOWQ1ZDNiZWRkZDFlOTNlMTg5ZTBiYzZlYjViN2E3ODA5ZmRjYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5NjA1NTYyYTYyZGFlYzE0Y2QxODk4YWVlNzU4Y2I4ZGIyYmEwZDM2Njk2NDA5MjFiMGM2MWZkZDQwNGRlMTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1ZTZhMmMxM2U3ZjlmNjRmMjEwY2Q2OWQ0YzIxMzlmNWVjNzVmMDI4MTU3YjJkMDgzMTQ3ZWYwOGZmMTIxNjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L316-L339",
+          "version": "repo-lines-v1:sha256:05bfdfe654ed74d78958e6efebf57b7fd349e92623b88e5f4b81c45118d2259b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwNWJkMGJhMmY4ZjQwMjQwOTNmMTgwZDdhZDlhYTk5ZWUwOThmMTE4OTI5YjJlNTQ5YjRhNmIyZDg5YjM1MDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzZDc5ZGMzOTRiMTMyNGZmNGExNmJhYjBkNmJjMTc4YmE3MWMwN2E0MTViZmVhYjc5NmQ2MWEzODdiYmY1NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZiNDg5Zjc0NTcxMzA2YzMyNjA0ZjYzZjcwOTA1NmZmOGZjZDcwOTlkMWE4ZDI3MGY2YThiNGQxOWQ1ZjE5ZDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_76a84fa0c2524d859286b56e991b2d3a",
+      "statement": "ValidatedCrossValidation aggregates fold Sharpes by passing the maximum as observed Sharpe, fold count as trial count, and cross-fold variance to DSR with fixed n_samples 252 and zero skewness and excess kurtosis; significance requires DSR probability to be strictly greater than the configured threshold.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L341-L408",
+          "version": "repo-lines-v1:sha256:5e8841cec76d279fbc5b427bac1471ee5e376ee25eb27dfe9cef89d7313605d8:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3NGMxZGI1NDVkZWNkZGY5YTcyMmE4NmE0ZGJjMzM5ODg5ZmE5ZWMwZjFkNzNmYWY5YmQ2MGFlMDg0NDk0MjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhOGZmNGM0YTU2MDFhMGE5ZmEzZjU5Yzg5Y2RkNzUxMWY0N2U0MDhmZDU1ZmY5ZTM4YzU1NjEwMDk2MmIyMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEzNTU1N2RjOWI4ZTFhZTMxZTAyM2FmZmUwODQxOWJmYmE5NjE0YzgxYTMzMzRiNTI4MzNlMDUzYTAxODIxZjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5fe14405a54b480296ccdcc5a224e026",
+      "statement": "The current ValidatedCrossValidation implementation stores StatisticalConfig but does not use it in the DSR call, and the configured sharpe_star and random_state are not forwarded into the instantiated CPCV or DSR calculation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/config/validated_cv_config.py#L10-L30",
+          "version": "repo-lines-v1:sha256:bae2a12f7888bc7473c22f376e99f77e9ad3f1e619f3c43374ca86343bf5a7d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjNzA2NGE1ZWE3NWY3ODgzNGQ1Yjg5NDNmZmYxMWVkMDQ0OGNlOWViMGE3YWNjZDg3NDUwODZlYjM0ZDU0MjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDI3MTU1ZDY2ZmMwOTdkNDVkNzc4OWYzNzhlM2MzY2MwZTkwZWUzMWIzOThlNWY0YmU3OWUyNDNhOTIzNjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZhM2JmYWI5ODQ0MjViMzM4MTVjY2FmNmZjMTU0MzFiZWQ3OThiZDAxMDNmMTFkNGNmYzgxNTIwZjUwYmM0OGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L166-L181",
+          "version": "repo-lines-v1:sha256:6eb5ba051087d849bcdc083bf32a4e23d6090e0d45428359a4de75bd445a6626:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZTQyY2Q1NGE5YmM4OTU5YTAzZGVkMGY0MTRiY2M2ODIwMGNjY2UxNjYxMzY5YWFmNDFmZTg1YTlkNTJlNTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJkYjE5NGYzYzUzMTk5Y2VmMzNlMThlOTcyOTZkNWY0MGFjNDNkYjkzNDQwMzdmODY5MjMwYmVjZjZjNTdiYWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L365-L376",
+          "version": "repo-lines-v1:sha256:881b6c078a9332b506b51b6379ad41ec10bbaae4a1b0465fa410f95399977f39:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0OTczNzA3NTVjYTRkNzllNWYyNTQ1NDllYTMyMjVlZjg3NDc5Y2UwNzhmODIwNzA1OWM0MzI4NmZmMTJlYTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3ZGRiOWJjNDY3MTNiMDg4OWQ2OWZhYjUwYWViY2FlZDMyNTY5ZWVkYWE1ZjgyNTExYTViMWIxZDFjNTRhNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4M2ZkMzdmNGViYjAzOTY2YjExODc5NWY0YjU3ZTU1YWMzOTZkNDAyNzdmY2UwYjcxY2M0NjE5NDE0OGFlMTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_edd55c048b7644518e65c681a3dea3a3",
+      "statement": "ValidationResult preserves aggregate metrics and per-fold returns and predictions in memory, while to_dict exports aggregate fields and fold Sharpes; evaluate_sharpes uses empty placeholder fold payloads, and an empty input produces a default result interpreted as no folds completed.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L111-L131",
+          "version": "repo-lines-v1:sha256:46f2403c9e1bafddbee3713928228cab1bc35e2601e4535ddc6af6a368678bd3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOWQ0ZDQyNTI2Y2I1YWIzOTkwMTUwMmZiNWQ3MjQ0MDZjN2Y3YTMzODBhNDA4NmYxMGRiMzE4Mzc3YjI0YTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4MGFiOWRhZDMyMWM0YjM0MWQzYjM3YjljZGQzMjYyNDY0NTExNmNlZDllOTZiMzZiMmI0MjBhZjIwM2FkOTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxYTEzNzMwNTA1MWZkZDBjNmIxNmMyZDI2Yzk2NmE4N2NhZjUxOWI0MGRlMTRjNzA5MGRlOWRkMzc4OGIwYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiZTA0MTg2MDQ4M2ZmNTg5ZTE4MTk5Y2FlMmQ1OTQzOGQxZjc5ZWUwMTZkZDNlYjBmYjgyYzMxMmY0ZDAwNjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L279-L314",
+          "version": "repo-lines-v1:sha256:7276c1e6ff117aca54c1ce9bc6e07127106a7c1e03e7fdb510faa1322cd42eba:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1Njc4ZDI3YTc0NWEyNjVmZTkzM2Y3Y2U5MmViOTljOTM2M2RlMGQxZmFiNDIzMTkyMTc1YTljZDdiNzZjMTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0NDMyOGY5NmMzZTc0YzgyZTMzZTMwMDE4OGZhZTViNTRhMDc4Y2QzMWFjMWY2ZWE3NTUwMTAzZjMzYTdjZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlOWViZGNmMzAyMzAxM2FhYjg5MGM0ODViNjFlNmM5MmNiNjFlZGY2MWY3ZDM0MDg4MTYyMGNhY2ZhYjBiMTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyOWFkMmI5Yjc1NDhmZTFlMTNlZTZmMGJjYmU3ODllOTc3ODE5ZDk5MGZlZDkyZDI3NzYzM2ZhNjRkOWExOWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L34-L78",
+          "version": "repo-lines-v1:sha256:c92c8570dbefead957081da24c83d05c9d320a98de285f224a2ebf78035911f1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZmJhZTBiOTFkNDRmYzBkNDlmNWRlNjkxZGE2ZmM0MzFmMjYwMTM0YmY3MzFlMGUyMWY3NjQ4MDk0MzM0Y2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1NmJmODJkNTJhOWQyY2RmNDg2NzdiNTRkMDY5YmQzOGY2MzUyNDg0NWU3NmY0YTJlMzliM2UzNTYzNTU4OTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhlMTAyYTE5YmE2NTQwZmFhMjNhMTQ4NTZkYmM0MTMyZTQ5MjFkYjA4OWM1NjA5NThjZGQ2ZDlkYTAwZjkyODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMyNzk0ZDM4MDk5OWZjYzEzMmY0MDM1MjA1NjViMzE2OTk3NjJhNTdlNWQ3YjcxZjI5MjIxNDYxZDc4Y2RlYTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/validated_cv.py#L355-L358",
+          "version": "repo-lines-v1:sha256:94e166f7c0daba4416c71d9e75c3ad0f01f2983bf8871755936a78c792d67827:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzk2YTg4MmEwNjgzNTUyMDAwNjJhODhhNGNhZDY3ZjViMmZiNzFkMGU4YzI4MGU0MjI1NTdkZDUzNjljNzBjYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTVmZTZjZTkyMmJlMmY3NTA4YjZjYjFiN2E4NmNiZWI5NDU1YzlkNzQ4MGI1NDliZmU0MjRlOWZhM2FmNzM5MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzk1MGVmYmI1ODAwZjI3ODgzMWE2MGZhMmM1NDM5ODQ0NDYwODE3NjRmMWQzYmQwMzgzNmI2YmRkZTNmNjNiZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzUxMDY5N2UwNTRhOTczY2E1ZjVlNTBhNzFmOGQ3MTlmYWU3MmVkZGMwYThjMTUwMmFlYThjYzM2YTMwNzgzMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_77d43a05aaee4ff4b83b5100f2f11433",
+      "statement": "Fold persistence writes versioned JSON containing integer fold indices, sizes, metadata, and optional timestamp annotations; loading reconstructs index arrays and rejects missing files or unsupported versions, while verification checks overlap, bounds, coverage, and size statistics but does not revalidate chronology or purge semantics.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/persistence.py#L132-L181",
+          "version": "repo-lines-v1:sha256:a4cb7fd0c9ea395d2938c85e8a8eec5f76198098a34d0baeef90fde8ad4d5b54:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMxYmI1ZjdlOGVlMTA5MGRlZGNkYjFkMGVlYzM3ZTJlYmUwMTRiNDFiMTQ4NmZiMDU3YTc5ZmRiMTlmNDhkZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNDEwOTc1NDA3MDE3MTgxMGU3MmNjM2M2NTUxYmNmODhjYWQyOTMxZmQxOTkwMzdkMjk3Njc2MTFjNjhkN2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI5YzFkOTA5Mzg2ZmU4ZDg0MzExOWRiNDY2ZTM4MGRkZGJkMjQzMzg4ZTU1N2ZhOGM4YjBkZDAxYTE2ZWQ2ZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBlZmFhNjAzNTAzYmVlNGM3OWQ5NzhmNmFiMmNlOWMwYTE2NTM4ZjdmNjE3MWY5Zjk1NTllY2EyZGNmYThkMjkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/persistence.py#L231-L303",
+          "version": "repo-lines-v1:sha256:9b1a27acbfe32a0c96407948f4a73a437b97d9fcc53c446c60eb247b544d4a26:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNDA0YTI1OGFmMWU1YWNlMjY0MjZlYzc1OWMwMzI2OWE2YWQ2Y2I4M2JjYzU5MDM3NjY0MzEyMGMyZDFkYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzOWQ1YzNkYWIzNmIyODgzM2RlNGQ5OTNlMzA1OTgwNjc2MzZlN2Q0MDJkZGY1YTJkMjhmYzY1ODU2YjY1YWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU1NjE1ZTEzNjdmNjEyMWYzYmJjZDQ4YWQyNzljZjk0NWUxYjE0NDBhZjViN2FiNTFkNzlhZWNjMDFlMTdjZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0ZGI3NWQwMzllOTg4MjgwOGVmMDQ0YWY2MzhiNTE4OGVmZjliNzAwMjdiOGNkNGUyMGExOWFlOWQ1M2FkYmYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/persistence.py#L31-L129",
+          "version": "repo-lines-v1:sha256:5ae98e564d39cb8785a7be96e129158baa1f5973b16f506a7bfb0b2e11ea971d:eyJzZWxlY3RlZExpbmVDb3VudCI6OTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3YTExZDVlZGMwZjA2MjhiNGE4ZDY2NWE3OGRiNmRkMTA2MmQ4ODA2NWQzMTZiNDI5M2M0NTBlZGY3NjAzMGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4YTM4NGE4NjM4YmQ3N2ZjMDY3ZTFmNzI0YTAzMGZlMjk4NDBmZjk1MGZkODYzMzJjMzRlZmFjNGIxMzU4MTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5NjJjMDViN2VmYTk5YzBiM2U3ODk4YzhkYjExY2M5NmE3ZmQwMWM0ZDNkOTkzODg0NjNmM2M0MmJmYjlkMDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJhMWUyYWM1NGFlY2E5MTE2ZjFhZWFhMDZkNWYyZjJkM2VmOTBmMjM1ZDM2YzMyODdhYjVjY2Y0MjcwY2RmZjkifQ"
+        },
+        {
+          "resource": "repo://tests/test_splitters/test_persistence.py#L138-L174",
+          "version": "repo-lines-v1:sha256:9d69969867677c857e53ca1a71eb54b05e94690a4ec9efeb99f6972ff560e0a8:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlZDJjZWRkYWFkMzIwZGVlYzM3ZTE1NWUyNDk3Njg5YWRkMjA1NTRmNWQ0Zjg4ZGU0OWRiMmY2NzJiODczZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjOGNlMWEwOWI1MDAzZTI1YjY0NGEyOTk3ZTA2NjZiZDU4NWI5YjVjYzQ4NmY0NTBhYzhkZmJmMGZhNjA1ZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkN2IxMmIyZDdlNzE3MzdmNjFhZGNiYzljNjgzZWFmNGQyMmY4YzA5MDEzZThlOTczNTkwMWIxODQzOTE5MTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4MjdmM2I2YjllYjZjMDAxMjMzMWY3ZGY0NDQ4YTIxMDU4ZTI2ZjdmNzkzZTU4NTU4ZDMxZTc5ODc1MWQ3NzIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

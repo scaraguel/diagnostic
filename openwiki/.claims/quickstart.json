@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:fcb7067afe6822f2a359870f7d9b707db973350350afdbb61a6a792d1a5efcef",
+  "claims": [
+    {
+      "id": "claim_96ab333ad6a743208d72c40ef07d5488",
+      "statement": "ml4t-diagnostic supports Python 3.12, 3.13, and 3.14 on Linux, macOS, and Windows, with package metadata constraining Python to >=3.12,<3.15.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L25-L34",
+          "version": "repo-lines-v1:sha256:5ed63f16ef0949d2ad3a40f2ca19a0b9140fd4d0ef7877bddf6287956bb09f30:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyMzYxOGZlM2RmMzgxMTcwYmIzYjdlNDgzMWI1MDRkZDYwMDI2NmMwNGQ0YTg5ZGEyNjhiNWM5OTJmZWJjNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyNDc4YzVkOTc0YmRkNDk5NzRjMWNiZWRhNzcwYzUxZjk2MTY2YzYzYzJiNTZjMzhjYjIyZDA5NTljMWZhMzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmMWQ5MzQ0YWRlMGZiZjlmYTAwYmNmZjgxMjBhNWJmYmVjNzUwMzQ2ZjRjYTIzY2I3YWIxOGIzZTAyNjBhZTcifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L58-L74",
+          "version": "repo-lines-v1:sha256:524d7b3b61a76ee95527f36278d23ccbedba573b9788b7d03260d92410eeee64:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2NTc0ZDUxNDRmYWI1NDQ4Mjc5N2UwMzA5YzgwOTc0YTBiMjg5ZmMzZTIxMWFjMzU1NWI4YjA2NjI5NjMyNDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1NmQzNDEwOWE0ODBkYjgwYmE2OWMzOGY2MmQ2ZGExYTk2NTcxMTc2YzJmZWVkMzhmMGRjYzM3YWUyNzU0NTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5MDRkMmVhNDIzNjE2YzUzMTEzOWI0MmQxMmZlZDg0NTJkNmUzNTlmZWM1Yjc2NTJhNTM1NTAzOWNjZjMyYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMyMzIzOWI0YzFmN2Y4MGM2MTc0NDliMmU2NTc0YzRiZmJhZmU2NjU4MmFlODgwMmUyYzE1MTU4MzczOTc1ZGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7f63bdda98014fa587023cf9ba94df7d",
+      "statement": "The project uses uv for installation and development; the documented contributor setup is `uv sync --all-extras --dev`.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L139-L151",
+          "version": "repo-lines-v1:sha256:d3024bc4dbf0242e72134bd72e9f9b323af9c9b7751f40b97741054b7daea93b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5NWMxMTEwMmE5NTNjNGEwOWI4YjYxZTZiOTA0ZmE0ZmUwYjNkYzE3NWM2MDU3ODUwMzc0MDUwNTJmOTIyYWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiMTc3NzEyMDk2MjU1YWVjZGVkNmYwYjIxOTJkMWZiNWM4YWUzYzBhZWZkNDA5MjI3NzUyZjEzNjRmYjBjYjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhNGE0MmJiMjRmMjQxN2Y5OTU2ZTM0M2U4YWJjYTgxNzI0ODUxZjI3NjkxNzQ5MzMwODc2NThhYjZlM2FkZWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhYmY1YzRjZDQyOWU4ZTE0M2E3NGVhM2Q2ZDdjMTMwMGY4YzNhMDFlOWJmNDY4MDA4ZjQ0MDg1OGE2MWIwNTUifQ"
+        },
+        {
+          "resource": "repo://README.md#L25-L31",
+          "version": "repo-lines-v1:sha256:0e5b754ff3e2afaf8cac65b9ee1decadc321cb56b9ce645139ec6b2a7ee82118:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDdjMDZjNTYxZDVjMzI3MzQzNjg1MjY4YTQ2YjMzOTFmMzk5OGVlZTg5MGQyYmU1MWYwZDIxY2M0YTUzYWU2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjI0NzhjNWQ5NzRiZGQ0OTk3NGMxY2JlZGE3NzBjNTFmOTYxNjZjNjNjMmI1NmMzOGNiMjJkMDk1OWMxZmEzOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTU3ODdkMWUxZGMzNGJlOWQ0NDVmYzRiM2NiZDE4MjQ4NmEzYTFmYzE1OTA4YWU0ZTQ0NmZjZWRlZmQ3NGVkMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6a38c0970fc04424a09c17a5b0be97b4",
+      "statement": "Core dependencies cover dataframe, scientific-computing, configuration, shared-contract, and trading-calendar functionality, while visualization, additional ML backends, Numba acceleration, ML4T data/backtest integrations, and Streamlit are separated into optional extras.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L76-L195",
+          "version": "repo-lines-v1:sha256:0caa0fb7ab444dcc18d3a5c89c700d50e8029b8e446c1756cf56c40fd71419bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjMDgyNmRkYTlmNDZmMDE2YWFkZWY1Zjg4MThmNmQyMzg0NjMxNmFlNDZhMzNjYTNkYzU1ZWMyZTEyYmIzMmE1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1M2Y0M2FjNzYyZDIyZTY4NGZmNGFjY2Y1MDcwYTFiZjQ2YTI3MWMxMDhlMTJiZGRkOGFmYWU1NDcwMTQ5NDU2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzZDA0MmQxM2E1M2YxMGI3ZWMxYWU3ZmVlMjIzZTUwNTYzYmI2ZDVhYzEyMjIzNGIxOGFlZWFiZjU0MGIzZWUyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiMWZkNDNkZDIwNGQyZDRiMGJkODlkMDc4MGI0NzUzM2ZkMjUwZjg2NzQ4ZjkwNWExOGFhN2QyODk5NzIyMWI0In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d57b9b39e3b24a58be4f44c32c2870b8",
+      "statement": "SHAP and Numba are conditionally excluded on Intel macOS under Python 3.14, LightGBM requires OpenMP on macOS, and current Kaleido static export may require Chrome or Chromium.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L115-L119",
+          "version": "repo-lines-v1:sha256:11ec8e0d755a48399933c224e6aaa930d7a6da791ed33da791a986e0b3bf2462:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDUzZDIwNDkyNmQzY2ExNDg1ZWNmNTQ3NzM1M2NkMjYwYjhiNGY2ODU5ODllOGUxMGQ0MDZhMTFiZGQ0YjkxZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDYyYWEzMjQ0NzE5YTcxMTZkMjAwMTdlZGI1Yjk5YzhiY2QxMzM5N2EzZjkxYWIwOWNjNWExZDIyYjU1MzdkMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjhlZmM2NWJjOWJiMzBlYjIxY2MxMzNlYzkwZjI2NGFlNWY1MzczODkyZWEzOGQ1NDVkZTc1YzYxNjhhNjU5NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWI4NWEzNGE5MzFlYWVhYTE2NWRjMDk5MDYxYTBkNzMzM2UyNGM2NGFhYTIwMGYwMDE4NTkyNjg5MmFmN2U1NSJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L125-L149",
+          "version": "repo-lines-v1:sha256:7d5a4a415e0a0f2f91180bff0c217f752bd2cc1c436d9fdcc9cc554c5e13f44a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0OWY3MWQ2MGUzMGE5OTg0MmNiOWExY2I4MjllZDBiYjNkMGYyYzFmOTU0NWNmY2QxMWRjMzA2OTIwNDQzMmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkzYjNiMGU0YWNlOTFlODJmNWM4NDlkZDM0NTQzZWQ2YzEzNDkwZWY0NDg1ODQ0MTliZDk4ZTQ1MjU4MmI0MzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFmYTFhNWViNTI1ZWY2YTQ3YWM3OGE5ZjEzNDgxOGNlNDMxYmIzNzA2ZTFjZTMzY2NkNDkzNWZkOWQ3N2Q3NzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_555501a8e5ad4ed59074323b05a5dcec",
+      "statement": "The stable public API is defined by package `__all__` exports; the top-level package guards optional visualization imports and assigns its optional plotting exports to `None` when visualization cannot be imported.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/__init__.py#L27-L30",
+          "version": "repo-lines-v1:sha256:705baf0ef8d724b15f50ed4a67f874be6c277b67c985d429f53831b09ebf39bd:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWM4NWI4YmU3YjQ1ZjhiMTZkZTEwZDliODExY2NhZjQ0NTYzOWEzNzcwMWE5OGI3Y2QxOGRjYWUzZGVlYjU1NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTE0MjcxYzQxMjc4MmQ3MDMzZjg2Y2Y0YjllZmY4YjAwYTg5NGU1NjI3YzMwNjZhYzZlZGJlYzdjZmY3NmNmNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTkxM2U2ZmMwNTM0MWNjZjYyOWFlNGFiYjNhNmU0OTYyZWVlMzE1NmE5NmUyNzEyYWVjZWQ2NjllMjFlMWRjMCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/__init__.py#L88-L175",
+          "version": "repo-lines-v1:sha256:22302f584a58a776332dfa4d250f2163dd643b3178f70a53f25c2358115267d9:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2YzU3ZjgxYTQ2NDU2YjFhYmY3Y2NkZTQ2MGVhZDAxMDJlN2ZmZDI2YjJlYTE4OTNmMjI0YmZkM2NhMGJjMWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_213e0d787fdb40639b3951eba899c074",
+      "statement": "Stable workflows include signal analysis, prepared-panel analysis, leakage-aware cross-validation and CPCV-plus-DSR validation, feature diagnostics and selection, trade diagnostics, and tearsheet generation from live backtest results or saved run artifacts.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/AGENTS.md#L3-L34",
+          "version": "repo-lines-v1:sha256:59aea9ade3241bc90e7489f395c8c039024160f02837d96e23e3215ac9978583:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwMWM4NzVhZjYwNjkwZTAyNDg0NzU1MmU1YjI1YjUyZGZkYzRiMDFmYmMyMmQ0MTU4OWJiZmMzODAxNTNjMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUyMTk5OGI2NjE4M2ZiN2EyYmM5OWM5MDZmYTdhNTExNGM5YjVhZTA2YzVkN2JmZWM5YjllMTEzMTlkNGZjMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYTUyYjdlMjEyOWU5YmVjNWM0ZmNhMzBkM2NkNWE3OWIxYTdkYjJhYTU5N2I5MWYwOGJhOTAwMDA5OWJlMzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/AGENTS.md#L5-L27",
+          "version": "repo-lines-v1:sha256:43c81183ea7642f56f1146659bbee1175e295e320aa08a47dd03481e75d1c0b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyM2FiYWYzMDE0MmZmNjEwZDI2ZGMyY2JmYjNmNWU1MzExYzAyZTA5ZDk2NTYzYjRiOWViNGJkZTBlNjk4MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkOTRkZWUxODU4NGFhNTBmOGZhMGZiMWMyN2MzNTAyNmE1NzAwZmEzOTM1NTY4Y2QxNDQwZWUzMGVjMDUwNmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzNTQ4NjgxMDk2YTQ2YWVkYzAwOGEwMzY5ZGIxNWE2MjRiZTgwNTAwN2FkYjg4MDg1YmRkYWM0NTMzZDI2NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA2M2RkOGJlZDA0OGMxOTU5ZGI1MmFkYzFlMmRhODEzNTE5ZTA4MTFiMjc1ZjVkYTJhZTk5ZThkNGYxNGQ3NjYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/splitters/AGENTS.md#L3-L18",
+          "version": "repo-lines-v1:sha256:74ef8522efd7309904a1b4762a261d3651cbafd1fe9942adc99a8f18afc5a405:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjYzM3MWZhN2VlNTIyNzI3NjhhNmRmZTdiOGI2YWRlOWIzMzc3ZjUyZTg4YjBiNGU2NTMzNmFlYjA3NWIzOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlNzdjYTBkNWM1MmZkYWU1MjQ5MzBlYThmZDFiM2Y0N2Y2ZWQxZmZhNmVmZDE4YTg1NGEyM2VhY2ZhOTU0NWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlYTk1YzFjYzZlYjY2YTMzMjNlMTYxMWY5NjQ5Nzg2OWIwMTJiZmI4MmIxNGRhNjBmOGEwZGQ3YzNmYmFlN2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3YjVjNTRlZjczOWJiYTUwZTdmNDVhMTJlNjgwZDNlMTIyOTY5MTIyMzhjZDE2MTBiNzQ5MzBhZDA2ZDgxY2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_daea5aec2b8042cfacad827470442fc3",
+      "statement": "Analytical ownership is separated from presentation and compatibility: integration owns backtest normalization/profile and tearsheet bridges, visualization/backtest owns rendering, generic reporting renders structured result objects, and legacy compatibility adapters reuse native analytical kernels.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/AGENTS.md#L34-L51",
+          "version": "repo-lines-v1:sha256:994e56d5b105b2dc96aa9c5d5b011d31f50c091703a53fea0b8125739f4f1261:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxNTRjNzhiYTc1YmJlYjM2NDE3MjRmOWJjZTM3YWQwZjQzODY4MThhN2NjZTg5ZmJhNWJjM2JiYTA5ZTE0MTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzZmY5NmMwY2FmMjg0ZTU0Njc1NjAyOWY5ZWJhNmFlMTU0M2VkNGUwZDFhYjhkYzJmZjJiNGJiM2IxMzBiNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1ZDljNjkyODA1NThiY2ZjNDY4NWUzMDU1ZDZkOWNlNjY2NTYwZTRjMDI4ZjE0ZWFhYWVjMWIwYjc0MWI4YmIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/AGENTS.md#L5-L28",
+          "version": "repo-lines-v1:sha256:7390a6698c982594921bd77c5151ceb89c3afdc7b7f7ce7b852278b609f0fa46:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyM2FiYWYzMDE0MmZmNjEwZDI2ZGMyY2JmYjNmNWU1MzExYzAyZTA5ZDk2NTYzYjRiOWViNGJkZTBlNjk4MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2M2RkOGJlZDA0OGMxOTU5ZGI1MmFkYzFlMmRhODEzNTE5ZTA4MTFiMjc1ZjVkYTJhZTk5ZThkNGYxNGQ3NjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzNTQ4NjgxMDk2YTQ2YWVkYzAwOGEwMzY5ZGIxNWE2MjRiZTgwNTAwN2FkYjg4MDg1YmRkYWM0NTMzZDI2NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/reporting/AGENTS.md#L1-L17",
+          "version": "repo-lines-v1:sha256:e231143d864d79b2135df21c4e9b1e33de36de305fa84971a22060ca0d419ea4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzMDdiODM0YTZjNGJjY2YyNzk2OTk0NjA4YzVmZWJlOTAzMDBiYzgyN2UxYTYxY2I1MmE5YTVmNWExY2RlYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1MjUyNzdmMGYxNmJiZjkyNGU4YTViYmI4YjkwZmIzZGJhNWU2NDNmOGNkZmQwM2MxMWZkNmViZjQ1OGNmMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/visualization/AGENTS.md#L1-L26",
+          "version": "repo-lines-v1:sha256:f1182eeceecac52bd49622f3390a1ee0c43886de85a33c115a1344d32757b73b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwMThiY2M0YzE3ZDg0NTcxN2I5MGM3YTJiOTY0ZGUwOTdlOTJjNmM4ZmRiOGQ1MzQ2MGNhMTU4YmU5ODljYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxZDRlMGE1MDI3Nzc0MDBhMGYwOTNjOTg0YjU2NjkwMDUzYmE3NWVmNzIzNjMxY2YwNDlkZWI1ZDc1M2UxOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ecde979963db45b1b246a0e39e48302e",
+      "statement": "The repository's standard final validation gates are Ruff lint and format checks, `ty check`, the parallel pytest suite with a 120-second timeout, strict MkDocs build, and all pre-commit hooks.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L36-L49",
+          "version": "repo-lines-v1:sha256:0eb4303a83c94cc03f7ed699e7325ab92813fe016e4eef22e7bcc107303531b9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3Zjg0ZTE5YzIyZGQ3ZDg2YmRjZGJhZGNiN2NmZDI2NGIzYzJhMGE0NmVjMjU2ZTQwMWVhOGI1ZDdhYzk0NmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkzMDg0MWFlMzJmYTUzNzRkOTAzN2ZlOWI1M2JlYTUxY2RmYjUzMWFmYTc0ZTMwY2Q3YTg5YTZmZGIyYWFmYmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjOWI1MmMwMjdjNjgxZDBhM2UzNjdiYTI0YjZhODhkZDM5NjRhOGRmNGQ2YzdjZjFlMTAxM2ViZTIyZDY2ZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmZjQ4YmM0NTdkMTk2MzczYzliYzg1MDkyNDJkZWE3NjFjMGI1YmZiNzEwMzQ3ZmM2NzM1MDgxNGUzNDRkZGMifQ"
+        },
+        {
+          "resource": "repo://README.md#L139-L151",
+          "version": "repo-lines-v1:sha256:d3024bc4dbf0242e72134bd72e9f9b323af9c9b7751f40b97741054b7daea93b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5NWMxMTEwMmE5NTNjNGEwOWI4YjYxZTZiOTA0ZmE0ZmUwYjNkYzE3NWM2MDU3ODUwMzc0MDUwNTJmOTIyYWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiMTc3NzEyMDk2MjU1YWVjZGVkNmYwYjIxOTJkMWZiNWM4YWUzYzBhZWZkNDA5MjI3NzUyZjEzNjRmYjBjYjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhNGE0MmJiMjRmMjQxN2Y5OTU2ZTM0M2U4YWJjYTgxNzI0ODUxZjI3NjkxNzQ5MzMwODc2NThhYjZlM2FkZWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhYmY1YzRjZDQyOWU4ZTE0M2E3NGVhM2Q2ZDdjMTMwMGY4YzNhMDFlOWJmNDY4MDA4ZjQ0MDg1OGE2MWIwNTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_46e5210350ef4ae0846e05262a9c0b6e",
+      "statement": "The configured default pytest run excludes `slow` and `native_browser`, uses strict markers and parallel execution, and disables benchmarks; native-browser integration is qualified serially in supported-platform workflow cells and is required for report qualification.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L45-L49",
+          "version": "repo-lines-v1:sha256:6e7b62c0ee81c40662a07f76cdca482cedc86e78ed735a92175cdd7e660cc658:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDdjMDZjNTYxZDVjMzI3MzQzNjg1MjY4YTQ2YjMzOTFmMzk5OGVlZTg5MGQyYmU1MWYwZDIxY2M0YTUzYWU2ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTMwODQxYWUzMmZhNTM3NGQ5MDM3ZmU5YjUzYmVhNTFjZGZiNTMxYWZhNzRlMzBjZDdhODlhNmZkYjJhYWZiYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmFiZjVjNGNkNDI5ZThlMTQzYTc0ZWEzZDZkN2MxMzAwZjhjM2EwMWU5YmY0NjgwMDhmNDQwODU4YTYxYjA1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmZmNDhiYzQ1N2QxOTYzNzNjOWJjODUwOTI0MmRlYTc2MWMwYjViZmI3MTAzNDdmYzY3MzUwODE0ZTM0NGRkYyJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L234-L253",
+          "version": "repo-lines-v1:sha256:0d259b409fc01867bd8d3ebc1072e13f1d8028d15b9cf7ef186cc65a7a551bef:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1NWUwMTYyMDNhN2FkNGMxOTE2NGQ2NmEwZTlhOGQ2NDQ0OWJiMWQ2YzFlZGRlMTY3MjgyMjc5Y2E1MWZlNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0M2JhNGZkZjE0Njg4YjQ2MjQxYzNhNzAzZjIzYjIzNDRkNTg0ZDg0YzAwODgyZjUwNjYxNmNkODQzYTVjMTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzMWFhMTUwMjY2YzY2MTQyMjM4ZGUyNzA4ZmNlYTNkZmM5NmM1NTIzNzNiNTJmMTA0MmZkYmUyZGQxMmE1M2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllYjgwM2VjNmQ5MWU4YmI4ZjM0YzBlMTYxMmViMWYzMjUyNWZlODEzZTI2ZmI2OTI1MjFiYTE5ODFhMWI1OTUifQ"
+        },
+        {
+          "resource": "repo://tests/RUNTIME_CATALOG.md#L19-L46",
+          "version": "repo-lines-v1:sha256:fb7f40efa218eeaaae55b81e40d2ba925a208232201c2b6ef5c0d64cca977d16:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzODA5MjAwZjJlMjA3Yjc2NjBjYzIzMWY5YmFlYTNjOTFkYzFlOWI4ZWI2NDUyMDMyZWM0N2ZmOGU2ZDBmMmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhZGZlNzQ4NjExYTlhNmVhOGNmOTQ4ODA5NDdlOGRmM2FhMDZkZTc5Y2U4MWNhZTg0N2VkMGI1OWU3OTZiZjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0Y2Q4MzdhZDkwNTBlNmI2M2ZhNDc2MGU1NTM3MWIxNjczMjBjZjhlYzA0NzljZTJkYzc0OTI5MGIwZmZlNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_79f66579953f4869bbea70d2a255ff52",
+      "statement": "User-visible changes and fixes require focused regression evidence through the affected public API, while changes to intended metric definitions, annualization, signs, or defaults require prior agreement on expected behavior and compatibility impact.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L10-L21",
+          "version": "repo-lines-v1:sha256:9adbac5401d0a8d26450d828f87d75df4fcc3dd1274e086fb6052fc18dd3665a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmOTRmNjEzOWNkMjM5ODZjZDBlOWE0OGQ2OGJmYjZjMWJmNzc1NzBhNDViZDY2OTFlM2M5MjE5NGM3NGNjNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3NmQ2NTM2MjRhNTE5YWUzMDc3OTg2N2IwNWRmOGNmYjc0YjM1YmEzMTk1NjI3ZjI4ODdlNzRkNmYzNjIzZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZhZjQ1ZDk3OWY5YmUwZWVlYzQ1MDRlZjQ1OGY4YWNjOThmNWNmYjE4MTM4Y2VhYTJiNzIxMjk4MjQ3NjJmYzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

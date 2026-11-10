@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7e26fdd9f1187f3826f3c6dbac5fe392ddccaedd44c8bc2b0e16ac8614f4827d",
+  "claims": [
+    {
+      "id": "claim_a51413b8de684c2ba7ed5fa295da547a",
+      "statement": "Public pandas and Polars frame boundaries clone or convert inputs into canonical Polars roles, reject ambiguous or conflicting timestamp sources, and validate nonmissing, finite, normally unique observation keys rather than silently selecting or coercing one representation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L112-L142",
+          "version": "repo-lines-v1:sha256:b66cc1cc2a7d61fcbd07e9d1103709ef12a3b379d1452787719d706f5f1f7ded:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjMTFhMDZmZTk2YzJmZmU1NWIxMzgzODIzZjQzYjA4ZjIzOGYyOGMwNmI1ZmRmNjQ4YjZmZmZlY2E0ZDY3ZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhiZGVmYzlhZDZkMjk5ZTk4ZjIzN2YwZTU2ZGQ3Mzg5NjRjZWJjMzFhNWYzMDNkM2Q4ODQ3OTE2NGMwNmQ5ZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxMTg0YzU4MmJkMjVkNGNhZjg5YmIyMzJlMzQ2Mzk0ZjE5NWJkNzc4YzMwMTY0MGQ0MDA3MWI0ZmY1ZTViYTEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_prepared.py#L104-L137",
+          "version": "repo-lines-v1:sha256:1b2592f6be737e1e8b5e0261d282aed7d45e43033ba971242fbdc84ad7bcb0f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmODY0YzkxODY0ZDU2N2JkOWFjYjRlMThiMjNjNmI2YjBkN2MzNjQ3MGU2NWI3YWY2ZmI3MjRhMGUxZmE1YTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3M2Q4MTUwYzg3NjUyOTQyMjcwNDA0OGQ0NTRkNmQ1ZDI1Njk2M2UyMWViODdjYWE0Y2IyZWM4OGNjMzNhMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkMGY1ODM5N2M5NDFiOGQyNGNiYTdmZTNjNjMxNzdhNmNjMTI4YjM2OTlmMTNjOWVkZTliYzg2YjM1N2M1MDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFkOTU4ODQxOGY0NWQ5NWJlZGJkM2NjMTlkOWU1MGNiNjA3NDVmOTY4ZmY3YmIzYzNmYWI4MjhjYjZhNTgzZGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/utils/validation.py#L32-L47",
+          "version": "repo-lines-v1:sha256:4251111de37b920f4adb0874c94e24d9406f85824cb69842c7e284a857920f6e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzYTlmNzU4ZDdhM2ZkMjVkMmMzM2Q4ZDg5ZGJmMjgyYjk5YjgzNjczNDZmY2NkMmVjZjZmY2UzY2NjNzczODMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1MTE1OTRhMDg2YTE4NTAyNDZlYzljMTkyMzE0ZmUxM2VmYjM5ZTNhYmRmMWYyZWFlMTRmYjMzODI5NTdhYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6af84bf114bd495eaf8b685fe48b8104",
+      "statement": "Datetime key alignment refines differing storage units only when both casts are lossless and does not infer timezone compatibility; distinct finer-resolution observation identities are preserved, while unrepresentable values fail.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/utils/validation.py#L6-L29",
+          "version": "repo-lines-v1:sha256:ea702dc2b3da11ff46c8ffe830fa78d89eec8d6b623f5ea27ffd76af97b1c1a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwMTkyYzE1MjRhMGIyNjBjNGQ5N2FjZTgzNDQ5NzM5NjliMmMxMGVkOGVjMWEzN2E0NjQ0MDIzMjc2MmVmOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiZTc3MTIyZWEzMDlkMzg1MzFlZGQ5OTI3NTRkZDg0YTA4NmM0YWJiZGE3MTY4Njc4YTAyYjE3OTQwNmIwYzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBiMDA1YzBhNGYxMGFmNjUwN2FkYWZlY2M2MDMyZjQwYzk1ZDc4ZWFkMTdkY2FjNWM3YmRiYThlYWNjMzZhMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhNDk3OTQwNjVjYTE5NjE5NWU2N2NmOGQzYzdiYWMwZDgwYzFlNmJmNGZjZDlhMTA5NWMxNjc1MzNiZmZiOWEifQ"
+        },
+        {
+          "resource": "repo://tests/test_signal/test_time_key_resolution.py#L76-L154",
+          "version": "repo-lines-v1:sha256:e71f28d2dffc2749d491a61282075f0114971b1f5586923bce41676b04bac90f:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwMzNlMTA2ZjZlMjQ5NjYxMjI4NTJkMzUxMTM5OWIyNDk5Y2I4OGEwY2RiYjYyODdmYTFmNzYzNDM0MTRhNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2MmFlMTA1YWFkYjhlYjE5MDBlNzM5YjIwZTZjZTk0MjQ5ZmQ4ZWE1NGVhMjk4ZjlhMDQ0ODhmNjQxZDE4ZDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmMzA1N2RkYzc4MzM2NjQ3YTIyMGVhMDZhZGYyY2ZiNmY3YWQ5ZTJkNTBhNWRiNjQyNWUyZTQ5OGVhMDYzMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1bfbc9c2372441fab965799d806c4a97",
+      "statement": "Signal price horizons are explicitly observation counts over a declared common or per-asset grid, with retained endpoint and status evidence; they are not calendar/session counts, and analytical fills are not represented as newly observed or executable prices.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L181-L227",
+          "version": "repo-lines-v1:sha256:9b59d1a419d6ee7f71cfc91fc280cf5f479ba694dac749bb6df8e00902347587:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ODVjOTYxOTU1M2QwMGY4MzIyNTQzZmE1YWNkZDE1OGFlOTNlMWVmMjhhZTg4OTdkYTM0NDAxNWI1NjNhNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1MjBmNjk3MGY4MWFlYzAyYzY4NzgyNzU2MDYxY2Y0ZmFkMWMxOWYyMTBjYzhjMWI1NDMzZTFkZjY5NGY3NTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM0MzA0Yjk5ZjE2OGVhOTFmOTQ4N2U5YWU2YTFmZDAxZTBhZWQxZjU4YmE2ZjE5MGJlNThhMDA0OGY1YWYyZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhMzAyMTYxMzU5OTk4YWM3ZjUyYzFhZjQyNjEwYjk4ZTI5NjQwMDZmNzI0OTY1N2NkMjc0NWE1OWM3NGQ3NmUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L255-L355",
+          "version": "repo-lines-v1:sha256:bbec11fdb0b2e70646b3080cddfe4d5e498970f16d2a285a419a8fe76b85deac:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlN2E3Yjg3Y2FiNjhiZWEwYzk0OWM2MzAzMWRiZjY4MDNjNjIxZWVmNDMwMGU3ZjdlNDIwNmIzMTc5YzY0MzBhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwZTM5MDc4YWYyODYyZDdkNTYyYTYwMmUxMTJiODk4OGIwYTFlODQ1NzMwMTU4ZDZiMWU0ZTAxMDUzNGIzMmU5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNDBhMmM0MDk3MTk2MjgxMWQ2Zjc3OTMyMTQzMmQ2OGEyOGRmMTk0ZDBiNDhiYjMwYjg4N2M1M2M2MzRjY2MyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MiwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhMzE1MzQ0OTNjOWE5Nzc4MDA2Yzg4Y2VlMzYzNGVmNDYzYjA5YTJkMGEzN2VhOWUwNjAyMzlhNGM0Yjg2NzFlIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L59-L92",
+          "version": "repo-lines-v1:sha256:e8304070857dc9b901d5cbc9706389425d7803370ccefe43b5988b2a3828ddd6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhYjYxZjhlNzM4Mjc1ZTY1NDJlMWQzOWFkMGViOWI0YjQzMWIyMzI1NjczMzE5ZTcwMjM4OGM4NzU0MDFlY2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExYzMyNDg1NzlmNzJlNDdiZjI4ZmZlNGQxOGY4ZTE1OWM5OGIxOTVhMmJlZTVkMWEwNDJlNGRjMDI3Njc4YzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1MWZmYzlmZDU5NDNlYjJmNmJiYWZjZmQ3ODRlMGIzNGMzM2E5ZWNkNWRlZTExNDI2NGFhYjA2ZTc4YjhkOTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_34bc33617e154a55a8a0e89af8939314",
+      "statement": "Supplied outcome elapsed durations are derived only from timezone-aware datetime endpoints using exact nanosecond arithmetic; supplied durations must be exact integer nanoseconds and agree with endpoints, while session labels and naive keys leave duration unavailable.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_outcomes.py#L65-L116",
+          "version": "repo-lines-v1:sha256:c70711102f6f74533c363981f138fe09a99f459af62479ef2b693f7a420a39d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxMGEwYzU0YTgyMDQxOTEyMWMzZDQzNGY4N2M4MzBhZTcxMzI5MGEzNDYxZWExMjBiZDk3OGJlZDM0OWQ4NmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1ZGZkNWExYTUzNzc0YjQzNTdmOWE5ZGFlY2FkNTdmMjI5ZTk2MzE5OWM2YTA3YjE0MGM3N2RjY2NhZjRiNTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ5MDY3MGFhZmQ3MGFiNDExNGM3OTk3NjdiYWQ2NmZmNDI2NmUwYzg2NTQ2Mjk3ZGE3N2E3ZDc5NzQ2NGQyMTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyZmIzNDg0MTIxZTFiMDMxNWVkNjMxZDhkZDFkNTk4OWEzZjNiNzdlZjI0ZmRhZmEyM2U2NTkyYTQzYTk1NDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4e77eec1581c436ab87d760f552a88d9",
+      "statement": "Calendar resolution preserves omitted, named, and explicit-None states: consumer overrides take precedence, producer resolved FeedSpec metadata is authoritative when no override is supplied, and explicit None disables calendar semantics through backtest wrappers.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/_calendar.py#L1-L19",
+          "version": "repo-lines-v1:sha256:d0873dff947a00e60f4f965e55bd9f40cf4b65ae076c146541135ea8c8e968e4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1MDcyZDMxOGRiM2E0MmM0MWQ2ZTgzNjRiZWU4NDhkYzY1OWRhMmQ4ZTBmMjFiZmQxODQ0NTdkNjkxY2RmOTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2NjZlNzU0MmJhNWM2MGQ4ZGY5Y2YzYjY3YjM0OWM5Y2RhMDdkYWE1N2Y5YTBmYTY1ZTgwZWE4MmMwOWZhYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_prepared.py#L23-L76",
+          "version": "repo-lines-v1:sha256:8bd0ba19008d26a72ec080bfa7f00ffedb0f0968d20166ae1143e4f597ef3adb:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2NzZmZjc5OTBmMGY5MDQxNTA1MjljYjFhMTU3YWY2MmNkZDQxZDE4ZTUzMWY3YTYwODZjNzAwODNjZjIxYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzYjg5YTcxMTczYWE1Y2E5NDU2NDE1MGUwMDAyOTg2NTVlMGNkN2ZiZTYyODZiZjRiYTZkZGMwNDg5MGM0ZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmNzI5MTE3OGE0NjUxYmE3YzgxMzdhNTFiOGI0MWZhNmIxYTMxM2U2NjM4ZTlhZDBlZDMzYTM5OTE0MmUxZDEifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_backtest_calendar_contract.py#L52-L62",
+          "version": "repo-lines-v1:sha256:d6667aca120ff304b22dc8716071246811bc94e62a65058b385af0de420d529f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwYWYyZGQ4YmM3ZGJiYTIzMTUwMDhiNmExNzgzOWUwMmQ1ZTBmYTUzNjY0NzZkNjM4Y2ZmZTg0MTgxMGNlNjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ZGRmZDg0NTIzMTk5NzZmYjVmYjRmODIxMmU5YTE5OGI2ZjViMDhkMzEyZGQxY2IxY2U2ZWIxZTFjZjEzMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMxNDhlZDJjYzM3YTRmNTkxOGNhYWNlMTJjN2I5MTExZGQ4MWI2NmNkN2Y1OTM1ZWNhMTAxODdiODI3OTMyYTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5M2VlNGNhNDYxZTQzODdhMWEwYTdlMjE1YjA4MWZhYjc3MTdiMDA0NGNjNGI0OWFkYTVkOGVhMDRlODMwYzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_97d7cb0404464b018fc0246645311b50",
+      "statement": "Already-prepared signal panels use a strict nonempty, complete, finite sample policy with unique observation keys and supplied quantiles; they are neither cleaned nor filled, and the exact Arrow-serializable sample is hashed and owned.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_prepared.py#L79-L176",
+          "version": "repo-lines-v1:sha256:b6fe0860ec76d0e11af8a145c457322edb6614737015b186d1628dde953abbb7:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxM2IwMWQ2MzI0MjdmZWFiNTk1NWE3YmU4MTVhNDIyYjQxYjNlYTY3MDU3OTc4NmYyMDcwMDY3ZjFkYTJhNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdhODQ1MWZhOWE5ZDk1NTEyYzQ1MTRlMjdhMTE4N2U3NmJmYTU2NGEwYzAyZmU2MDkzYmU1YmI0NTY4NjQ3MjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4741f9cc820549668b64b6a896f27a31",
+      "statement": "Portfolio inputs preserve producer evidence and unavailability: returns are authoritative, optional account tables remain absent when unreported, all-cash snapshots do not invent an asset, missing fees remain unknown, and NAV or executions are not fabricated from other account data.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L148-L211",
+          "version": "repo-lines-v1:sha256:4e220c46d581ada705b6391c36dbd8ad31948d7224697e54795811b6616eb813:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlYTg1ODRlZDQ5NWNhOTU0NDFlNGY3Y2Y0ZDljNGJhMmUwOTQ2ODlkN2RkY2M2YWViN2UzZTEzNDAyODA4M2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxYjI1NTBlODA4OGM2NWQ0MzIyYzA4ZTQxMDdhNWNiNzk1Njg0MGU4ODhmNDNhNDk0MjY3YTg5OWMxOGJiMTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2MzIyZjNmYmQxOGRmMWE4NDYwMDU4YmExNmJjN2UyMjYyYmIwYTI0YmYxYmQzOWJmY2VkMjI1YmU4OTM5N2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L24-L75",
+          "version": "repo-lines-v1:sha256:8699b6ae25a100e9211c927dbc4a687dc3760cecd4a3f025ce63cec6ad3effbf:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhNDViYWQ1NjFkNDBkMzA1MGVlZjA3YjEyNmVkZWJlZjEwMWU2NDk3MzEzMWI3ZTUxYmZiZmJlN2NlZTQxZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxNTBlY2ZkNDVjZDA5Y2QxNDNjMmRiNmMwYWM1ZjRjYzY5MmFkN2MwMTBhMzUwMGMyY2JhNzRlMTlkZjNlNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjMTI5M2ViMzQ0ZDcxYjczYjE3ZTQ5YTA5YjQ4NWQ3YzQxZWNhY2VmNzE0MWIzZWEwMzg3NDFhNWY2Y2MyZjkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L261-L284",
+          "version": "repo-lines-v1:sha256:926aeb055e2fe5b874317969989c6d806c5eff2f3ff5e5a709bfb2ae818a4345:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwMTRhZWIwMTVlOGI4ZTcxMDdjNTQyNmZjODY2ZGZmOWRiYWMyNjBjNmYxMTZhYzM1ODYxYjcwOTk5OGM4ZmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5N2I0N2JiODFjZTkzY2JhNjdhZmMwODY5OGE4MGNmYTA5M2E4NjY3ZTljOWY5NjUzMzc4MThkNjU3OGQxODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1YWE4MTc5ZTJhMGE0YTVmM2RhZWIzNmE5NTQwYzMxYzg4OTA2M2E2MzUzNGM2YWE1Y2E2MzkwNGFiMTViOGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ3YjI2NDU5Mzg0ZDY0ZGNhNTJjZGY5Y2I5YjU5NzQzZjMyNThkYmVmNDU1MDlkMWQ4ZmVlMGZjYTAwNDQ1MDQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L479-L529",
+          "version": "repo-lines-v1:sha256:3c39e8e0583006ca2fe4f8fe63d48e0cdd939e1f32b58224a7d66ca148b73ca4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiNTIzYjcyODhiYmRmYTViY2I5MGM5MjRiMzVjMjQyNjI1ODE0ZTRlMGE1MDI3OWRlMmU4YzVjMTJiZjlkZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY5NWM3MjRlOTQ4MTBjMzg5MjcwYjlkMzNkYTVjZDIyZDM0ZWE5OTExNWY3ZGRlM2E0ZDJjOTFhMGE5M2IyMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3921abf507fb4a6da766315917261c97",
+      "statement": "PortfolioAnalysis owns normalized return, benchmark, date, position, and transaction snapshots before caching and returns independent copies or clones; mutation of caller inputs, exposed arrays, or previously returned cached results does not alter subsequent calculations.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L165-L194",
+          "version": "repo-lines-v1:sha256:94d74f7bba38fd03bd9b9c7f639399ac3243fcad09e2adfad6f9a8a3d364b502:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0OTMxYmQ1MzJiNmI1OGY5MjYwZTZlNzUxMjkwYzgwMTJiMzlkMjczMDg0NWRhMGE5YzM5ZTgwNzU2ZDIxZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5ZDJjYjUxOTRhYTBiYzEyZTg4M2RhOGI2MGUzMjYwOTBiN2E3NGVhZDcwNWU3MDI4NzFhNWE1YTUzN2FiMDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4ZTcyNDgyYzFlNTc5ZTA4MmYwOTE3Zjk3ZWQzYjZiZTgzOWZiZWZjN2JmODkzZWJlM2UwY2E1MDFiNmYyMGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhZjBlOTZjNGZlYWE1ZDMxNTkwODllMzcxN2YxNmNhYjRmYmJmMWZlOTIxYjk1MWYxMzRhNTM2YzE3MjI0OTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L445-L478",
+          "version": "repo-lines-v1:sha256:82e9269710c5027ed05664a5ebc18204b668aaf91d0761daa60488825b8181e2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxYWJjZDBjYzY5MTNkNGY1MWViMjFlNGY1YWZjMmU5MGY4NmQzNmE0NTBiYjQyY2IwNWM2ZjNlMGQ3MDZmOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhNmI4ZTc4M2Y3MzViZDFlM2Q0NjE1N2I1ZmJkZDc0MDAxOWY3MTlmNTZkOWQ4ODFmMDE2ZmFhZjk0YTQxNjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmYTRhZDVmZWJmMjY1NDM0ZDhjMTgyZjI3ZWM0YjMwZTJlYjczNDNjMjJmYjc1MzYzNjA2ZDk0YmI2ODI3MGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0ZTA5OGJmYjY0ZjMwYmEzODdjZTgwZWU3YzUzMWI2NWU5ZWM2ZmU1M2JkNzI1OTA4ZDcwOWEwZGNlYWZkY2UifQ"
+        },
+        {
+          "resource": "repo://tests/test_evaluation/test_portfolio_input_contract.py#L207-L260",
+          "version": "repo-lines-v1:sha256:96a5d0b038188b38a1d8fc4c3c8c00e43fd552d17a65e190ca572de8f0a4c595:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOWYyN2Y3ZGZiMWNjYWRjYzFjOWIxZjBkNTc5YWI0YzhkNWMzOGJiYjQ0MGIxYWVmZDNmNzE2ZDk0NzFkZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4YmRjNjJkNDFiOWVlMWE3NjFiMGZkNjA5MzhlMWJjZjJkMjU2YWEzMzY5NDE1MjI2MGYwZDIwMDgyMjZhMmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a81de38448a47659e7e86da8f565731",
+      "statement": "Undated portfolio samples retain zero-based observation identity for numerical work but cannot produce calendar tables or complete calendar reports, and undefined statistics for finite short or constant samples remain unavailable rather than being fabricated as zero.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L127-L139",
+          "version": "repo-lines-v1:sha256:17321502f77bb959a696f2aff262cdcc89991fc06b30d30d45b8297a4800dd82:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2YjRlMzI4MGE3NWM1MWIyMjQ0NDk0MGM1OGE2ODUwMDA4ODRhNGI1ZmYxZDkwNjY0ZjM0ZTZhMzhlZTMyZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5MmIxNjdmYmIzMjExNGMyOTQ5Mzc4MTkyZWZiNWUwY2EyYmM0MTFmNzUyMzRiNmQ3ZTk4YTJmYmE1OTBhY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwOTkyNmRmM2RmOGRjNGYwZDc0OTExOWUwZDM0NmQ2YzFkYTVlYzBmNDQ5OTdmYTRkNjEyMTIwZTM1MDMwNzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlOWUyY2FmOTBjN2UxNzZhYWYzZTYyMzgxNDUzMWRhN2VjZDExYzM1YzljNjkwMTM1ZjM5MTg1NWNlYzI0NjcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L456-L473",
+          "version": "repo-lines-v1:sha256:dff2c0363d42f16308473ad527caba82a6b6c14dcbb4b015a4d8dfc035955448:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkNzg3YWE1MWRmYzAzNmE1Mzc4ZGZjNGQwM2JlNTc1NGRiNTVlMTllZTE3ZjgyN2ZmYjBmNmUwNWJlZjdmYzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQwNDk2YTQwYmE4MDljZGI3NGNiZmE4OGIyZjc2ZmE5YjE1NWNkZTRhZGFlYTk0NWE3YWM2MTJmYWY3ZWU3OWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0OTgyYzA0YzE0NzQ3ZmNkYTMxMjhjMWNmYzUxZjdjM2VjZDBmZGJjMjA3YzBkMjEzYjllYTM3M2YxMDlmMTcifQ"
+        },
+        {
+          "resource": "repo://tests/test_evaluation/test_portfolio_input_contract.py#L237-L260",
+          "version": "repo-lines-v1:sha256:ac7ecbb52bdea7aa728a46011c88d9d99eaaa81149ef2ef69c58a269c6fca07c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOWYyN2Y3ZGZiMWNjYWRjYzFjOWIxZjBkNTc5YWI0YzhkNWMzOGJiYjQ0MGIxYWVmZDNmNzE2ZDk0NzFkZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5N2MyMDYyZmNiOGUzMWQyMzNhNWE2NGM5MjViMTgxMTE0NzA3OGM2YTA4ODUzM2I0MTExOWQ5ODliYTVlZTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_evaluation/test_portfolio_input_contract.py#L54-L87",
+          "version": "repo-lines-v1:sha256:0c1c5a6877718f97aec92e25ae952e4a04ecaff322a840d3727a2f5ab0c24f80:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExNWZjOTU1ZDIwNGU5NWIxNzE4YmU5NjQyMGI5YTJmNGNiOWU2ZDBlOGI2NDAwNWQ2MzlmYzI1ZWQ2Y2Y0ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5Y2FhOWMzMjUwMDk1NDg5Mzc0MmZiOGU1ZmFjMmEzYzE2ODFhMmJjMTg2YTNiOTY4NWMzOTllOWMxMmJkODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0OTMyNTBkMDhhMDNkMzY0M2FmNDFhZTE1NTY3Y2ZlMmI0YjA0YWUwNjAwY2YwZGE3ZDUwMGIyMzY4NzIzNTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ec16f2a1f4b0442eb19e784ec2f07da8",
+      "statement": "The result layer deliberately combines Pydantic schemas and dataclasses: BaseResult provides validated shared metadata, JSON/dict export, and dataframe discovery hooks, while SignalResult is a frozen dataclass whose tabular evidence is owned as Arrow IPC bytes and exposed by fresh decoding.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/results/base.py#L13-L90",
+          "version": "repo-lines-v1:sha256:fa986847de41f3b5f956fe956553e056c3b68f4aac7d1b02b00f2a525a63d093:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyMzhmYTU3YmYzY2Q2NjJkOWJlMDgyOTRlYTQwNDRkNWZmM2NlYTJjYTE5YmFmYzczYzUxZDYxN2NhMDRmYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjMTdjYzFjMzFlYjNmYTkyMWQ0ZjVjMTIwN2U1NTBmNjA3ODkxYTc4OTIzMTZkMmE1NWEyZDlhZTBmMjYyZWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3MmJhZTI1Mjk2MThjOGFhYzBlMzI3YzdjNDY2MjNiODFmM2YzMDgxN2Q0OGFhOWY1YzM3OTIxZGJkZmE4NDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFhYzU3ZGVmMjViNGZhNzA5MzA2YzA1ODllZTE0Y2RkYTA4OWNiMzZmZjJmNDExNzRlZGNjNTYyNzliNzhmNTgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/results/base.py#L92-L177",
+          "version": "repo-lines-v1:sha256:4ba601fe4615fd81d318ecfc50b3e3554cc62c9a38f1ef52ca49bf5d5618181d:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwZDRkNjQ3NTYyNDYxZWJlYTg4MTZhMjI4ZGJiN2M1ZDMxYmQ0MDBmMmNmMmNiN2M5ZmJkZDZiZjQ5NjBkYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjZjUwM2E4NTdjNDZkMGJhY2E0MTcyMTk0Y2MwN2Y3ZGVmMjk0ZTRkNWNkNjNlMDExMDVkMzQzYWM0MmM1ZTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4YTQ4NTk0ZWNjNzY3YmI1YjgxYmRhZGNkNGRiNGIzZjMzYzNjMjdhYmVlOTRkMDdiMWRlN2VkMzVkMzk1M2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L1-L32",
+          "version": "repo-lines-v1:sha256:a467c8e042e6ee3e896bb95c311e44c259d23e180420fa622ee317f2348063d4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3YmUyNjZkZjJhODZjYWE1YTUxZTJkNzcwMjFiMzI3OGZjOWE3YWQyZTNmMWE0YTgwOTNmMjdjNzJjMzRkNGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkzZjA3YTNlMDAwOGEwYjkxN2MwNDQ0YzZmODRlNmE4YzU3YjdlOTBlY2I0ZWRiZjA0ZTgyN2M1YTJmZmE2ZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5OGIwNjNkOWI0N2U2NTM3OTYyNTU3MmNjZTE5NzY2OWQ1NzY3ZTEyYzE4YmUwNzU2NTJiOGNkOTgxY2U4ZDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L35-L174",
+          "version": "repo-lines-v1:sha256:0aba6ff24221a73bba749cda4771ecab6b33e4eecf7d0a9ab0edbe6d341d6cc4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhODVjZDJhNjE3OTZjNTRmNmRmZGZmMTNhZjkyNTJkNDgyZjQxZWNiODkxY2ZiODIwN2Y4NjBkMDRkYWRkYWM0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5OWNlYThjYTYyMDhmMmFlNzRhYTI2ZjdmM2Q5NGVmOWZiNWI5NjdhMGMzNTZmOTJkYmI3ODcwZjY3MWFhYTcwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmNDgzZDc3NTAwMDZmN2E0NmExNWU5NmFmNTMxYzYzMTlmYTc0YThmN2NhMGQ0M2Y1NDBiNzI5NTllODBkMjkyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_484dfe1e026e4524b628f59f81c2bfee",
+      "statement": "Owned result persistence uses validated, contract-specific formats: PortfolioInputData uses strict versioned JSON with base64 Arrow tables and required returns, while SignalResult tags Arrow payloads, converts NaN to JSON null, validates payloads on load, and restores tuple and numeric-key shapes.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L78-L109",
+          "version": "repo-lines-v1:sha256:f33949bc2b2c6b7fd2eb2667b33e719d76768f3c5411cd34b5776d2c4826d5a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5MzVjZjc2NzU5ZTQxZmE3ZmU4MDhhYTlhMmE4OTc4YWQwMGE3ODk4YmFhOTk5NWU0MzI4MWM0NDQ1MmNmMGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjMTQ3YTE0NzEzN2E3ZjU0NTBkMDAwMWVlYTkyNGM5OGEzNGZhZGU4OWRmOTc2YmZmMjdkMTA1MTM2MjFkZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ODQ2ODM2ODg1YWRiOWU5MzFlYTZmZjI5OWRmYzkwNWE1YzVlZTA2NWMzODMyOGRiNTE3MGFmYmM1NDI2MDQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L475-L559",
+          "version": "repo-lines-v1:sha256:31513ca1fde8937ca880b2a941782760a8a734d300ed59adf26593d6ff164fb3:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzOTUxMGU5NjVjMDgxYTVhMWNiNmQ3MWQ5NDUxMGM2ODg1OGJmYzUwNzMxNDUwM2Y5NDAyZjkzMTJmYWJkMzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwYzk4MzIyYTMwYzQ3M2U3YTgzZmYxN2RhZTk3MjcyOTMzNzZiYmZmYTJkYTJjMTk4MmJhOGMyYTU4ZjFmNzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUyNjVhNmQ1MWNmNzFjNWZmZmI2OGQ1ZDFjYTA1NjVhNzEwOTkwYjhkNGY0ZTZhYTAwZDcwZTc1MWMwNWJmOGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2MmYwYjllZWNmZGFhOWJmZjNkM2E1ZjBkNzlhMGRjMDRlYmUyNjdiM2QwM2EwNjc4M2M4MWQ3OWZjMTRiYjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L561-L619",
+          "version": "repo-lines-v1:sha256:3b7c5c29b2c841cd6f5d4613e59c0372f508d1f007a9f439762012752609b2b4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2RkZmU4YTA1YjI5MzI3ZDYzMmI2OGU1NWQ1M2FkZjM4Yzg2NDJlODFkYTgwMDczNDg5N2M2N2U5ODc0YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlNzJjZjgxM2RjNzVlYmQzNDc4NTY0MDE3N2I2Zjc2ZmExMWJlZGVjYTNlNTVlZWMxZmRlN2M3NTFiMTg5MGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b665d5f5a23e4e1f8d8f165a188df02c",
+      "statement": "Backtest observation mode requires an explicit positive annualization scale and invalid analysis/report requests fail before output publication, preventing a hidden calendar fallback or partial report replacement.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_integration/test_backtest_calendar_contract.py#L145-L183",
+          "version": "repo-lines-v1:sha256:c0e27382406dee1ed5ef43c797be288836549f996083b8c348040688a96671a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5ZjUwYWEzOTk3YTEzNWM1YmU5NDY5ZTg0ODM1OGZjZTk1MWI5NWY1NzZhZWM0Mzg0MzE1OGQ2OTRhZjdiN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5OGQwNzEwMGMyMTI1ZDM3OGFjZDk1ODU1ZTc0NTdlNjkwZjYwOTYxYWQzNmNjNTAyMTFkZDA3MTg3MTYzM2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmZDljMWVlZGE3YTlmN2I3NjRmYmE1ZTUyYmUxNDg2NDRmY2ZmYzc1YmIyNTVhMWI4ZWY3MTg0YWUxMjZkZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_backtest_calendar_contract.py#L64-L82",
+          "version": "repo-lines-v1:sha256:55e41b7dfc489ed5c942bfc80dec4d08c46898b9616a8d75ff7f1e5b9d6e93a0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA3YWY0ZDJiZmVjYTgxODM3MjM3Yzk4ZTdjOTVjNjdkY2Q3Mzk0OWM0ZDVjMDQ0NDYzNTJmYzY4ODU3Y2EzNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmMTEwZDMzMjcxZGYwNzY2Mzk4MzM3NWQ5OTQwMWNjNGY4MDA3OWE0NmQ3Mjc5NmQ4Y2E3MDhhNjMzOTc1ODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlZjEwOGRmOWIzMmEyNjA2YWZlNjI4ZTE3ZTQyZDA4NDY1YmU2OTgxMjQzMTQyMjY0NWJhODRkNTU3ODIyNDkifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

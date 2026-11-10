@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:acf01c40627f42143717eec304f4bcfa45d0365a2f7c4f90435fd203bf9c2b42",
+  "claims": [
+    {
+      "id": "claim_b8d799fc40e9410baf30cd6f3d4259f7",
+      "statement": "`analyze_signal` computes forward returns from factors and prices, optionally filters factor outliers, assigns buckets, and then invokes the same `_analyze_data` calculation engine used by strict prepared analysis.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L315-L399",
+          "version": "repo-lines-v1:sha256:e08ba07f16ae7659a348920542c52e78026200c2868e9d39b77e000424bf3606:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5YTA3OGE1MGE0YmQwNzk0Y2RjOWZkNGRmZTcwNDRkMWVhM2YwZTFlMmIyY2JmNTMxMGY4ZDlhM2ExZmU1NzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxZWVhMDdjNDNkZTQ0MTQzNGNjZTFlMDc4MjBiNWRlODQ2NjhjNWNmM2E0OTNmZGZmNWNmMjY1YWU5MTFkMjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkYzI1YTViNGM0ZDk4M2ZmMWY5Y2ZiOWJmMzVkMTAwYzkzZjZiZmIyMTU1YTMyNDlmYmE4ZDlkODU1MzIyOTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3OGQ2NjViMTkyN2M3NjRmNWZjNmVmMDhmYzUxMjQ4NjFmZDI2ZWMwNDRiNzk3NmRhMDRjNzU3ZDc0NWRmNjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L40-L93",
+          "version": "repo-lines-v1:sha256:9a24ad022cc12126fa897fa56df06db8edbe5470f94edc5245f5bc2f7f6dc5e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiODQwMWE3YTNlODNiNTg3ZmY1OWMzZmIwMTkzNWZjY2Q5NTFiNjQzNDIyYzZhZmJmNWQxZGRiZjEzM2NjNjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2ZjlkN2UxYTg5NTcyODQ5MDI2YTBiZjcxZjE4OTM5NmU2MWE1OTdjNDE2YjE4NmI5YTEzZDI1ZDFhMTUwNjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwOWRjNjQ2N2ZmYjE3ZmUzOTc1ZTdkNDUwZDE5ZTI3ZGNmYzY5ZWRiYmU3MmE5ZDI2NTgzZmJmYTYyMjFhOTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L96-L190",
+          "version": "repo-lines-v1:sha256:1bec12227548346dae6d66c5ca09d2e548eb9e41eb1a76e3db961899e06cfd2d:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0ZjY3YTRmMmNkYWE5MmMwOGVhNTgzMjYwNjY5NzVlZTA3ZDM4YzFiOGYwNjc4NDcwZjM1MWU1MmViNDMxZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxMzY4Y2Y2YTdkNjM3NGQ0MWRlZTJiYzE2MTE2YTlkNDc2NjA0ZWFkZGQ0ZjVkMDcwYjIwMzAzMzI5Y2ZjYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1NTJkZTdmZjdjOTI0NjFhYTFlOGNlZWY4ZGRjZjQwNWQ1YTFiZmRiM2VkMjQyYjc3NmI3YmEzYzRmMjFiMzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzMWMwMTQ4MjVkYjE1MWNkYzc3ZmZiYzhhNzkzMTE1NzQwZTU3ZDFkNWNiNDZlZWVjYmRkMzE2NDIyYTZiZWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2095b9b547ed47a799767bd5f03eb276",
+      "statement": "`analyze_prepared_signal` validates and owns a complete supplied panel without cleaning or rebucketing; exact `return_columns` preserve arbitrary labels and positive sparse bucket IDs, while supplied labels do not establish calendar durations or endpoint conformance.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L201-L247",
+          "version": "repo-lines-v1:sha256:798c5e07adeabd831d9e680cbe942eb48359517cc8ff7947f2eedf5afa2e7fb1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNjk0NDdkZTI5ZGRhM2VmMzc3MjA3OGYyMjg2ZjA4ZDkxMmI3ZjI4ZGY2MjA5MDlkZDU4YmYyN2E4MDk2NTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkMDRkYzNjMGViNGZkODNmNDNjYmYzMDM3YzliMDAwNWE1NTBhNWJiNTVmOTI2MDhhMzhlYzRjMWU5ZTcxODIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU3NWQ2ODIyMjIxOWJkMDk1MWUyODRiODA1NzRiZmJhYTQyNzE4ZTg4ZTBiNjJiN2UyOTE5YWZlNDBiMGI2ZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkyOGNhMzlhYjYxZGU3MjE0ZjhkMzI3YTNiMjg4YmY0ZDcyOTExODE3YTM5ZmFlZmViNmQyYzgxYjgwNmEzMTMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L249-L313",
+          "version": "repo-lines-v1:sha256:65024a5ce11727ea5361bf09ec6dcb62dff5d155151b2e631ee6c6e7b5b35841:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmZDgxMDNmZTIwNWU4YjU2ODk1ZjE2MTc5ZDcxOTgxODUwZjY2MjlmMmM5YTM3ZTAzNTIzOWYwOTk2M2E5MTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4NTVhMjdlNzE4ZDM4ODExZTA0ZGE1YmQ4ZGEwZDYyMmU5MWI1MmFmODJmN2UxZmQyOTRjNjAyNGQ1MzJmNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4MTRkZTg3M2ZjNmVkYmJmY2Q4NGVlYzFiNWUwZGZhYzExN2VmZDEwNjdkYTMzMjhlNWFlMzFlYzlkZDZjMDEifQ"
+        },
+        {
+          "resource": "repo://tests/test_signal/test_prepared_signal.py#L30-L82",
+          "version": "repo-lines-v1:sha256:810ccb5bf6636eb19ab69d008e3ab3bb7432b018e9c4e1b5be06288778e63057:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxNzNlYmM5OTNlNjBhYTVjYzcyZDdiYTM2Y2U1NjMzNWYzMDFjZDkwOWI3ZjE1ZmY1YmMxYzg4MGY5MTllMzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxNDkyYjJhMzNjYzVkZDM2NzYwOGQzYTgxYTBmMTM2Njc3Y2I4OTgxZDkwNTlkZGJkYzliZDdjMDQzNDRjNzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3NDlkOGE5MzAxMjQ4YjkwMzgxOGMyNzgwYzkwYzBkYjc0NDY3MTdmMzA5OWRkYmJjYjk1ODQ2ZDhlNjc0MzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2NmI3ZGIxNmI0ZDU1NTVkZTIyZjc0ZjRlMGI5ODEwOTJhNGRhMzQzM2JmNjZjZWVjY2IyN2FkMzZjOTI2YjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_718fec56a05140859a1141be347de656",
+      "statement": "`prepare_signal_panel` accepts exactly one of supplied outcomes or prices, selects one common finite factor/requested-return/group sample before bucketing, records disjoint staged exclusions, and raises `MaxLossExceededError` only when the loss fraction exceeds `max_loss`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L639-L712",
+          "version": "repo-lines-v1:sha256:18fae6659112da532ee0ef7a8b1b12ee3a0f450a11720c25fbfbb40388234ed9:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0OGFjZDVlYTJiY2E0NDE4ZmY0ZGY4NzY1MDMzZmMyZmNhYjMxODMwZGMwMDBiNjVhZmY0NWFiMDg2NjY4YzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3MWY1YmY3NGEyYzM3YzQ4ZjE3ZWIwMWYzMmFkN2I4YTU3NmM5NjJlYTRjMDhhMzcwMzk4MGVlMDdmNTUxNzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmZGM5ZDM5OGM2NzJjNTUxOGFlMDUzZmU1NzQyNjJiZjgxZTNjMDI2YTM0N2IwODIxMTdmZjI5OTIxN2IxMmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhM2VhNGZlN2YxNWU2MWMwMjM3NjEyNjZiMTliZGJjNThmZmY2NDA3Mzg0YWI2ZTkyMjFkMDcwN2U5ZWUwYTIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L810-L864",
+          "version": "repo-lines-v1:sha256:cbd46accd70762c089eaf419ec215a704efded0302c9b4d874d5057143da8f91:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiZjA4YjUxZDFjYTkxOTlmNjU1YmU4NmVkMGRkMjhiOWIxMTM5Nzk3ZTczMzM5M2VhYmIwZmFkZTQ4OTRhM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljYzRiMDM2YTVjMzMwYjQxMDJiZjBlMjdmZjczOTllZTY5YzZhMjE5NDViZmZjYjRhY2FiYTJiYTQ2OWI2OTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzODg2Zjk1Nzg3NzE0ODI2ZWEyYmI2NzMzZjU4MjkwNWZiNzQwM2MyNTQ0NmRlODAyMDYwNmUzMGYxZmM2ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxOTZkZDA0ZWE5ZWNlNWMyNDc5N2U0MjVkZmQ0NDdlNzBjMGE2MzMyN2ViMjcxNGNjMDAzZmUxMGFiZGEzOTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L895-L1034",
+          "version": "repo-lines-v1:sha256:d00f4541321afc99350a943c30d8ea828829e9aeebdbb7d9813a8e004a680605:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5NTdiN2QyZmQ4MmI5OGY4YzJiMjEwZWY5ZTRhOTIyN2JiN2YwZTM5ZmViYTJlZmZhMDI1MDgxZTdiM2Q1ZjUwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmZGNjMGFiMGFmODEwZTI4ODI1MWViNTdhYTEwNDllNjc4MDIwNGM5NzdjMDQ4MDQ2MDVkOWI1MmUwYTViYWM5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiZDhmOWE3NjJhNTViZDAxNTcxZTAwMTljNzczODAxYjI2ZWEzMWVhYzQ1MWJkYzBhZGJkZWQ0ODI1ZDEyZjlkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjZGYxMTM0ZmJiNDEwZGM5ODg3MDhiMzMxNGExYTUzZDViYjBkZDYyZjhiNWNiYTdkNmI1YWE1ZDFjYzliMzIxIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_06622e6317e0418cb91e2f49cb9f19d0",
+      "statement": "A `PreparedSignalPanel` owns Arrow snapshots of retained data, exclusion audit data, and optional long outcome provenance; its accessors return independent frames, and `analyze()` delegates the exact supplied selectors and buckets to `analyze_prepared_signal`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L127-L177",
+          "version": "repo-lines-v1:sha256:07ebaf217679e533ede5e5ee198e446c17f821123b41c031b959ae425597fd01:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5MGJiZjM5OTAzN2Q0NWFhMjE1OTg1OWY5YTQwNTg0ZDA0ZGYyZjg5Nzk5YzE4NDJiZmIyNmJjMDkxM2U1MWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwOTNkY2UwMmZhM2U1YzBiOGMxYzg2YWM2N2U4NzYzZTNhMjQ5YWFhZDAxZjlhOGVkZTJkNjcyNzE1MGJkNzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5MTAwMjA0MmY5Yzg5OTRiOTc2YjhhNzRmMGNiN2QzYjMzZGE5MGY0ZThmNWI2OTA0NDYzYWE4YTVhYTFiZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhN2RkYTYxZmE0NmYwMGEwNTZlYzlhNjRkMDE4ODQ3ODRhMzhkODNlZDIzZWQ3NTNjMWI4MzkyMDg1NGIyYWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L37-L125",
+          "version": "repo-lines-v1:sha256:b2f6fd5f59f9103e9d726d6b9dd0457175d6f33129e571b17c4ef3d874166015:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmMjU5MzFmMGZiOTFiOTIyNWM3MzliOWUxZjExYzdlZWZkOWNiNmViOTRkZmEwNjliMGM4MjM3OWVhNTljZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlZTcxNWFiMzIzZTAzZDFiMDVlOWFlNTY5MDExMDI1NGM4Njg2NGIzNDMzMjc2YzhiZDhjMTg5Y2M4YTlhYzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkOTFlMGQ1Mjc5ZWFmNjM5MzA4Zjc0MzczYTQ2ODY1MjNlOWM5NThhODg4ZGE0ODFiZDIyN2JjNGM0ZmQzZTgifQ"
+        },
+        {
+          "resource": "repo://tests/test_signal/test_panel_cleaning.py#L143-L181",
+          "version": "repo-lines-v1:sha256:02da36d545bd4537dbad6e41f710f39313f0b9beb290c164fb30031d370bfe32:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NGI2MmU3ZjRkYmY4OWM5NmU5N2RlNGEyZmE5NjkwYzRiZDk1OGU0ZTU4MmNjNzJjY2VhZDY4Y2VlNGMwZWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2M2Q1MzVjZTM4MDYzZDZiNGM1MWQ4YzM4NmE3ZjliM2U1ODBhMTRhMTBjMDdiMTk4ZGZhZjE5YzkzYTNiZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2N2I1MzFhMGFjODY2OTEyNmZkZjc0NTYzOGRmN2I4MTgwOTljZWJhYjU3ODI3ZTY5ZjdjZDg1MjgxZjllZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0ZTViMTZlMmI0YTMwN2UwYzg2Y2M5Y2I1ZWZmNGJlYTcwZGVmNDQwZGMyMjk3NmMxODgxNTIzZTk4YTNlNzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bba160ca6eca4e7d87602b9bb58df079",
+      "statement": "The panel price route requires an explicit price basis, computes observation-count research outcomes on either a common or per-asset clock, retains endpoint/presence/availability provenance, and does not treat analytical fills as observed or executable prices or validate shifts as sessions.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L183-L233",
+          "version": "repo-lines-v1:sha256:02852d0a2852a2deeffd1975f04621dee5f32c7960d6ee855b124359acd828ed:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwY2FlM2RjMjc4ZjY0OWFhYWViMTlkN2ExMGM4NjM2NDI1MjNmOGVmMDBjOTE4NTM2MTM0ZGIwYzQzOTg0NTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2FhZTk0ZGI2NzRmMWQ3OGY5MTNjYzAyYjczOTA0MzAxNDEwNGY3NGRmNDE1ZDlkNjljNzhmNWNhNGE0MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzNmJjNjVhMzAyZDcwMzQzMGNjOTZiMTk3ZDFjZWQ2M2RlYTRiZjY4NWNhNjNjZDU1YjY4M2YzM2U5NjU2NGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L301-L357",
+          "version": "repo-lines-v1:sha256:7279e7e7f532a4e0785c7769f4a24f02b474375895b9bf72042c19a410ab58ff:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhN2RmNzJmNTQ5MDE5OWVjZDk1N2FlZGRiYWI3NTFiYzcwMmYwZWJmYjJiODVjMDI1ZDQ0MTI5YjFjNjQzYjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyNjBkY2M5NDBjNjcwZjc4MDFlN2JhZDk0MDM3MjdmMGM5NGU0YmY3OThhMmU2YzdkZDExMjJiNmFmMTY5MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/_price_outcomes.py#L61-L109",
+          "version": "repo-lines-v1:sha256:cc8d42bd48b4432dc3fd50e3766fff1899730a5235d8ca6a2fcacd51a9112852:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmMGExM2NjNDg5NDg2MDRlYzliMjk0ZDZhMjllMjAxYmQ2NDNlYTFmOGFjYjM1M2JjMzgyNTIwZmE4MDkwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2Mzk1YjNlOTE5OTA1MjgwZWE2NGQzNjg1YzRiZGNmZjhmN2UwNzNkNzVkNGQ3OGFlZjRlOTQwMjNlMDBjNmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2ZjYyODZlMTQ1OTA3NGQ3MDAyN2ZhYmUzODY2MTc2ZGEyMTQ4NzZlZDMwMTBkY2VjMjc5YjRiZDYxZDMwYzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b4c398b5ccfc49c6a34e37f103be623f",
+      "statement": "The shared engine computes dated IC observations and summaries, pooled quantile returns, a native top-minus-bottom spread, monotonicity, and optional scalar plus dated persistence outputs for each selected horizon.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L315-L430",
+          "version": "repo-lines-v1:sha256:ff64b379bdae760f8a9341e06078076955b4fe3b887c07b0974bf527a62fa97c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2OWEwNzhhNTBhNGJkMDc5NGNkYzlmZDRkZmU3MDQ0ZDFlYTNmMGUxZTJiMmNiZjUzMTBmOGQ5YTNhMWZlNTc1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlYjRmNWM5NWM2NzJhOTNiMThjODIxM2Q1NTU3ZmQ3MTRiMDA4NjIzYWJkNTFkYTE3NzJlYmVjOGE0MmMxNzgwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjZGMyNWE1YjRjNGQ5ODNmZjFmOWNmYjliZjM1ZDEwMGM5M2Y2YmZiMjE1NWEzMjQ5ZmJhOGQ5ZDg1NTMyMjk4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NmQzYzk3NDQ2ODljMjRiNDcyNWE0MTkwY2JlNmJjODA2N2Y5MDIwYzRjMTQwYjBjMGU2MWQyZGYyYWFmMTFiIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/core.py#L432-L517",
+          "version": "repo-lines-v1:sha256:7e3431b864bee403f0b2de09225c82aea84be8762c39eac97e885c4f9261d609:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5Njk3NjNlYjhhMjAxOTI2YjU1NjE2MDZlNmEwOTVhYzhkMzhlZTU4NWYwYzVhNmFiZTNlNjgxZWYxZTg4MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiNGQ1NDlkY2JjZWQ2N2E1YmJmNjg1NzE1NGI5OGVkNTNjNmMxMTJkMDc3Yjg1NWZkN2VlODJmYzc2NGZkNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5MTcwMWQ3ZmJiYWQxZGNhOTU3MTcxNTc4ZWM5NTg1ZTA1ODViNTFjOTg5NTdhNTc2NDFmMDk3NDAzNmM2YWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3a027eb7984f4b0a84dfaa219af4cd7c",
+      "statement": "`compute_quantile_statistics` distinguishes per-date asset samples from equal-date aggregate statistics: `by_date=True` reports asset counts, while the aggregate path reduces defined daily means with equal date weight and reports date counts.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/quantile.py#L137-L183",
+          "version": "repo-lines-v1:sha256:ca9e507a0014da28b61e00fc35a1ce36d7fd12e8fbde087a7bb595b7baa66cf5:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlZTE0ODEyZmY3MzY3M2NkOWM5YTY2MGZkYzZhNGZkMzhmMTNlZWQ3M2M0MGRjZGJjNDRiYTU3MGFkNWJhNzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZTczMjBmMTJlODhmMGEwZTU5OWJjMTM1ZjY5YTgzMTczYmMwNTY5NzYwODM3ODFmYmQ2ODYxM2RmMjdlNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkOTczODYxYWNiNTc3YmU5OTc2YTdiMjg1MDZlZGI5NjZlNjA2ZWZiYmEyZjIyNWVhZGRjOTc0NDE2ZTczNGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiYWZmODQwYzFhOTUzNDVlYTdmZDE0MjYwYzI0MTU3OTYxODFhNTg1ZjY5NmMzOTVlZTA2ZTY0NWVjYzBjM2UifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/quantile.py#L243-L295",
+          "version": "repo-lines-v1:sha256:0651b6387f417dd785f73429c2969ef1acb730f342c5ab2a754c1bed94de02ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmN2UwMDRjNDJjYTY2MWIxNmFjNzg5OGMyZTg3OWVhMjBjYTY3NjNlODExNTRhNjY2ZmFmNWEzYjFiNGFkZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YTY3Y2E4Y2EwMWE3ZTdjZjBlODVkZWE5ZTc1ZjlhMGMxZWNiZDRmYjFlMTdmOWJjZjc1ZWUwM2Y1YTFkNDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhOTcwN2VlNmExZDkzMzgyODU3OWU0MTI1ZThhNDRjN2M4ZGM0MWU0MDhkYTZjZDlmZGI1Nzc2MjI1YWJmMzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkMTRiZTNhN2JhYWNmNGJhYzQwNDQxM2VhMjJkMDA0MGYyZDZjYzNiNmQyMzJkNGZmMThmZDY3NjdhYmVjNDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dfca91335f044642aaf28a1cec8b1d90",
+      "statement": "Panel quantile spread statistics are distinct from the default pooled spread: they subtract arbitrary bucket means, optionally propagate independent leg errors, and the unscaled upper-minus-lower return represents gross-two exposure rather than a unit-gross portfolio.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L536-L593",
+          "version": "repo-lines-v1:sha256:d0c40bab5833da0387742060a767083f28f57395c5f9e4b72dad9f8b2503ea3b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1ZjlhNGIzYzI3NWYzYmNjNjZmNDczMjhjMjIxMThkZjAwODg3NGJlMmVkYTMxMDZiYTFhZjI0NjVmYmYwMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEzODBiZThiNTI4OThmYWJmNzY3NGI1MzMxOTRmOTFmN2Q5NGYwYmRkNTVkZjA5ZTMxNmI4YzRiNzQ1YjExMTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3MWExYzNiNDFlZDQ0OWYxMzAzZWUyMDk5MzIzMzA3NGY1Y2QxMmM5OWEyN2MzYzMwNTI4MGM1NjMyZDQ1ZjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/quantile.py#L298-L334",
+          "version": "repo-lines-v1:sha256:f6640628750de8e37ffff5ac1b3ba0134e38013370673f288b740a3a0e107ebc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiYWJmZWQzMzNjOWI1YWM1OWExOTFhM2RiM2UwMGM1M2EzOGEyZWRlMzFhYmFhYzAxNDRmOGVhMDZiZDIwYmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2NjJhMjMzNzMwNTVjMDViNjc3MWUzNTYzZjIyOTZmNTA3ZDViM2RiMmMyMGNkOTg3OGUxYTE0OWJhNTc0YWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2ZDNlMDdkZGJiOGNlMGVkODIyNjU4NjJiMGZkYzdlNGRjYmJkYTU3ZDc2NjFhNTViMDViNWIxYjk0MGY2ZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhhM2MzMmZlYWZhNDhkOGJjMDg3Zjc2Y2E0ZDYwNmVjMGQ4MmFjMGI2NWQ0ZTdjODNlZTYyODBmOTIyMDIyNDgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a97d293000594b1abadd832d4929b7a7",
+      "statement": "`analyze_signal_returns` retains separate raw and display statistics, uses raw supplied returns for mathematical wealth paths, labels display error scaling as descriptive rather than confidence inference, and explicitly marks the paths as non-execution observation-order products.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/returns_report.py#L222-L242",
+          "version": "repo-lines-v1:sha256:4b74995e4c7fb60022639c76a86c5579a9c7a3e6aa04734d1d6989075611f28c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNmZhNTNhNTRkNDA4MDM1MTM2ZTQyMjNmMWYyNWJkMzc5MDY2MDViMmQ4ZTBjY2Q3NzFlZWVjOTNlODg5MGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MDQ3MDBhY2YxZjM1YjdlYTE0ZmM1NTM4MTNkOWI4NmI4ZjZlMjU2NmE3ZGNkMzhkM2VmZjQ2ZTc4N2JhMmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmOWM4N2Q2MjhmOGE3ZmRiNTEzOTI5YTQ4YzNlZGM0YTdiMDY1MWI0YmY5YWRmN2U3N2EzNjk0ODg4YTkxNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiM2UxYzVmNTI3ZmZmZDZhYTZhYTcwY2ZhOTExZjU0M2MwNGE0NzNmNjhkMTEyOTBhYjkwOWE3N2FmYmM4ZGEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/returns_report.py#L315-L370",
+          "version": "repo-lines-v1:sha256:aa617a51f15b55711026d110d60a53c5ac197107e1867cbeb712b58ff5c4428c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExNWQ1OGNhZjg1NTI1ZDhjMzI3YmQ2ZWY3Njk5NDA1NzU0Yjc5MWRjYmJjODBiOTE2MzQ5NWZiNTQwMjE2M2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5ZWZiMjJlMjYyMTBhZjU4MWJkN2VmMDc3NWY5Nzg3YmE2M2VlYzMwNzgyNTQ0MDJmMjFlNGQ2NDg4YTE0ODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjOTg3ZTRjYzM4ODM0OGRiYTNlZTI3YzkwNzNhNDIwMTZmNDAyMWIzM2I3OTMyMDlkOGIxYTA1YzcyMzE2YjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzMGY2YWNhNDhhMjVkOGVlZjg2MTQwZDY5NmJjODYwZWQ0ZjEzOTQyMDk0ZjViOThhNWYwOWVjMWMzYmRiZDIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/returns_report.py#L386-L410",
+          "version": "repo-lines-v1:sha256:42f6fc1b793bdb7193620c3a72337708c3f1e0689c388fa1330833c55e71c201:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3NzIzMDMwMDg5MWJjYjNiZDA0ZDhiZjAxMWY0ZDVkMDlhZDMzZTY3ZDRlZTAxMmMzOGQ1NGU0MzNlMzA4MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzZDgxNTYyNWZmYzJiMjlmNDRhYWY0NWNiMzQ5ZWE2MGQ5MjA4ZjVkZTAxNGFhNTYwMmE2N2Q2OGExYmIwYWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE5ZDcyZWVlNDQ3OTFjYTU1ZTc1OGJhYzdiYWE3ODRjODIxNjYyNGFkYmQxMzExZWQ3MTQzNjg2MjIyNWJkMjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b24ee5bcb7294f84b760dd925f655541",
+      "statement": "Event views align supplied levels or compounded returns on the panel's observed sample and do not substitute an abnormal-return model; factor weights and cumulative returns are research calculations rather than dated execution holdings or self-financing account P&L.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L210-L268",
+          "version": "repo-lines-v1:sha256:cef48d02a88f3940ce1d4aceb237503a858ad6ce535fc61a6397766b7cb75b2b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MGM3Y2U2YmIzOGYzYzkzYzVhNDA4MjlkMGNiYWJlNTI2NzY2YzFhZjBmMjI5MWNhNmMxZWNmYjVlMWRkNDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwZWE0MmJmZWUyMzMwODFiY2I0M2RmMTI4ODA3OTBmODBjZTgxZTljNDU2NTJlOGFhYjIzZjI1NDU3NDcyZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5MjFiZWNkNzM3NGFkNjc4MDVlYzcxZGE1M2Q1Njk1YjY5NzIzNzJkMWFiOTVjMWU0YjExN2RiYmQ3Mzc3NGYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L270-L385",
+          "version": "repo-lines-v1:sha256:6f8fbebdc49b814e82f2b844752ef94dafd2fb473b97d485c9924b3bf34cc4cc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1YzRhNzU0OTdlZmNjMjEyMDUwYzU2NjRhYjJlYmZmZmIwOTgyNjgzNThhNTZhN2EwOGU2MjUxZjY1YzIyNThmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1OTA5YTUzYTYxOGQwMjhlMWQzMDAwYzBhN2FiY2VlY2JlNWZiMzdmNGU1MTFlZmU0NjY0M2ZhZDZlNjY4NzJmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmMTBhMWY5YzRjZDNkYjE1ZjY1OTc5ZmM5NjY3NzM5OTk2MjFmZjgwMjI0NjI3ZjY5YTNmMTZiZTRmYWRlZGFjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmMTY3YzY1NWQ3MDJkMDViOGQ1MzQyYTVmNmM0NDQ3NzhiOTFkYzE1YjY1M2Y1ODIxZTkwOWFiNGMxZDUzZjRjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_069abc5238ae4f7d9620e4594d662b67",
+      "statement": "Synthetic positions require explicit expiry keys and represent research allocations, not orders or executed shares; synthetic portfolio inputs compound supplied forward outcomes, create no transactions in the Pyfolio bridge, and retain research provenance.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/panel.py#L387-L487",
+          "version": "repo-lines-v1:sha256:a0c50a4d6190372a297c6a6fd091827892fc7a92c08ccbef858e99262bfb4bde:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0YzVkMTgzNzNlM2JhOTBhY2Y0YmVmOGE3N2NkZmJiOGJlZWRhYWU1ODY1NzdlOGU4NmZmZDViZGM3MGJjODJmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1OTA5YTUzYTYxOGQwMjhlMWQzMDAwYzBhN2FiY2VlY2JlNWZiMzdmNGU1MTFlZmU0NjY0M2ZhZDZlNjY4NzJmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhMzgwYmU4YjUyODk4ZmFiZjc2NzRiNTMzMTk0ZjkxZjdkOTRmMGJkZDU1ZGYwOWUzMTZiOGM0Yjc0NWIxMTEwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4ZTY1OTkxMzhkMzc1NTU0YjI3ZWIwNDRjM2JhMTY5MzcxYjcxZDY1YmUwZjUzYTk3YmE5NTk1YzAyZjYxNDc4In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/portfolio_inputs.py#L106-L155",
+          "version": "repo-lines-v1:sha256:3e0369d1c226ee4755ea9e467a283ff47d7717bbdfbde0a5df4332488b2efb24:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiMTA4MTdiNmMyOWQ3YjMwZWNhMDI5NjQ3ODQ0MWEzMjU1NzhmNTAyOWQ3ZDNlZWExNjI1NzdiNDQ4ZjZjNzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4YjhjZDQzZGY4MDQyZGU3OGNkY2Y4ODc3NjlhNzMzMmYxMDlhNDI1YTJkODJkMDlmNGFmYmFiZDRlMzNiNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjYTJlZjlhYjgzNzUyMjA2OGQ2YjlmZWEyZjUxOGU0NDNhNDUyN2U2MTM5ODYxYTcyNDA2MDMwMWZjODNlNjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmNjhiZWQ5ZmZkN2YwMzY2N2RkZDkwNWI2YzUwODQxYmU0MDQ1NzliN2I3MmJiZTJkYzMyNzgzY2FjMGNhNTMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/portfolio_inputs.py#L25-L37",
+          "version": "repo-lines-v1:sha256:48888ae1c1603d1b2e48f42d6acd18e9da0d236cf74f13629ddbe69806b2c8a1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZTQwMmRmYTk4MjJjYTYzZDdlN2ZkY2ZjNWYzMGU5YjVkYjlhMWVlZmZiNmY4OThmM2JmOTc0YTAzMThjNDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE0ZGU3NDlkYTI5OTBkZDg2MmFmOGE1OTEwMTU0ODRhNDkyZDM3ZGNkZWJiZjZjZDg5MDdhYjQyY2ZmMWI1ZDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5YTdjNDY5Yjg0ZDY3MjUzZGFmYTY3ODc5MzNlNDBmNTRlNjllZmYxZDRjNmVhNTgzNDRjMDU2ZTc0NjYxOTEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/positions.py#L25-L44",
+          "version": "repo-lines-v1:sha256:49f97297bcbf5f691fb3a92a43085a5263f867808f765da6136de8e486455fad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5NTIyNjA3NTViZWY0YzNiNTMxMTBhNDEyZTJmYjhmYmZjMTViM2Q3YjdmNjcxMTIwYjBjYTljNzg1MTkwNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxNTBlY2ZkNDVjZDA5Y2QxNDNjMmRiNmMwYWM1ZjRjYzY5MmFkN2MwMTBhMzUwMGMyY2JhNzRlMTlkZjNlNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkZmU2ODE1NzA3MTQzNDc3Y2UyYjk4ZDEyYWRhZDA3MzcxY2Y0NTBmZmUwODU2NzFkNTdhODJlZWY4NGZlNDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b1273332947b41e5b824a6d8be471c4a",
+      "statement": "`SignalResult` owns optional prepared, outcome, quantile-observation, and dated persistence frames as Arrow IPC; JSON export/import validates and restores those payloads, and dated turnover and autocorrelation must be persisted together.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L127-L180",
+          "version": "repo-lines-v1:sha256:b189c6f2919c16e70ae24899405a3af6e29b37a663dabd602ab1df5044767baf:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxNWNhOWJjM2ExOTExYTdlMWVjMmNhNTFkYWJiYmU5NWJmYmU4OTg2MzhjNDI4ZjQ2Y2U3ZTg4ZjdiN2E1ODQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmYWE3YTRiM2JiZjNlYzI0YTQwOGM3OThmZDQ5NDU4Y2U5MzI5YjJkYTJmNDZlYjc2NzQ1NGI4YTc3ZjBkYzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0MDk4MDRiMzU0NmY3MDFhMzhhZTZjYTdmNjUxZmY5MzM1MzNhOGU5OGMzM2RiYzliZWE0MGMwNDhhMTBlNWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM5ZTEyZmJiM2NjNjMxOWY5OTY2NjJkYjRkMmI1YWIyMDBjMzc3OGQxZjdkNmE1ZTEwNjRkNjhkNTYwYTM1YzEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L19-L31",
+          "version": "repo-lines-v1:sha256:b03ed1c10839e916c7be4f43b1a0dbda76314efe3a2891ba11328ab5f1666a23:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxNjkwZjBkZTJmMGExYzBiOTk5YmZmY2Y1NjkwNGE5N2I2NmI0MTgwZWVjYzdjMDc2MThiNWI1YjA0OWIwZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlNmQxYWMzMGJmOGE1YTg3ZTNkZjljNTJmNzQ2OTRmYmQ2YWE0MGQ4MjkxNDMyYWFjNzRlODVmMDljNjkzZjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhYTRmM2NiNTA4NDg3ZGUyM2E1NmE0YzMwZTNhOTBlMWFjZDBhMDQ3MWRkNjEwN2FiOTlkNDg3OGY2ZTU3MDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5Y2VhOGNhNjIwOGYyYWU3NGFhMjZmN2YzZDk0ZWY5ZmI1Yjk2N2EwYzM1NmY5MmRiYjc4NzBmNjcxYWFhNzAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L474-L572",
+          "version": "repo-lines-v1:sha256:7a48cb82544d3e991bfc8624979f3cb0992ea410d47ae2a39f01a8579c041694:eyJzZWxlY3RlZExpbmVDb3VudCI6OTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhNjM3YWIxZGM3N2E1MTExZGY3YzVkZDM2OTcxMzA0YjBlMDFjMGNhYjZhZDEwNTUzMjdjYzZiYmVkYjg2NDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlMTNkNGMwNWVjYzY5MzMwZmQzOGZlOGIyOTIxMDFiNDVkMjlmMDM2N2Y3ODM4NDNhMzFmZWZkNGY2YzFmYzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzNmY4NDM2MzdiZTQ0NzA1NTI3ZDQwNGY4MzA1NjFmNzAxMTgyMjYyZjJmYzAxYjQ2NzQwY2E3ZmJjYTlkY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlY2FkMzI4NmJjOTEzMWNhM2U5NjA4YWI0MTMzYmQ5NGZhYTMyMDJhMGZjNzcxNGQ4MzMyMWFiN2U1ZGVmNjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1841c6cdec85427c952d98c4d5f137ad",
+      "statement": "Visualization bridges preserve their sample limitations: the IC bridge aligns multiple horizons to their common date intersection, the quantile bridge carries exact bucket IDs and dated observations, and the turnover bridge returns no model unless both real dated persistence tables exist.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L182-L195",
+          "version": "repo-lines-v1:sha256:79eae73eb73a6aacb670043e5d6a71077ea6dabcbf0db0195dc3381ae0bdbd9e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0MTA4Nzc5OGFjODEyZjhhZTE1YjhlMDRhOWI5OThiZmExOTgxZjIwNjU5MTc3M2EyZDg0MTkyMzBkZDMyZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4NjYzYWM2NmFiYTFiZjYyMzI0YzI5NDFkZGY0Y2FlNjcwOTFkZGU0YzA0MTcxMjI4NjZjNTY1YzIzZDMxYjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlM2MzN2Y5ZmZiN2UwODMzNzg0MGY2ZmJjNGIwN2MzMzAyZmQwMjI3YjdkYmFhNWJhNTcxMzkxNDVlOTU5NWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0NWQ1NTg1NGE3YmZjZDAyM2ZhZDg2MTlmMDkyNDc3NGM1YjdkNzI2MmVhNThlYjY0M2Y1NTg3NjQ3MDhmZTMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L257-L337",
+          "version": "repo-lines-v1:sha256:d3ae61118ec01d8a198732f5990202dfa41d7931086cbc1a11ee7015f1f695ce:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjYTM5ZTI2MjdlODRlOTlmOTRlODVjMTVhNmI3MmJiMzY0YTk0YWM5ZTk3YWM5N2Y3MDY0YzYxYTAxOGM5NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJkMzcwMmZlZTc3NmMzNzhkYzI0ZmU5MTI5MWM4NTgyZjQ5ZjkxNzM1ODRhYzU2ZTg2YjFmNjJlZTFhZmE3MzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzYTVjNGVkMjM3MjA5YWZhY2Y1NWYzMjcxZGQ2ZjMzMjFkZDdlY2M0NTU0YmRmOGQxNjAyZjY0NWQ4OGFhZmIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/signal/result.py#L339-L430",
+          "version": "repo-lines-v1:sha256:1287698daaae481c3e4e3ff7534b5f3834ac96e8792f17a732901bf115e0bdba:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjOTdmNjZmZDVlYjAwMjgyMWMxNDA0NjEyOGMyZjc5NzAzZTZjMzMwMjE4MjI2NWJhODAyNjEzNTdkNzYyMzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhNTIwNjMyMGI5NjNhNmE0NDc1MDg3MWE3Y2YxYTgzNjc5MmM1MDE0YjYyYjFiYTBiMTdhYjNiNDgyMWVhMjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyNGRlOGRiYzU4YmIyMmRjNDIzNjhlODY3MWMyNmJhOWQ1NGVhZmEzZWE5OWJkYzM2N2ZlZmFiOTJhMzE2OTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwMDk4YTAwMTY0NDc5MGZmYWMyMGQ0Y2JjMzk5MjU2MmVlNzViYjMzOTFlOTZkZjgxZTcyYTViY2ZmYjNhNDMifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

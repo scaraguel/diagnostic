@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:331d4e46fe13aaefb6d8ee3368afec40480a550810483bc70764773fbbe10ecc",
+  "claims": [
+    {
+      "id": "claim_b515f15201514169ba80da5bd5dab719",
+      "statement": "PortfolioAnalysis supports a lightweight return-array boundary and a from_frames boundary that preserves authoritative net returns and owns optional account tables without inferring returns, NAV, or executions from other surfaces.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L139-L265",
+          "version": "repo-lines-v1:sha256:5db2aa340230eddc2fca8cdb4eadc1ffa33233318cabd3dc4c0ed32dfbb9328c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjOTJiMTY3ZmJiMzIxMTRjMjk0OTM3ODE5MmVmYjVlMGNhMmJjNDExZjc1MjM0YjZkN2U5OGEyZmJhNTkwYWNmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1MTQzZWVhYjc0NTg1MmU3ZDQ4YmNlNzMzMjk5M2I4MTQ4MWQ3NmE0N2U0MWRhYTM3ZmFkOWMzODFhYzVjZWQwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2NWIxMmFiMjY3NmMzZWFhZmZiZGJiNzJkMzY4NzVmYTE2N2ExODk3NTYxMTNlZGJmYThmMjhiZmI1ODgxZDdmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5NDQ3MjEzZGViYjkwYmJiZjg5YzUxNWY1ZTJmNjA3N2Y0OGU2ZTg0YTViNTQzMGE0MTFlN2Y3ZGI0NDMxNWE5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L27-L76",
+          "version": "repo-lines-v1:sha256:d5947bf6909f403e9b41b96d5959c05c75a39dc9bb472aa9e0dfc998e4d2a2f5:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODQ4OWIwYTIwMWJiMGIwNjc1YTk0YzlmNDhmNWY0YTM5ZWE5YjJmNGZhNjk0YmNmM2JkZTVlMmRmMDUwZDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwZjlhZmEzYWE1MzJkOTI4YzJkNjg4MjhlNzE2ZGZkNDk5ZjgyZDI5NTA2NTgyYzliNGNmYTAzMWVkNDIxYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmODlmN2M1MDI4Nzc1ZTNjZmY1ZTc1NmNkNWEyNzZjNTNkZDliNWJhYjViYjBiMjY0NGE5ZmIzNWFlYzk3ODIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/frame_inputs.py#L452-L529",
+          "version": "repo-lines-v1:sha256:177aea88e9b1e1660298fdc8577a7ef69663dfd157e0f514da0e4cdf38efbc37:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5ZWJhNjJmY2RjNTQ4NjEzZTM5NDNiNDg0NzYwNTJlOTAyZjNmM2YxZDJhY2U1ODQzYzlhMGQyNThlYTc3NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlkYWE0YjczMDE5OTlkOTkxM2IxMzI5Y2FjZDkyNmIzZDIyNTk4YjFkNjlhZjYyMmMxMTVlNzkxMmY2YzU2NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a5b33ec3bbcb4c1394234b2dc807d3f6",
+      "statement": "PortfolioAnalysis computes return-based summary, benchmark-relative, rolling, distribution, and drawdown analyses, while calendar tables and complete reports require genuine dates rather than undated observation indices.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L1092-L1186",
+          "version": "repo-lines-v1:sha256:c8b34076c1e93719db51b8a1298fec8a78971108caa39c54229ccd2856f0d3bb:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0OWFlNTMwZmRmMDUxNmU1NzE4NDJmY2U1ZGMyYjk2YzQ2ODlmNzI5YTFhMjQxOTM1ODc5NjZkMzA3NDNkMmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhZmM3MGRlZWQ5M2RiMjBkYWUzMzc1NjNhMDFlZTZjNDllNmQ0MTgxZmVmMWJmNzJkMTkyMzg3NDdkOTlhYjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkOTRlYmQ3YzYzM2E1M2JlN2IxYjgyMmVkNjQzN2Y0NTg1MGQwZWQ2ODVhMjdmMzA5MmViZTg0OWRhMTk0MDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1MmNiYmE5MzcwNTk5ZTcwMzRjMjVlY2IyNWI2MTYyMGNhZjc2ZmY4YjAxNzVlMDQ1NWM1OGE4YjNmMTk0YjYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L399-L426",
+          "version": "repo-lines-v1:sha256:05103464e1977fe552ae69c7f42b545859402d0d82358ececbfb6b23912327c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1NTgzMGJlNzlhYzNmNDA3NmFkZTZkM2JhYjgwNGM0ZGQ5MDIzZDFmMzYzM2ZkMGZhYWI1YWNiMjE5ZDA3NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5MWExYmVjOTAwMGRlODE3NGRkOGQwMDVkNjY3MGNkZjE4ZDAyOTA0MjU0NDVlMjA3MDdhMzFkOTBlN2Q1NDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ZGYyNzdmZjNiZWJhZGFiNzJhY2ZiNWVhODQyNjU4OGIxNGRhYTU3NmU4MzNiYzkxZWExZjE1ZTMyZTk3YzEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L487-L609",
+          "version": "repo-lines-v1:sha256:4e49cfbb2aecb7d1ad74e355da63f8d61a8523f7b34b5e52c91740f72806d7ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmM2QwMGNmMjcwOTY0ZDQ0YTEzZGZhYzg3NTJiMDlmY2M0MzViMGYxOWIzMTZhYmNmODFhN2FhNjRiYjEyMmQ2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhMDVjMzhkNWQzODc1MTI3MzFlMTJmOWRmOTVkZWRmYjExY2NhMmIzNGQ4Nzc2YzM2MDViZDQ3MjYzODJiYmQzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0Y2YyOWI4ZmE4YzYzNTRkODJjYzYxMTdjM2YzYTNjY2NjMjkzZjM0MmU4ZjVjOTFkYzBlZTM3NzA2YzNjODFiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0YTM2M2QzNTI0ZGY3MDJmNTMzZTRmZjM4Mzg5NTZmNTBkYWM5MDE3MGRhMjhhM2NhZTRjYzVlYjgwN2E4ODg2In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L923-L1015",
+          "version": "repo-lines-v1:sha256:3c034006133be6bb077a85a8e998f186ee0f6572d5ec32291f9d9f234b4ff59c:eyJzZWxlY3RlZExpbmVDb3VudCI6OTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1NDJlZTAyNzdhNmM4NTJkMjVhOGY4MWU3YjJjZjMyYjk4ZTAxMTY0N2IzM2VmMTkyODdjZTZlMGEyNzQwM2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjYWZiZmQzOGJlOWJmZjg0ODJmYzQxYzMwYjZlNTJjMWE0ZmVhNDk1NTBhOGNkYzk3ZjRkMDFkMDRkYjg4MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhYWFkZTlkMDk5MmY1MmQ1YjEyN2Q2NTY0YWI5YTI3YTk4NjVkMDdkZTZiYmQxNjIzZTcxM2U1YjFjN2VmODcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0144c3aadfbf4886abbd8d1af585e37d",
+      "statement": "Wealth cones train strictly on observations before live_start, use observation-count horizons rather than inferred future sessions, overlay held-out live rows, and retain paired benchmark sampling when a benchmark is present.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/wealth_cones.py#L160-L225",
+          "version": "repo-lines-v1:sha256:0e232bbedec49ae2f8bd69617c7778a80ef0ab2871c9003b7f46081a35d601b7:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwYTRiNjIyYTNlOWIyNjhhYzQwZDA1ZGI4Mjk3ZDcyNzMxZjhlMmYyOGY0YWJiMzhhMWJiZTE2OGJmMmM2Y2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiNDBjMDEwY2NjOTg2YTliNTQzNzcyMTMyYThjNmRlOGQ5OTVhMmRiZWVlMWE4MDlkMzMzYTc4NGRiNDc2NzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3NWI0M2JkZGQ5MjUxYTZjM2ZmMzJkNzViNWZkNDZjNmE4NjIwNGI4NTNkMzA4YWQyODc1MDk2MjYyMzhmMGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViMGZhZjRjMzNlOGRjOGNlZDUyYTFiYzRmOTkxY2VlMzZiNzA5MDMyMjRjNjg1ZmFkZGYwNTZhMDE3YTk4NGMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/wealth_cones.py#L267-L300",
+          "version": "repo-lines-v1:sha256:340d4c8e85c91c5c387a4ea641a19ec96c0ab944744830869bace594cf8f2c72:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwYjA1NTQ2MWM5Y2QwN2Y2ZTc3YWMyOTI3YzMwMGU3NzNhYzIwODE2MTZmYjRjZTA1ZjQzMmI4MTliMmYzYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1MzEyOTVjZjY0ZjA3Zjc0ZGY4OGQ2ZWQyMTMwYmUwNTE5MGQ4MjExNjFmNDNjNGMxZDRhZjIzNDExMDJkYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjZjI1ZjI1YjI0ZDZlNGQ0NjNmM2ExOWQxNzFmZTJiYjk4MGQxYTMzMWFkOTcwYmEwM2I5YmY3NTVkMzcyZjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_17046a2cbc704e8ebbd64ea795bea821",
+      "statement": "Native transaction analysis derives activity only from supplied fills, keeps supplied net returns authoritative, and normalizes observed and incremental costs by beginning NAV; missing or nonpositive denominators remain undefined.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/transactions.py#L101-L138",
+          "version": "repo-lines-v1:sha256:342ef4c0c0f127b509f1c21e02798261e234d23a81708e4892447125d768b832:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZTIwYTZkMmJmYzZjZDVkMjc3M2E0NTViN2FkOTRlZGFjYjE3NThjOWJhMTRmMzgzYzQwZmE1NDEyZDcyMzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZjOTE0MWU5ZjMwN2IzMzA5OWEyYzA0ODcxZDE1MGRiN2I3OTU1OTZkY2U2ODdkOGQ2NTg5YjQwNWYyNDFjM2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVlNzJkNGVkN2NkYmM0Yjg2ODAwZWEzNTA3ZTVhNzNiODJjYjUwYTNhYTdhNmE3NTVkM2Y2OTk4YWYyZTk2NmEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/transactions.py#L194-L281",
+          "version": "repo-lines-v1:sha256:e126b4f00fe87eb99ef60e24188f040d52fd440879502f5c0f311b02d9f58a57:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkMmJhMzNlZDdlYWRmY2ExZWJlN2JkMDllZDQwNDgyZDA1ZDdmZDMwYWM0Y2ZlODhiN2Y5ZGJkNmQ5NDZiNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3ZDEzMDM0YTJkNDFhYzRkNzFhZDNlMzA4YmIzODg5ODczOWM3NzQ3NmVlNjE5MDIwNjY4MmQ1NDc5YmU4MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4YWRiNzliZDVhYmY3NmYxMTNhM2IyOTY5YzVlMDVhNjFkM2IxNGE1MjI4NzU2ZmM3ZTVmNThiNWIzODM4Y2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYzYjhlN2ViZDc3Yzk1MzQ1MTJiN2QwY2RmZjM0ZmQ3ZDZjYjJlMTVmODZjNGZhODNlNDY1NjZkYzdlODM0ZDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/transactions.py#L24-L34",
+          "version": "repo-lines-v1:sha256:1c3cf711572a545984dcd49614f373f08ab0773982dcb22188d45da2d145b3d1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIzYjJlNzNiNmExNGI4NzhhMWUwNDhmYzEyNjZiY2ZiODZhZDE3MTM5NGU0YTlhMzY2Yzk4NjRlYmZlN2ZmNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzYzY2NWU5YzFhYmQ5NDE3ZTM3MmU0YjY4NDM5ODE1OGI2ODY2NWVmYTczZWFlMjQ0MzZlMjgwNzY4ZmY5ZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_18727e24062f415a9740df2938ae7d0c",
+      "statement": "The legacy Pyfolio slippage adapter uses compounded closing NAV, unlike native beginning-NAV transaction and capacity scenarios, so the two scenario conventions encode different capital timing.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/capacity.py#L250-L296",
+          "version": "repo-lines-v1:sha256:fa27a93a88cdb6cb4d76fafd87ad551e8bb791534a7726c4b5b6d1addd3ad758:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmMjYxNTUzYjM5NTY1ZGNiMGM3Mzk0OTUwZDM1YjY3NTU5YjQyNjliZGJjZGIzNzliZjFmNzk1YmFhNjJkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhNDdlNmNiNDYxNTQxOTFjZmZiNjMzMWMzMTBmYTZmOTkyMzNiZThkOWM0MTE5MjcxNGYxNDlmYTQzM2RkMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyNjA1YmU2YzNkYjYwZWExNGUyMTJiZTY1MmFjODI1NzI1OGMyN2E0YWFhNzM4N2YxNzQ2YTNkYTI2MWE0ZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/capacity.py#L198-L220",
+          "version": "repo-lines-v1:sha256:e17e9d4de2f06d1ac699f613c3a340e61e49556a94cdef223ecf1f18a4a57ef2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5ODE5Mzc4NGFhMjVkMDJmYTU3Yzk5ZTE0ZDcwNWQyZTQ5ZmVmY2JkYzkyMGE1OTMwNjA2M2E1Y2RlOTAyODYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2NzI3YmE3NTQ3ODE4OGIyNzBlNzAwODg2YWFjYTBkOGVjZDM1Yzk2NGNkNDE1Y2U1ODYxMTU3NjAwYzhkNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM1YmYzMGNmZjQ1ZWIxZjkwNjg2YWU4YzlhMDc3ZDA5OGZjNjdjMDQ4ODFiM2IwMzkxMTQ2YzBjNGE0YTQxZWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_30b5f18ada4940fb810f9e17c6f34a58",
+      "statement": "Capacity analysis requires declared complete holdings and supplied compatible market units, uses lagged known-at dollar volume for liquidation, treats missing coverage as unavailable, and labels capital-scaled quadratic impact as hypothetical rather than executable fills.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/capacity.py#L178-L235",
+          "version": "repo-lines-v1:sha256:51dde2bcbaa2c37a153a35f08724f5dc152b68f6d2cec51fd1d6b32ebb322a80:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyZmIwYTQ2MjBlZDhjNDY4NGZlZjVhY2FjNjY2NDViZjk1OTkyOGVjMzdlMDM3Njc3NzJlOGIwMzNlZmYwZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNTVhMWYzOTMyZjM2ZDI0YTY5NjM3MDdhODFhMDNmMmIwYzI4M2JjYTNhYTE5MDY4MzFmZTE1NDI2NDg4YWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzYmQzMGRmYzhkZmY4ODFjMmE3NjU5MWJlZmRhMzJlNDA4OTZiNThiZjlkZjE1OThlZmM4NTg0NmQ2NmNmNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwNGNjNmIyYzcxNmQ0OGI2NjUyOWIwNTY1YWFhMDE1ODgxYWU3NzJkM2EwYTdiNTQ0ZmY4MWZkMjFkNjI3NTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/capacity.py#L236-L304",
+          "version": "repo-lines-v1:sha256:eb1a28735096ee65f63a68a7cb89b8ae4dbe3ea8f143e79aa3e18ef4d53b3c9d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4MDZlYzJjNjVlMTk5NzU4YzhmMWUwOWQyMDUwMTdlODM2NDRhN2MzYWM3ZmM2OTI5ZjMzNjQzMGFiMmY4ODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkOWRjMDZkMjE3M2RmMmI5YmNhMmY4NGQ3ZmZkMTYzY2IxOGQ1YWE2ZTVhNjM1ZTViZjY0NmJhYTFkYzhiYjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyNTY4OWZmYzQxZjU0MWEzOGMyZjEyMGIzMmYwYTIxY2JkNDAwNWUzZTk0NzM0OTA5ZDBiOWIzNTViNWNhNjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0MmEzYTE2ZTBmMDc0YTQ5YTg0MDU3ZjQyMmE3Y2U3YzFkZWNiYjQyOTAzYTkwMDVmYjIxMzc1NjExMWNkZGUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/capacity.py#L32-L83",
+          "version": "repo-lines-v1:sha256:bd5b6e774364bd7e08801042e4305690cc04a178a40701cb6b3a3c4a0ba00227:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4MjcwZWI5ZDY3Mjc1YmY0YjU3YzRjMjk2YTQzMDc5NmI2NmY2NWY0NzA5NDRmODhkOWY3Nzk2OGYxNTQzNzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzMDA3ZTJjZWVhNmRmMDYzOGRhMjcxYmIwNDQ3OTFmYTJjOGE5ZGU5MmU4M2I1NzdkNjQ3NTdmYmZhZWI1YWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5MWM2YjZkNWQwNTUzZWM4ODJlNWE5M2RhNjZlZWJjMDI5NjEwYTEwZjZhYjQwNjhmYjNkNTgwNGU4NjE3YjYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/capacity.py#L379-L420",
+          "version": "repo-lines-v1:sha256:e1b1dfa0f9b04835423158751cf0b00f04648254d50ce12d9d066004d242ff67:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzMzU3ODg3OGJmNjAxMzM0OTBmZWJlMDFjZTEwYWZmNWE3MzZmNzZmMDA2ZTQ0OGNjZGUyNjAyZGJmOGQ1M2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlYjc4NGRiNTUzZmZiOGQwZjQxYWZkYTNiY2FmMDU0MDBkN2M0YjkzOGM1Y2EwNGM5NmZhZTcxMTZlYWY5MTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUwYzA0N2MwYTYwYmRlODRiN2UyZTE5NTE3NzMyMjUzYjA5YWYxMjIzOTI3ZGFhMzczYzAxMTU1MTFhNGQyOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjNjkxMTczM2UyNGQ5N2UzYmU4YTBlNjZhNGEyZjUxYWFmZDA3ODE3OWEzYzg2ODM3ZWU5ODlkODRmZmI1YmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_15f628ce99814d54b5ce3d66d7a8f5e6",
+      "statement": "FIFO matching requires an explicit flat or supplied opening state, preserves actual fractional execution matching and unknown costs, and keeps optional mark-based synthetic closes separate from actual segments and remaining inventory.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L389-L428",
+          "version": "repo-lines-v1:sha256:2a628ed6d79b8992286f6bb3086fb0b12407faad361c2545011e63e8869a72c7:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4ZTA5MGM2NzUyZDJmMjM2YjA3Y2RlZjNlNTQ4YThkZTFiOTA2N2VjZjY0YjBjOTZlNTMyMTU0NDAzYTg5NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiM2RmMWQxMDU2YzgxNjNmNGFlMDE0ZmIwMDQzZmVjOTNhYTEwYzk0NjE0OTk4YzM2NTgxMmMwMmUwZGQ3MjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEwOTBkNzE0OGMyNjY1ZGFkZGVlNmFmNjVkNDQ4NmQyOGI3YTg4NmFjYWQwZDExMGRlYzkxMTQzYjNhZDA5NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0NDM3OWQyMGVkNWI3OTg0ZGYzNmIwZGNmZTQ1MjI2ZjZkZjgxNDUyZTBjZThlM2FjODQ1ZmZiZjczMzFmMTMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/fifo.py#L23-L44",
+          "version": "repo-lines-v1:sha256:3570e2af803bd4d88a0f399ad676b9698b1fc9bdcb14f3a229fe53fde3015809:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMWJjYzA5NGVlNzcwOTlmMWYyYWRiYTlkNDZlYmRiMGNhMDFmN2VlZWIxMjQzZTA5YjJhNDdhYzk3ZWUzMDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4ZDk0ZmM5NzQwZDU0ODNlMDEzNGI0MzM0YWZhMDc4MGQ1N2RmYTlhY2RkMzk5MzI1OTNmNjkyZGRiMmJiZjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlOTJiYjllNGVlYmYzZTE2MDZlODMyYTlkYWY4ZWUzYjU0OTE4YTkxNmViNDliYjhkNDkzOTkzNzdlZGY5N2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE3Mzk3NmJlYjg5NWI0OTJhZDBkZmZkZjZhMTMyZjI4MDZmMzhjMGE2MzliOThhYzdmNTUyNWExMDkyNjY2ZWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/fifo.py#L275-L340",
+          "version": "repo-lines-v1:sha256:4fdc01aa5b69e9bddc3638651081755594206ac3935795186deb38c4a4e6019d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4MzIzOTNhZWEwNTcwZGY3ODJkZDg3NDM2NDMwODkzODNlZGVkZWI0YzI5NDBjMjMxOTQzMTliNjcyZjcyNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiMTMxN2RlMjZlYjA0NDhhZGU2Yjc2ODJjZGI4ZDViZTBmNTQyMzFjNDEyNDJkNDE5YmQ2YjFlZGY1NDhiNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBjMGM2MDZiMWQwZjI2ODk2OTQxODE0MWEwNzUzY2FmZTUzMDIxNjI0NjkwZjVmMjU1MjAwNDYzODg2OWUwMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4MzJjNmU0Nzc1N2M0NTg1YzRiMzQ4ODUzNmVjZTk2YjljMTRkOGRjZTFmODVkNzdlZTZlZTk1MjgxZTJhNGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_82adb9b86728446b8de93866e17568df",
+      "statement": "Explicit intraday replay is a full-notional cash-price model over complete opening inventory, actual fills, and supplied known-at marks; it samples event states and does not infer broker, futures-margin, FX, dividend, deposit, or corporate-action accounting.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/fifo.py#L45-L75",
+          "version": "repo-lines-v1:sha256:5ad96dab6058a50138869b96df632e0ead3415c1e4f083f22ea23fd1b74e33de:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmYjVhMTI0OTBhYmMzZDVhZWE2ODk0MzI2M2M3YTYwNTRmMGJlNmY3MDk3OTkwZWM1OTVlODBkODIxOWQ5YzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMjg1NTZhNzg2MjhhOGRmMzY4MmU2YzQzMGNlZDhhYzczNmU0MGE0MTdiY2MxZDhmNGMxNjgyY2NmYzhkNTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5ZmFlODllZTU5Y2E2MDdlOWQ0Y2RhMjU5OTI1NGQ0ZDc5YTcyZTdlMzkwZjhmMGQwMmRiZmQ3NzQ1OTUxYWEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/intraday_reconstruction.py#L104-L176",
+          "version": "repo-lines-v1:sha256:c842a6d87bb92a40ffdf9e37ea32e23e6ca63764463b4dc8352f2a5a3f1d833d:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkOGE5ZTljMzI1MjgyMGM2NWE4MTY1MjBiOGRiNDkzMjI4MDg0OWVjOGM3ZDJlYjYyNzJhZmRmZWJlMDU5YzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4ZjlkMzhiMGE2NDYwZGMwMDRiNTNlNDBiMzQ0NGI3ZjkxYjAzNWEwMWYxMzM4ODYzNDMzYTI5YTU4NmViZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4MDhkMDgyNjM5Y2RkOWI2ZmY5ODcwODM3ZGViNGY0Y2U5OGZiMWE0NjBlOTJhZWFkZmJiNWMzZjY4MzA2YWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkMjJlMzFkMjk0MjBkOWY5Mjg3ZmY5Y2E3ZDlmMjM3MjQ2NThmMzliZGQyYzY1OTAyOGM4ZDQ0NWQ4ZTliODQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/intraday_reconstruction.py#L219-L245",
+          "version": "repo-lines-v1:sha256:b18f62d2891607a9851395257d70493a4c7d49b1b3c1f1c754b309958c10850a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0MzNkMGVhOWVjZjJmMzljOWE1MDQwNzM5NWVlNDExNzJmZTY4MmM5Yzg4NWEzNTA4Zjc1YmRlZTE1MWVmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyNzIyNDlmMDYwYTRmZTNmZGQ2N2E0MWI2MDNkYjUzN2U2ODEyZjU0YzQyMGU5YTYzNjU3Y2U0MTRlYWJmNjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE2ZjBhZDlkZDBmMTY4ODFkZjVmNzk1ZjNmZDFlYzE0ODcyMWE1MDkzZDc5NDNhMWZlMjY5OGUxNWE3OGI4MjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ODEyYjMzYWVjZjgyNGE5NzkxN2UyMmE3NjcxNzNmZWIyNTRmNGEwNDNjM2VmZjE2NDVlOTc0ZmFhYzZmNjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/intraday_reconstruction.py#L36-L84",
+          "version": "repo-lines-v1:sha256:5debca7778772d0b8832d79ed5acdb2204dd0329b1164f5e45d10ac834faf150:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5NTA1MTgwYjdiZjk3MjlkNWRiMTkzODA5MDVhOWFlNzVlMTJiNzA5MGY5YzM3MGI1YmIxMWE2M2VlYzg1OGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5NWZkMDIzNTYzNTgwMWI5Y2I5YTM1MjMxMWM5NmY5YWE5M2RmYTFhNTc4OGQyOGM5MTAyMzdkMjdjMDAzNTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MjIzMTA2ZmQ4NzQyYjcwZWEyMzNmOWRjMzU5ZjRiMDJiYmIwNjliNzI4M2VlZjc2MjQ5OTUxNmJkN2I5YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4ZGNmYzI0NWI0M2UxOTYxZGM1M2U2ODZkMTU3MDk4OGY4MDc4Zjc4Nzk2YmRhOTQ2ODg2NTcxMmVlYzI5MWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_180d751074074c61956e2e671bd1524e",
+      "statement": "TradeAnalysis converts completed trade records to enriched metrics, applies explicit filters, ranks worst and best trades by cash PnL, computes aggregate statistics, and rejects empty input or an empty post-filter sample.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_analysis.py#L849-L952",
+          "version": "repo-lines-v1:sha256:d5ebf936a5e57cba3440e96f982c9e2be53d1351d2ce533faac2bcbd5ab2ee50:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2NzgzM2JiMzRkZGIxYWViZTk5OTI2NTEyMWExMWNlZDU3NzUyYmVmNDM0MWRhZWIxMjU1ODBjMzgxODRlNmJhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyYzY4NjUwOGM4ZGNiNmQzZmY3NWNiYmQyZTIxZTZkMDRiNmM4ZmJjODU5ZGUzNmVmOTI1MGU5NmE1OGZjNDg4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiM2RmMmFjZjA2ZThjM2YwM2M3MTM1YzZlOGFjNWE5Y2E1NDMyYWJlMDZhNzRhY2EwZmRkOWE1M2EwMDhmOTg3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmNDFiMDZjOThlM2YxN2RlMDE3Mjk2ZTE3NWU4YTRjMGQ1OTBiYjdiYmNlMzYyNGE2MzRlMWVhYWI1MTkyODQzIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_analysis.py#L954-L1102",
+          "version": "repo-lines-v1:sha256:7375c1e15fd0d3c650669c84a21a6d817c9383c95ad200c2b5dc8ec1f467797b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MmNlNzgwNDk1NjA3MGY2OTg2MGJjZTI3Mzg0MTA0ODljYzIzOGU0NzM3NGVhMWZjMjFkZWFmYWM4ZmZiZDE4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxMDY3MTk2YWM1YzBiYzY0MzUwZDUyYjgzNTQxYWQ5OGIwOGY2ZDQxODBmODE1YmQ1MTkzYzdkMjlhNmEwNDk5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4NTk1ODlmZGI0NzU0MThlZjQxZjFmNDBkY2Y5NWU3YzIwOWNhYjdmZjZkOTk0MjYwNDc0MTUyOTQwMWY2NzYyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmNzQ1YTlhNmNkNDAzOThmNThkZWNmYjMzMjhmOGNhNWQ0ZTgxMjI1Y2I2N2IzODdiOTVhNmE2NGNlYTJjMGQzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_7518900e6cf447fdbce3bf73b278f58b",
+      "statement": "TradeShapAnalyzer requires timestamped features and shape-aligned precomputed SHAP values or computes SHAP lazily from a model, then supports trade explanations, vector normalization, clustering, characterization, and hypothesis generation.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L132-L153",
+          "version": "repo-lines-v1:sha256:c7cc14cc5b294d01bdceb4ee504fb776416c9bd425f22a98d5b3d29c8dc76858:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxZjEwNjZlMzMxMjc1NTAzYjYzYWMwMjc5NzkyOTBjMDA3YmMzMWJjMWIyZWU4ODYzOTgxYmY0YTgxMGM4ZWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4MDBmMzQ1OWVlMzQyNDQ5ZTIwMTgwYzMzMzJjMjU4YjAwMDkxZGM0MDVmNGI0NmQwNTI1YTg3YjVkN2U5ODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwNTNkZTFlMTIwZTExMjUwN2ViODliMGUwMTBiNWM1NjhlOWNjYTNmOTc4NGVkNWZjYjU1YjQwMzA1NzUxNjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_shap_diagnostics.py#L195-L332",
+          "version": "repo-lines-v1:sha256:107f4e36702543a84b6f6c69e14312ae1452184e325a2599a9b3cd8d0fa6226f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlYmY2YjEyYzc3MTgyYWUzOWQ1YmEyNTQ5NGJkODVkYTZkOGVkMWY0Njk1YTlmOTNhZTVjMTliMGQ2ODBjMjRiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkMDRhMzRiZjlmZTA4NzBlYTUzODU3OTc1NzljYTIxNDcyMzM0YzhlMTRiYTM3NzNjMWNjOWJjNDdkODNjZDkyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhMDQ5YmQwMTYxMjBhNDQ4ZjJjNTY0YWYzZmEwYTVhYzFmMDUyYjY5YTk1MzMxMmNkNjc3ZmVkYjUxMGVmZjE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzNGYzMjE0MTFkNWE5YmVjZTQ3ZTY4ZTg3ODJhODQzMThhODQxNGYzYjE1ZGNiNDVkZGZhNTZkNDNjYTNmZTk2In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_shap_diagnostics.py#L334-L494",
+          "version": "repo-lines-v1:sha256:adbd36e657c9779ec70b3fb628b02884549897258f1f43653a8debfe05b4c29b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmMTFiMzc5NjgwZTk3ZDQwNWFkYzBkN2I2ZmJkNmUyMGEzNDFkNjk0MGU4NDhjNjdmZGU2NWI1Mjk4MTU0NjBkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxY2QxNTA3ZmMwNDRhNjFmZjk3MGRkNDJkMmIwMGZjOTdlYmI2ZWNmMGM1MTEzYzk3YTE3MDdlM2M4ZDg3MTQ0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5OWViNTY5OThhYTc3OGE4ZWMyN2MyZDU2MGVhZjdlOGVlY2FlZGE2MjZiZWE0ZGU2OTJhYWNkNTYzZjk3N2U2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyOWMyYjc0ZTY0ZDcwOWU3NTQ5Yzg3MzU2ZDUwNmM5NTk2OTk1MzQ1YTNmNWY4ZDRiNWZhNTI4YjY0MjhkYzk0In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/trade_shap_diagnostics.py#L60-L193",
+          "version": "repo-lines-v1:sha256:1c48a2c3bc42ecf1a5372a450a94d182c422e37a6551ee914ce60b4c063d5b2f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlMzYwYzE3YjdkMzg5NDE2NWZmYWE4YzNkZmQzZDhjNjUzOWIwY2IyNTEyNjMwYjNkMGY1MWQ5NWI4YzQ0MWQ0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjZmYwNTI1OWVkZTYyOGNjZDUyZDU3Mzc0MWJhOGQ1YmEyYTA3NmRlM2Q1Y2ZkOGQxNjRlN2E1Y2Q2NTVmMWNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4ZTQ3YjI5OWExNGY3YmVkMTNhZjliY2MxY2M5NTczMGUwZGViNzgyYWQxMjk2YWMwMWNmNjZjYmJmY2I4YzkxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzN2UwMjQwNzIyMDcxNzc1ZDdiZTliYjA0MzIzMDFlNzUxNGFiZWMyZjQzYTAzNWE1MDIzMTM4NzljOGY2N2ZlIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_682e23944c0f4a6985db7f44585db7e6",
+      "statement": "FactorAnalysis is the returns-based estimated-exposure orchestrator for static OLS, rolling exposure, return and risk attribution, validation, timing, Kalman analysis, caching, and factor report figures.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/factor/analysis.py#L159-L244",
+          "version": "repo-lines-v1:sha256:783551eaf1ab8e005a56430dcfde74c15ac69ff799261c9d99ad95db05b7faa2:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0YzUwODIxZmIyY2YxNDNmZTc2ZDQyYTA3ZTMwNzIzNDJjNWRjN2QzODgxZDQ5YzkwNzAyMzAwYjg0YWZmMDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ODQ3MzM4MmI1YTBkNjQ0MDI4MmIxMGQ5OTEwMjk2ZmE4N2RjMzBlNDVhZWYzMmNlYTk0MDg3YTAyMjYxM2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyOWRmMDRlMGM1MWQzNDk5MTI3MDQwOTUwN2VhZmRmZWRhNDNiZjYxOWFiNjJkOGFiMzgyN2U5NzM4NGJmNTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/factor/analysis.py#L25-L157",
+          "version": "repo-lines-v1:sha256:3989921f18eb7765dff174f225b6caf795644aedec31255cc3ace74dff5149f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzYzg3MmM4MzJmYWY0NTdlMDBlYzg2Mjg2ZDliNjk1NzlmYjA3OWVlNDdiN2ZlNjI4NGUzYzUyNmIwNjk0Y2EwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiY2EzMWEwZWMwM2Y2ZTczNmUzZDQxN2JmNWVkOWQ2Y2U1NzkwYTg3YjE3OTYwMDBmMWY2NDljYzJhNWEyYmM0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhODg0OGVmZTFjMzRiYmVmOWNlOTYwNGRkNWM1MmU4OGJlMzM1YWM3NTFmYTQ3ZjY4YTY3YTQ1Y2VjNDYwNjI2In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_32c2aed399e34a83895d609dd582ba9e",
+      "statement": "Holdings factor attribution does not estimate betas: it requires complete beginning-period NAV weight snapshots, causal known-at weights/loadings, interval starts, and loading coverage, and produces additive period and wealth-linked or arithmetic cumulative contributions.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/factor/holdings_attribution.py#L106-L200",
+          "version": "repo-lines-v1:sha256:dc16f6ff951f5f4b525e91dcc50aea9b322bb334a62587015989b43dbd5e8046:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExM2YzMzZlMzhhMDQxZWJiZjQ5YWE2NTI4YTU0MGYzMjdlYzRlODdjYTJiZTIwNjg2YzBlNGJlM2UxMGZlYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1NGRlMjlkYTMwMzllMTZlMDAwYjUxMGYyOWY3NGVmNDUxM2RiYTBmNzgzMjRiYzI2OGEyYTgwNTJlMDQzOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQwZTBjZDc2MmEzYjVhMjA3M2I0NTNjMmVkZGFkZWVjZDEyMmQ0YjRkYTJiOTA2YWYzMTRmM2YwNTYxYjE5MzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/factor/holdings_attribution.py#L231-L366",
+          "version": "repo-lines-v1:sha256:5b98b9fe6e81d1f888130923ad5adaee5907b992cfe21adfa283e6c0be3f956a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5ZmMyOTYzMzk1ZWY0NGJlNTNlOWZlN2YzZGFhZWViNWIyMmRiNzliNWUzYmY5MTA0OTNiZGY0YTEzYmE4MGQxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2Yzc0OTEwYWEzYTY2YWExODM4N2M3NDE4NDNhNGFjNzkwNWEzZDZmZDQ0NTJlMjQ1YzI5MzZhNDI1NGRiNTcxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L1016-L1072",
+          "version": "repo-lines-v1:sha256:405d1a3527209dad3374af4b3ca1caff83061ccad26de44d65f4f0e0d1f9a4b5:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1ZDkzODViYmFmMGQ2MzMwY2Y4OTcyOWRjOGNjNGRlY2RiNTJkYjg1YjI0NWFiMDViYjg1OWY2ZjIxMTU2MzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmMDI2ODUyMDBiN2Q2MzBiNThlNGY3YjdlNTRmMmQ4M2M5ZjJlYjFmZmYxMGMwZTIyOWQ3ZWJkYjM0ZjA0MTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2ZjAyMDliNTEzZjJkNzBiMDU1MzRhMGRhNjlkY2VjOWVmYTUwODVhMTQyNjc5OTdiYmIwMjU2ODY3M2ZkZjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_002983bc9a5244be8f8780175e8a6bf7",
+      "statement": "Portfolio tear-sheet assembly automatically computes holdings only for complete owned snapshots and otherwise consumes explicitly prepared transaction, capacity, intraday, regime, live, and wealth-cone result objects rather than selecting those analytical methods implicitly.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/evaluation/portfolio_analysis/analysis.py#L1188-L1252",
+          "version": "repo-lines-v1:sha256:e0045bde7017eb3bb9ef51e0f016e582279da019b3986dd6a46a3dc2225425fa:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhhNDBlNmQ2MjFmMGY0NDFjY2JkZjIyMzdmY2Q3MTk2NjBhZjkzNGM5YzMxZjU4ZmUyNTU2YjgwYTNjNjJjODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllMWE5ZTQ4N2JmMWI5YjFiZWFkYjI4NjA4NWVjMmY0NDY3NWJhNzEyN2FjNjBjMGNkYjhhMzExZjAwMWZhNjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyNmUxODZjMDk0MmIwODEyMjY3MWJhYTVkNjcxMDUwMjU0MWI0NmVmNDQ4ZDFjMGJjMDIxYjU4ZTA4NThlYzUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}

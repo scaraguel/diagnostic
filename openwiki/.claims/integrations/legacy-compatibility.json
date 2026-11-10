@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:560d44a963c840474c633fd75853d87986f0bcb04e24704ea4f72322a6bc701a",
+  "claims": [
+    {
+      "id": "claim_0744ef7bd1f84c2c94e85579f56f8b3e",
+      "statement": "The compatibility package is an explicit migration boundary: it exposes Alphalens, Empyrical, and lazily loaded Pyfolio namespaces while leaving native Diagnostic defaults unchanged.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/AGENTS.md#L11-L31",
+          "version": "repo-lines-v1:sha256:884113f8ea0a00619c06c6253918b437e5cf93a834d5c8e09b774c91e5919c1a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyMjhiMDg1N2Q1NmE0NjRlNjk1NzVlMDFmNGUzYWZjMzRmNWQyYzUxMmNiNjFhYmFmYWEyMmU2ZTU1YTFiNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVkOTY2OWVlNDQxNTJhNmNjZGZlNDQyNDVjOWY4YWRhYjMwZjNkNmJkODMyNTliMDgyOTQ0MjJlNTdmNDQ1ZDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZjMDliZWQxNmMyNDg2ZDQyNzBkZDQ2ZmIwMTNjNDZhY2EyNmJmMDhlZmRlMzMwZGUzZDVjMDllMDc2NThiOWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/__init__.py#L1-L17",
+          "version": "repo-lines-v1:sha256:8fac096344dbfa8de476176723116bbd5b8821cff52b7f65c6f790476af3af89:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlMDdlNDQ1MWZkMGY4ZWQwYjhhZDMyZTU0NGE4ZDNiNTU5NTQ4YjAxN2U5N2E0ZjE3ODlhMzRlMGE3NDM0MDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmYTUzM2M0ODYzNjcxZjBkM2IxNmU2MDQ4ZTIyYTZkNWZiM2FmZTdlOGU2ZjkzNTM1NGY5ZWVjZDVhZTg4MTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/__init__.py#L1-L30",
+          "version": "repo-lines-v1:sha256:d8c92deedab49df72c08c88c0a326ffab26386b0d4d9942717747dedbf155c77:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2NGI5ZDFhNGU5OTg0NjU5ZWViNmNmNDY1YTVkMWQxN2JkYWYyZGM3OGQyNzkyYTE0MDQzOTU4ZjFkOGQyMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a16370d68fe4902b30a212cfbc93c6e",
+      "statement": "Alphalens preparation adapters validate and translate pandas factor/price inputs, then delegate forward outcomes, quantization, and cleaning to native price-outcome, Polars bucketing, and prepare_signal_panel kernels while restoring original asset IDs and attaching diagnostic provenance.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/utils.py#L1-L12",
+          "version": "repo-lines-v1:sha256:7daa974b72f4772603e1bfe1957fac54af2fed0bbd63fadcff5279fe7ce8835b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmNzk4MGM3YTM0OThkNDgyOTk3NzdmYmI2ZTIzM2M0MzI3NTk5MDc0NmIyOWVlZjI3MjQyMjZlZWQxODdkMjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiN2MxNjY3MTVmZDJmYjliZTNlN2U2ZGM4OTIwZGVmOTJkMzQ2OGY4MjFhNzdkY2MyZTViYTkzOTRiMWQ1Y2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2MjgwOWIwZDEyZWY5ZjZiNWM2MTY5M2NkMGE2NWY2NWUwM2UzOGIzNGE5Nzk5MzVhN2UzZGFlZmUxOGE5N2YifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/utils.py#L181-L299",
+          "version": "repo-lines-v1:sha256:3d1d6f94a7926d70b3790b7f5128251787fabba022486184da743e0073762bdb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkYTIzNTRjNDM4N2EyYWRmNjMyZTZhOWY0YmRjMmY5NTM3MTI5ODRmYTBjOTZjYmNlZDUzNTFkNGQzN2FiNDdkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwNzRkN2MwMTQyZmJiMzJiN2ZlMjFhNjRjMjljYWM3NWFhZThjYWVjNDMxMjExMGViZGQ4NWE4MDhiMjQ0NzIyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkZmJiYjUwNTRkYmM2ZTAyYTc3OTFlNTM4MzJkMTY2NzkwZjcxNWM0ZmQyODJlMWNmZTk4MTI3YjFlMjQ5Njk5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/utils.py#L302-L398",
+          "version": "repo-lines-v1:sha256:65a25c39433549a15cb392c4616510fc67d97782c6b211e138064fc94f48cafc:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiNTRlZTcwZDUwMDA5NTgyY2UzZGE4OTAwMjg4Y2QyMjkwMTkzZWU5MmEyY2FmMDk2YTJkN2E5NzBjMmE3YTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2ZTI1N2I1MDMxNmJmMTViOGJmMGVmNzNkOWFlMmI0YzM5MWZkMWU4MTU1MWFjYmY5NjdiMGVhZDg4YzM5OTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzMTg1NjY0NWNjMDU3ZmFiMGRlYmVlNTEyYWZlZTY4MWEzMDhjYzEwOWU1ZTdlYzI1NjZiZWMxZGM2NGIyMzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkYjk2ODk1MGM3MmY0NzMzM2RhMGQ2MmNkNjRmMDY3MTA2OTI4YWU2YjhlODAzMGVjY2E1M2M5ODY2YTZjOTIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/utils.py#L65-L116",
+          "version": "repo-lines-v1:sha256:d48679e88b04080041cb41d10ec39803f4bf256f4fc0ca945d97527dc3d71171:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5ZTA4ZDNmMGRkOGY3Y2RhNzU4M2Q4Yjk2ZjRjNTg3Y2U1MmE4MDA2M2U5M2NjM2Q5MmU2NmY4N2ViNTZjN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3ZTM3OWEyYmVkZTY1YWRlYzE3YjUwMTZlNzViMGU1ZDM2MDAyZjEzNjBkNDA0YjY0ODM1NzAyNGEyNzdjZWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5NGNkNWQ3NDg4ZTczNjg1YTFiNjQxN2FiMjU0NmRiODU2YjYxZTY4MGFiZjEwZDI0MTAxMTIwZDllZWFlNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0N2Q5MWYzM2RjMzdmMmZhYjlhYmE1MTRmNmZhYzQ4OWRiOTI1NWY2ZTVlYTMwNDk4ZGIwNzRlZDE3ODM0ZTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_49f6c2a6eb7d4df8a2c7f28e97477895",
+      "statement": "Alphalens performance and tear-sheet adapters reuse native signal portfolio, regression, IC, quantile, turnover, event, PreparedSignalPanel, analysis, and report-generation components rather than implementing a separate factor-analysis engine.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/performance.py#L1-L39",
+          "version": "repo-lines-v1:sha256:56e443c974863afed4b1de7f4409e907605ea4e1b8a24e6dc188770c865d9971:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxOTgxNGNlY2VkZGUwZTNlZjkyYmU5OGY3OTY3ZWQwZTVkOTM3YTY2ZWRlMDYxYTk0NTUwZGNlOWE0NTM1ODYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2NDFjMjBlZDVlNDkzZDA2NzQyMDQxYjQyZjA2MDY4MDA5ZWZhZmM0NWI0MDY0OTQ0ODNkZWQ3MzY3MzFjNTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFiZDZmNDY5MzhiNmEyZGM0MGM5NGYzNzYwYmM4NDk1YzZhMjY0MTIyNzc1YWVmYzJkMmY2ZDNmZWMzMWNlMjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/tears.py#L27-L52",
+          "version": "repo-lines-v1:sha256:af56ea08b8aad2d8225835684e2263fcc29b68a33cefb158c7cb35a61a58d38e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyYzlmZWZkNmVhZDMzYjdkM2VhNWFhZjA0NTdmZmY5MGI1MDRkMzg0ZTkwODA0Zjc2MjM4ZjIyMWNkOGU2MDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxMThlZjYyYjgzOGYxMGZhNzIxOWNiNTZlZjBmYjEzNzg3ZTQzM2U3YTA2ZGMzNGY4NmMyNDczMGFkZjRkNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxNWUxZmQzZWRjMWIzNzYxNDFjNWI3MjEwNWFiYjViNzcxZDFiOTU3YjJlNGQ5YmIzNzE3YWYzYjI1NjI0MmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiNzRiM2MzNWJiOTRlNzc4NzllODYyMmNiOTM3Y2I5Y2FmY2M0ZDc4NmRmY2VlYzllMDBmYWUwMzk4OTQzZTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/tears.py#L82-L173",
+          "version": "repo-lines-v1:sha256:de4d90b036c419bbfbcb5bb15fe6439a8681ad2d3ba776f23847965e1719e982:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiNWM4MjYzMmZjODJkNGIyYzM0MGY0MjU1OGJhM2RmYTMxYzc2NTVkZjZmY2MxNjhiNGZkY2U1N2ZhYzYwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0MTgzOGU0NWZlZDI1M2ZlNGI5NzBjZDNmMjM2Nzc0ODM5ZjA0NTEzZWIzNzc1MDIxZWI2NzQ1Mzc3N2ExZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5OWJhYmYxMDQxNWUyZDAxZDdiNDJiMjk4MjQ3NDU1MTI2MGMxZTZkZTkwOWYwOTJjYmI2M2QyNjFhOGI1NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkZWJhMmFjYzdhMTEzNTZmN2VkNjNlM2I3NGE1MWQ2Y2FmOGI0YTFmNjM2MzBjODRiYjg2YjI1MzAzYTlkNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3d54d1dfd96a4da9bfb95a4475d0918d",
+      "statement": "Empyrical compatibility retains legacy-shaped periodic risk-free/MAR and labeled array/pandas behavior while delegating core compounding, annualization, drawdown, risk-adjusted, and tail calculations to native portfolio and risk kernels, with explicit validation and metric-specific missingness.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/empyrical.py#L1-L16",
+          "version": "repo-lines-v1:sha256:14e45cba961b608ad6227b4f213343118767f520be544acd790c1b5b3190abec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4YTI3MmZmYWJjZWY2ZTY2ODgyOTliYmYyMjNlMTU5YmY3ZTYxYjNhZjUzODFiM2FiYTQ1ZTAxYjRmOTIzYzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZTA3NmFiZmZlMTA1NmE3YmNjMjc1MmExYWQxYWVmOTY2MDU2YzJjZDJhMzI1ZTRjMzRmMjkzODcyNTIzZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmOTdhNTM4OGNkZTNlOWNhMGI5MGExYjE4NGZhYWYyYzcxNGQ5ZDFiNDc5YjcxMTA2YzRmNGYxYWZhNjJhYTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/empyrical.py#L103-L204",
+          "version": "repo-lines-v1:sha256:73c95cbbafca8f4780f7c65eaf63992c8dde2d7c58ccad15b740502c0103fd32:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlYzlhNTU2YjkyY2UyODkwN2VkZWViZTA0MjY2NDk0ODJlMDYxZDc5Nzc1NTAwNzdiYjBmNTRlMzIxZGM2ODY2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzZDkxOTFhZGVmYmRmMmY4Nzc5M2JlMDdhOTRjNTg3MDNhN2E5NTFmOTZlNjk0OWRkY2ZjZmJiNTk4ZjI5MmUzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0YzVmYjBkMjIyMjU5YzY3ZTYwNWU0ODg1ODY3MWM2ZDQwMDcxMGM4YzNmZGI1ZWIxNjBhYWVmYjAyMTZiM2I3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkNmIyZDMyMjkxMzhkYWIxOTIwZTRiZDJmM2QzM2FiNDA1OWZhYWJmZDI2Nzg0ZjczOWE5YWNiNmIyODMzY2Q5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/empyrical.py#L206-L353",
+          "version": "repo-lines-v1:sha256:062b49d54892741021b0d60afb852d8dabf3849539740457a1ecd52994948f4c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1NDlkMmJjNzdkYjE2ZTZkOTVkNzk1MWU3NjgzMTJjY2NmODM3Y2FkZWU0MTRkMDdhYjAyOTk1NjdhNTVlN2U4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4YjFlMTRhZDYzZDM3ZjhmMzEzNzNhOTNlMjk4NzdkYWRhMmQyM2JkYmVlNjhlMDA3Y2U5N2FiYTY5OWU1Y2I4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1YzRiY2I5NWRmYTYyMTA5ZGNhYTZkMTY0M2RkY2EzYjc2ODhhOGE2NjA4NThmNTAyMGRmNWJhM2Y2NmIxY2UzIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/empyrical.py#L68-L74",
+          "version": "repo-lines-v1:sha256:5026d95a7374175d804a56b464ee3d97086cbeb3b74a95a4056971601d0d57fc:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGNhZDMxMjhlNzU2OTQ4YzQ5ZDcwMjA1NjBhYWY3MDcyNzgxYzExMjQ0ZmQxZTNmM2Q2Zjc3NTljOTJhNzQzMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUwYmE1N2Y1OWYwYTZhODU0ODIzMDNkYzM2ZDllMDFjZDA4NjhiZTAyNGQyNGM2MzJjYzYwYWFmMjA3ODk4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWI4NGQ5ZjM0NGJkMjhkMGQ0ZDQ4MjIxNTg0NjljMzllNjVmZTg2ZjYxMWQzMDA0NGJmNmYxMjllNjYzYzE0MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGFkM2RiZGM4ODU0NTFjNTk4MTViY2U3OTExNzgwM2M4MzE1ZDU5ZTdlMzg0YTQ0Y2NiZDhlNjVkNzlkZThmZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7e0bb60e31d847a5b15162268231c7aa",
+      "statement": "Pyfolio tear-sheet compatibility composes supplied account, round-trip, capacity, and factor-attribution inputs through native portfolio dashboards and renderers; absent inputs are not fabricated, and output is a native PortfolioTearSheet, Plotly figures, or offline HTML depending on the entrypoint.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/AGENTS.md#L41-L49",
+          "version": "repo-lines-v1:sha256:f99bf7295e4dabe32cfb383b7d2a2dfba2b345df9b1fd9a4e743dce761d6d5da:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWU2NTgxMDZkNTY4NTk3ZDdlMzhjZDg3MTAyYWZjZTgyMjAxYmJlMTFiYmRiMDEyODE3ZDhmYWE1MzM4NjIyMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGZjZjNhNjExZDcxNzZkOGM3MzIzMjFiYjI3YjI4YzczOTFlZWMxYmUwZGFiZDc4NmRjODc5Njg1ZDczM2MyOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzE5YmIyYmI1MmE2MjcyM2RkNGE5MzlhZjEwYjg2OGI1OTM3YzIzZmIxNzgzMDI0NjhjZjNmMTNlMWJlOGM2YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDQzYmFiMGY4MWMzNWYyMTE2Y2FkMzAzYjBjMzRhOThmNTQ4YTEwOWNiNGI4ZmFhMzI3NDZjNjJjZjAzZmE5MyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/tears.py#L311-L356",
+          "version": "repo-lines-v1:sha256:5ce15bbd6c8ef7360a81cf9e96b63848458097025fdc28b6b44a2826509ac4a4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmYzI3NjQ4MjdkZWRkMTU0Y2IzNjY0Y2MwMmE4YjNjMWY0MTA5ZGVmYzM5NWNkOWIyOGE1NzM5Mzc4NmJkZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE0MDg5OGYyMWM1OTNlYTIxN2RlMzNmMzk3YjdmYjJlODQ3OWYwZThkZjRmZjkyZmNlZDlmZGIzYjBmYTcwYWQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/tears.py#L32-L123",
+          "version": "repo-lines-v1:sha256:d3532b8366ef8bc08763e4f8e7df2559c8741add6dc40759b23f1ad7b09997ce:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2YTllN2U4M2ZmOTg1MGI2MThlYzhkN2JhNzg3YmFmZmYwNmFmZTQwNzVmYWY0MGE1NWVjNWE1YzFlZTY4YmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MmI3ZGY3OThmNzcyNjRlYWJhNTJmMGUxNmI1YzVmNTFiZGZkMDY0NTBlYmZlMDhlNThjNTQ2Njk1MDdjZTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmMTNkMDkxN2Q1YTdjN2E1MjA5MmJhODE0N2M5MjJkZDcwYzlhNGY5NWFjM2VjZTgwYzk0MTJlNWE1NTAyNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFkZjRkMmNkZjYzNzU4ZDU3NWM1MWI2NWQ3MDc2MjI4NDZiYTNlYjVlZTFlNjMyMjdiYzZhOTNhYjQ0ZTUzMDYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/tears.py#L358-L481",
+          "version": "repo-lines-v1:sha256:a92be4ad42bffe32d1c92520cdbc96b7078f787980c4df2fc0944e2db1d7182b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0ODFiYWYzZDUyNWEwODc0ZGFlNTY5MGQ2Y2YwOGIwZTkzMGI0ZjcwOWJmMjNhYWE3YmFlZGVlNzhmY2MxNzJiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmOTQxNmUwOWY3OGJhMzE2YzAzMjU2ODIxM2I4NTVlZTc1NmU0MTU2NWQ5MThmMDk1MTljODFmZDYyMGY0MDYwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3YWVkYTE5YzBmNmIyNTQxMmU1Y2RlOGI0NjgzNDY2NGVkMDJkMmM3OTkzMDE3NzgwODUwNmEzMjU4ODhmYmU2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_a34bc55ed5764648ab04737a3452b777",
+      "statement": "Compatibility plotting deliberately replaces Matplotlib artist semantics with Plotly: rendering functions return Plotly figures or HTML, and Pyfolio plotting rejects a supplied Matplotlib ax instead of mutating it.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/plotting.py#L1-L7",
+          "version": "repo-lines-v1:sha256:8ba9206de4ca291c32aa08c286f42be1e955396bfbab7f1eb5d5bbc1950a2f45:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDhiNmE3MWIyNDllMWZhNjkyNDE1MWMzYmZmNWE1ZDVlNDY5NjcxNWJlMWY2ODY3ZGM4MDQzYmNjNDliNGFhZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTZjNzQ2NGMzMTBjOTIzOWYxNzkwYTVjYWI5MzI5YTU5ZTViZTAwN2JhY2EwNjFlNTczM2YzNDMwMTMzODc0MyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/alphalens/plotting.py#L55-L78",
+          "version": "repo-lines-v1:sha256:01626a84ab775d2bb606622ed6d4b8669f622aded8e89b37113a447438de9693:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmOGJiOTdjNGEwODkwYWE0ZGEyOGYwZGVlMWM0M2RjZjY3Y2I4ZWEyNWI2ZWM1ZWFkZmU0NWM2N2U2YmFiZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRjZWFjYTg5YTk1NjM0OTZkZmMyZTg1NzZiZDA1ZGNhMDczOWFjMGYxOTQ4NDE4YjY1YjM4N2U2NzVjZGEwMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5MTliZmQ5YTUzOTJiYWEyZWI3MzdjZmQzM2FmM2E1Mzc3NWFkY2QxMzNmNzEwOGM4MmY2MDZlZmFjZGEyOTEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/plotting.py#L1-L6",
+          "version": "repo-lines-v1:sha256:5b08f8ee731c3eb0d1451af6e790a032689cf35c4b23ab06c6f6d6a3e8570e68:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjViNjY4NmUyYWZlZmRjMDc0NTk4Y2MwMzNiZWNjNGE0NjIzNjJlMjA4MmE1YTZkNWQwNzg5NDdiZTA5MmFlMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMwM2VjZGQ0YTRkMTBmMTljNzNmZDQyZmQxMjQzN2ZkMzM1NGE4MjY4MTYwNWRhNTI1NWE5N2EzOTA2OGRiYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTViNmU4NzA2YjQzMDQ3ZjJhNmRiNjdmMTMyNjM4NTk1NjA0ZTY3ZjM2OTY2ODc2Y2UwMTU4ZjAwNTNlNmJkMSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/plotting.py#L49-L58",
+          "version": "repo-lines-v1:sha256:0a00865717a04268bb568c89574a23279640de3bb4de47cd4cf2255b4e7ba99a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2NmU5MGNmZjRjZDU4NzY0ZDdiODE1NjgwMjVjZTMzYjQ0YzJkOTJmOWJjZGJlM2E0NDk0ZmFiYTcxOWI2YWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkYTUzM2Q3MGFjYzgyZmI4YmIwZDkxZWE2ZDAyYmZiMDdmNWFlZGE1OTA1YjdmNzYzZjIwMjY4NWY1MTUzYmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhYWE1MjkzYzI4ZGEzYTFjNGVjOGU2NTAzODVkMTFjMjU5OTc5ZjU3MTBiMTRjMzk5Y2E3ZjVkMjI0MDIxOTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYyNjc3OWJiNjhmZjc4ZmVlZjg4MDMzMmIyOTRjNjYxZmE5YTE1Yjk3Mjc4MjlkYjk4Y2Q5YTJhZGJmOTNmYzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_31d7758d672b4b08a4a8d27be73c628f",
+      "statement": "portfolio_analysis_from_zipline consumes a plain pandas performance DataFrame without importing Zipline or Pyfolio, requires authoritative reported returns, validates nested snapshots and stable SID/multiplier identity, and maps optional positions, valuations, and actual transactions into PortfolioAnalysis.from_frames.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L16-L53",
+          "version": "repo-lines-v1:sha256:19ef794255a6ffcb4efc80cfe534b947a9b2449f7a53a5f91331949e454d30aa:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU4MWQ0YjcxNDM4N2Y3ZGYyODYyZDFiMGQwMTdmNTViZmVjMWJlMWU4MDVhNzMzNTljNDFjZmZjYzUwM2Q3ODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4MGU2YzdkZjUzODljZjViOTQ3NGVmNDRkYzQxNzA0OWYyNTVmMjM4ZWIwZGZmMWM2MzA4YjRjYzM5NjZjNDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L56-L86",
+          "version": "repo-lines-v1:sha256:4409c55f8c019074de5976eeb8518e4f08acd4c54a4dcce854bee113f916d944:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmZDYzYmI1Y2VlYTA5ZGIwNTAyNDUyZTU3NDllNzZiZjkyODZlMmVlOTMxOTQ2OGZiNGE1YzIzOTdhZGMwMzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1MGQ2MWZhZTcyMmIwYWU0YzNmY2Y0NjNmMWVhMzY3OTYwYTFmMWNlMTFlN2ExYTVmNGRhODQ2OTQxNDg4ODciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3NDU0YzIzOWEzNjljYjhlM2E1NzRjM2M2ZDFmYjNlZmI3Nzg4MWUyZWNmMTM0ZjMzNWQ2OWU5NWU1ZGEzMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjMWM3Y2YzMDJhODcxNzIxOGQwZTk2NzA2ZGVjMTQ0M2JkN2Y0NjcyMmNjZTdhZTM3MGQ3YTRmNzZlM2RlNmEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L87-L179",
+          "version": "repo-lines-v1:sha256:05bbffc475a30192cba803bf0e2ed6a6bb3be2a06e480d68b98b1f592f10c8be:eyJzZWxlY3RlZExpbmVDb3VudCI6OTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwOWY0NDUzM2Y0NDUyYTU3ZmFjYWJmMjY2MjczNzkwNWIzZDRkYjEyYWFjZWJlNjRhMWM5ZTVlYzY1ZmQ1Y2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiNzEzOTgzN2ZiYTE5OWIwZGM1MDc2YjlmYjlkNzBkZTA3YWMyZDE5OWFkNTUwZTVhNmYxN2I0YTQ5ZTQ3OWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiMmYwZjhjNTFhZjQyMDNiZDJiZWRiMGVmYWUwYzIyYjc0ZDk5MGNjMjE0NjY0YjJlZDU4NTk3Y2I4Zjg0NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwNDA3NjAyN2RmY2Q0NjdjNWI1YjJjZmNjODM5N2MzYzg5ZmMzOTk5ZWJjMWNhMmNiYWU3NTJmYzgzMDMyMGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b526c48db83349caa3c739ff8d134466",
+      "statement": "The Zipline adapter treats explicit empty position snapshots as proof of all-cash complete books, keeps marked notional distinct from reported cash and NAV, never apportions aggregate costs to fills, and records source and derivation provenance in owned input metadata.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L140-L218",
+          "version": "repo-lines-v1:sha256:540e2cd9101661c3bd89ded72472e3853aeb62dca74215e14bef3042c634d414:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YmJhNmIwZmViMzE3ZjRhZWM3OWQ3NjNjYzIxMjJlYmZlNzk4ZGY2YmZiODI2MDljOGY1OTU0YTU5NGMwN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjMjljODI3YjlmNmQ3ZWFlMDZjMGRlNDFjNGU5ZmFmZWFlNmFiZWQ0Y2Y0ZTQwZjBjM2FjZWYwZmU2MDg4ZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3NzZlOTU1NTEwMTQ4MGE5MTlhMjcwNTYwYTg5MzE0MGI4YzRmMTYxMTlhMWM5ZTkwNzZiMGJiNmVmZjdiMjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4NzFmZWQ0NjQyNmE0MDQ2NWY5ZTJmZmMxOTRmYjhhYjM0MmUxYzQ4NzExZTQzOGZkNDRmNmI2MmFiZTFlZTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L87-L139",
+          "version": "repo-lines-v1:sha256:d393b6dd91109560f2ad1fe4247a577518a24b4b506a8159a866aa623c8a988c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwOWY0NDUzM2Y0NDUyYTU3ZmFjYWJmMjY2MjczNzkwNWIzZDRkYjEyYWFjZWJlNjRhMWM5ZTVlYzY1ZmQ1Y2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjZWE5YzM0YTc4MjI0ODM1N2M0NzY1MmU1YTU3YjQ2MmRmMTFiYjk3NmI4MDcxN2Q3ZmUxOGJjZWM1YzQzYWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiMmYwZjhjNTFhZjQyMDNiZDJiZWRiMGVmYWUwYzIyYjc0ZDk5MGNjMjE0NjY0YjJlZDU4NTk3Y2I4Zjg0NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0N2YzM2E0ZWYyN2I0MGFhMTU1NmFkOGIxNzcyOGE3NGI2MGZiMWUwZjUxNTUzMTQyMDgzZTAwY2QzMTJhYzIifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_zipline_result_adapter.py#L209-L253",
+          "version": "repo-lines-v1:sha256:739c12e431fab6682f5b06b62644eefab3365bde5d86c7c2e0393f5dc8e04bc6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3OTgwY2E2ZWNmZDhjNzJiMDdmMmEzZGRiODZlMzVlNDc4Y2M4ZjJlZDA3MjllYmFlZjM1MjgxNjE1OWRkY2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlZGU1MmIxYTMxOTdlNDczYjlhNTY0YzUwMmUwNTY2ODMzZDcwZjVjMDQwOGUyY2NmZGIyOTQ4MjE3ZDYxNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzZWZiZTM2MzljNDViMzk2ZTdjNTg5NDczZjc3MTkxMWQ4ZTlmMjQzMzY3M2U0YzZlZWYxZDIxNDU0MWI3NzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e8e643b2ce4546baaabc7726c118a872",
+      "statement": "The familiar Pyfolio Zipline tuple extractor delegates to portfolio_analysis_from_zipline, then projects validated owned returns, complete marked positions and cash, and actual fills while preserving the distinction between civil-day labels and execution instants.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/utils.py#L151-L192",
+          "version": "repo-lines-v1:sha256:f4707f092e81a06a1f228e205bc110da9520dc4a49e11b42060bac08998695a4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyZmIwYTQ2MjBlZDhjNDY4NGZlZjVhY2FjNjY2NDViZjk1OTkyOGVjMzdlMDM3Njc3NzJlOGIwMzNlZmYwZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YWUzOTFlYzVmMGZiZTFkMmE0MTA2Zjc3OGQ2MjJiMzM0NWUxMDA5NDQ5YjRiOGE2NzAyNTZjODZlYjgxNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhMWU1N2FhZDAwOGQ2NTlhMWJjNDhjMjE4NTM3MWQ3ZGIxYmIzMzZmMzc5OTAzZTgwNzE5ODcyYzQ5NWJhYTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlZDRhZDhiZDkwOWM4MWMyMWZhMWJkZjgxMjkzYjM5MjczYTJmZjUzMThmZDY4MTg4ZDBmMDg5OWZiNWE5N2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/diagnostic/compat/pyfolio/utils.py#L193-L250",
+          "version": "repo-lines-v1:sha256:ba91b317f2b9744cdf3a9055c4f92d316d1b4f866a86c3d1d32d95d0d7d4bd9e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkY2I5Yjc1MjhiNmZhYWMwN2U5NDVkYTZiZGZiNDk0OGE4NTFkOTMyMTAyYmNkNmVmMzhkMWY2MDZmNzJmNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkNGQ3N2EwYTU0MzZiZjIyYjBkOGM3ZmYyMGY3ZmY3N2M0ZjFjYjMyYzZhOGM5MWQ1MDJkODJjYTY2Njc2YjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1M2I3MGQ2YWY1Yjk3Yjc1YTYxYmNiYzQyZDFlN2EwOTZhNDM1MTI4MTdkZTRmNDcxYmRjODhiZWI0MmRkYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0Yzg3ZjMzOTdiMWJiMTgxNTY1ZTJmZGRmOWM0ZDc5MTk4ZGNlODJiN2MyMzgzYzU0OTM5NTg5NWU2YTc4YTIifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_zipline_result_adapter.py#L49-L85",
+          "version": "repo-lines-v1:sha256:158cdc95e235092ac680f84b50950d2178aeb27ef14b0406914a6a7e7b9325fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmY2ZhYWMzYTdmNmM0NjY3OThjNTUzMjdjMmE1YzA2NDMyZDNiNWI0NjAwOGUxMTE2ZGZjNjY4ZWM1YTRiMzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MzY3MDliYTVjOTRlMjQ1NzFmNjBkOTYxM2RkZmQxY2Q0Yjc4MGVmOWI4M2JhYTlhMTk5NTFkNjQwMWI0OTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzZTRjOGYwZTU5ZmVmODFhYmQ0NDYyNzI1Y2RlYTdlNDgyNTFhNzU1OWFiOTJmMDE2ZTA3YjYzMmRhOTBiZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFhZTQ4OTQ5NDRjZTIxNzM0OWZjYWZhNzFhZjU3ZWM0MTI3NTcwYjEwYTNjMWRjYzVmZjAyZDI1NmQ5NTY5YjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1830772aacc248bca3e537d4e918ddf4",
+      "statement": "Production Zipline ingestion has no hidden Zipline, Pyfolio, Empyrical, or Alphalens runtime dependency; an integration test blocks imports of all four legacy engines and still constructs validated transaction inputs from a captured performance frame.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/diagnostic/integration/zipline.py#L1-L14",
+          "version": "repo-lines-v1:sha256:dd1bfcc115947ce5f954663c80237a94de9fce75648689b73667ddf2afeb30c0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFjZmU0ZTA1YWQ3YTJkODQyYzljNzI5Y2NiNDQ5OGM1NDRlNTg5NGZkYWFlOWFmNTU4YmQ5NTQ4NTdkZmE2NzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhNGNkMDI1ZWRmNmFlOGYzYTgyMTljYzMzZWQ0YzcxNTljMmEzNzE5MGY0NmJiODczYmViYmI2NjM1MGJmNDYifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_zipline_result_adapter.py#L256-L295",
+          "version": "repo-lines-v1:sha256:10fe0e67e3b3564bfaf73a4af31402afee52504176745ee5bda49db7bf84af0e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5OGFiNDQ2ZTdjYTI3NWM2NTRmZGRiYjNiZmI0MjVjYjc5NTQ1ZDc1NTM0YTg4YTk2MTE4ZTA5NTg0MjAxM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5ZjIzMzAzYjFkZDM5YTFlNzMzZjg2YjVlZjNhZTQzOWI5YWYzN2I3ZTAwYjgyYjA2Yjg4NWU1ODM0MzAwMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhYjMxNDVjZGU5Y2RkOTYzNDVhYzNkZDI5ZjQ0NjIzMDk2MGYyZDNmOGVkYjA1Yjk5YTUwYjdhNTRkZjU0YTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3fc90d6ff6643248722420ebb195630",
+      "statement": "Legacy reference packages are used only as optional correctness qualifications in representative tests, while native compatibility and integration tests cover operation independently of those runtimes.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_compat/test_acquisition_recipe.py#L73-L90",
+          "version": "repo-lines-v1:sha256:2f8a684b262323be57993be665cd31f19ccb6506a22510b0f19a910ff9643957:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyNjQ1OWI1NzhhNjhkOTgzYjA2ZGU4ZGJjMjcyOGU2NTk1MWZjMzVlNTU5ZjVjOWIzMjQ2Y2U2N2MwNDc5M2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4YzlhYjA4YWVhM2FlYjM4ZDc4NDVhNTIzZmI1NjQ1MDViZjk5MDFiNjBhYWM2ZDFjYzBkYWU4ZDVmMzQ1N2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiY2RjNjkwMTFkOGU3MDNiN2Y3MDI0YzBlM2YxMDI5ODFkNDY5Zjk2NjM5YThlMjI0MmQ1NWE0YTMyYmE5ODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU1NmE5ODhiNWM3YTdkZTU1NGRmODJiMzUyY2YwNWE0MDdkN2M3ZWZjNDc4YTQzNjhjYmNlNjE1MWNiMmNjY2EifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration/test_zipline_result_adapter.py#L256-L295",
+          "version": "repo-lines-v1:sha256:10fe0e67e3b3564bfaf73a4af31402afee52504176745ee5bda49db7bf84af0e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5OGFiNDQ2ZTdjYTI3NWM2NTRmZGRiYjNiZmI0MjVjYjc5NTQ1ZDc1NTM0YTg4YTk2MTE4ZTA5NTg0MjAxM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5ZjIzMzAzYjFkZDM5YTFlNzMzZjg2YjVlZjNhZTQzOWI5YWYzN2I3ZTAwYjgyYjA2Yjg4NWU1ODM0MzAwMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhYjMxNDVjZGU5Y2RkOTYzNDVhYzNkZDI5ZjQ0NjIzMDk2MGYyZDNmOGVkYjA1Yjk5YTUwYjdhNTRkZjU0YTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_signal/test_correctness_vs_alphalens.py#L1-L28",
+          "version": "repo-lines-v1:sha256:64f5dd01113e1b5f85d878f01bbe61dfb4d006421d147495741ea3ad94f37450:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViNTdlNjdiNjE4NTQ1YjJkZTgwZmI4ZDZiYTcwOTE0YjgyMjNhNzgzZDViMzY0NThiMjA3ODAxZjg2YTMwNjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3MmUwM2Y0YjY3YTNmMzMxMmFmNGRjOTRiZjQ5NGM0ZGY2OGFhMjM2MzkzMDllOTFkNDAxNTc0MzhlNzVhYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlMDI1ZTM3Yjk2M2E1OWQ5M2E3YzJiZjVhOGQwZGM5NDdiMDFhZGQ3N2MxNWViODBkODQ0OGMyMzFhMGYwMzUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:31.080Z"
+  }
+}
